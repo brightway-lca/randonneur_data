@@ -1,0 +1,2 @@
+include randonneur_data/data/*.xz
+include randonneur_data/data/*.json
