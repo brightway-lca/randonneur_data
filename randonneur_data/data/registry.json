@@ -14,7 +14,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-22T21:46:47.326585+00:00",
+    "created": "2024-07-23T07:27:03.628893+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -35,6 +35,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -42,6 +43,8 @@
         }
       }
     },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.10-cutoff",
     "filename": "simapro-ecoinvent-3.10-cutoff.xz",
     "compression": "lzma"
   },
@@ -60,7 +63,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-22T21:46:53.240087+00:00",
+    "created": "2024-07-23T07:27:11.073974+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -81,6 +84,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -88,6 +92,8 @@
         }
       }
     },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.8-cutoff",
     "filename": "simapro-ecoinvent-3.8-cutoff.xz",
     "compression": "lzma"
   },
@@ -106,7 +112,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-22T21:47:42.360447+00:00",
+    "created": "2024-07-23T07:27:16.613314+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -127,6 +133,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -134,7 +141,159 @@
         }
       }
     },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.9.1-cutoff",
     "filename": "simapro-ecoinvent-3.9.1-cutoff.xz",
+    "compression": "lzma"
+  },
+  "ecoinvent-3.7.1-cutoff-ecoinvent-3.8-cutoff": {
+    "name": "ecoinvent-3.7.1-cutoff-ecoinvent-3.8-cutoff",
+    "description": "Data migration file from ecoinvent-3.7.1-cutoff to ecoinvent-3.8-cutoff generated with `ecoinvent_migrate` version 0.2.0",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "role": "author"
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "wrangler"
+      }
+    ],
+    "created": "2024-07-23T07:12:00.169310+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.7.1-cutoff",
+    "target_id": "ecoinvent-3.8-cutoff",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.7.1-cutoff-ecoinvent-3.8-cutoff.json",
+    "compression": false
+  },
+  "ecoinvent-3.8-cutoff-ecoinvent-3.9-cutoff": {
+    "name": "ecoinvent-3.8-cutoff-ecoinvent-3.9-cutoff",
+    "description": "Data migration file from ecoinvent-3.8-cutoff to ecoinvent-3.9-cutoff generated with `ecoinvent_migrate` version 0.2.0",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "role": "author"
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "wrangler"
+      }
+    ],
+    "created": "2024-07-23T07:12:54.600899+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.8-cutoff",
+    "target_id": "ecoinvent-3.9-cutoff",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.8-cutoff-ecoinvent-3.9-cutoff.xz",
+    "compression": "lzma"
+  },
+  "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff": {
+    "name": "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff",
+    "description": "Data migration file from ecoinvent-3.9.1-cutoff to ecoinvent-3.10-cutoff generated with `ecoinvent_migrate` version 0.2.0",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "role": "author"
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "wrangler"
+      }
+    ],
+    "created": "2024-07-23T07:16:19.494612+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-cutoff",
+    "target_id": "ecoinvent-3.10-cutoff",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff.xz",
     "compression": "lzma"
   }
 }
