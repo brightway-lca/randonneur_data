@@ -14,7 +14,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:27:03.628893+00:00",
+    "created": "2024-07-24T10:37:28.350572+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -22,6 +22,9 @@
         "path": "https://creativecommons.org/licenses/by/4.0/",
         "title": "Creative Commons Attribution 4.0 International"
       }
+    ],
+    "graph_context": [
+      "edges"
     ],
     "mapping": {
       "source": {
@@ -63,7 +66,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:27:11.073974+00:00",
+    "created": "2024-07-24T11:19:57.375906+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -71,6 +74,9 @@
         "path": "https://creativecommons.org/licenses/by/4.0/",
         "title": "Creative Commons Attribution 4.0 International"
       }
+    ],
+    "graph_context": [
+      "edges"
     ],
     "mapping": {
       "source": {
@@ -112,7 +118,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:27:16.613314+00:00",
+    "created": "2024-07-24T11:20:03.022229+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -120,6 +126,9 @@
         "path": "https://creativecommons.org/licenses/by/4.0/",
         "title": "Creative Commons Attribution 4.0 International"
       }
+    ],
+    "graph_context": [
+      "edges"
     ],
     "mapping": {
       "source": {
@@ -161,7 +170,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:12:00.169310+00:00",
+    "created": "2024-07-24T11:22:03.820556+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -170,10 +179,14 @@
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
+    "graph_context": [
+      "edges"
+    ],
     "mapping": {
       "source": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -183,6 +196,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -211,7 +225,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:12:54.600899+00:00",
+    "created": "2024-07-24T11:22:13.155831+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -220,10 +234,14 @@
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
+    "graph_context": [
+      "edges"
+    ],
     "mapping": {
       "source": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -233,6 +251,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -261,7 +280,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-23T07:16:19.494612+00:00",
+    "created": "2024-07-24T11:22:27.519875+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -270,10 +289,14 @@
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
+    "graph_context": [
+      "edges"
+    ],
     "mapping": {
       "source": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -283,6 +306,7 @@
       "target": {
         "expression language": "XPath",
         "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
           "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -295,5 +319,107 @@
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
     "filename": "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff.xz",
     "compression": "lzma"
+  },
+  "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere": {
+    "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
+    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.2.0",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "role": "author"
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "wrangler"
+      }
+    ],
+    "created": "2024-07-24T11:36:32.682192+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.8-biosphere",
+    "target_id": "ecoinvent-3.9-biosphere",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere.json",
+    "compression": false
+  },
+  "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere": {
+    "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere",
+    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.2.0",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "role": "author"
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "wrangler"
+      }
+    ],
+    "created": "2024-07-24T11:38:11.144509+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-biosphere",
+    "target_id": "ecoinvent-3.10-biosphere",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere.json",
+    "compression": false
   }
 }

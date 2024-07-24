@@ -13,7 +13,7 @@
       "role": "wrangler"
     }
   ],
-  "created": "2024-07-23T07:12:00.169310+00:00",
+  "created": "2024-07-24T11:22:03.820556+00:00",
   "version": "2.0.0",
   "licenses": [
     {
@@ -22,10 +22,14 @@
       "title": "Creative Commons Attribution 4.0 International"
     }
   ],
+  "graph_context": [
+    "edges"
+  ],
   "mapping": {
     "source": {
       "expression language": "XPath",
       "labels": {
+        "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
         "name": "//*:activityName/text()",
         "location": "//*:geography/*:shortname/text()",
         "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
@@ -35,6 +39,7 @@
     "target": {
       "expression language": "XPath",
       "labels": {
+        "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
         "name": "//*:activityName/text()",
         "location": "//*:geography/*:shortname/text()",
         "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
