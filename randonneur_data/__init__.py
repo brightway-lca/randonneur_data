@@ -11,15 +11,15 @@ import lzma
 import shutil
 from collections.abc import MutableMapping
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 DATA_DIR = Path(__file__).parent.resolve() / "data"
 DATA_LABELS = {"create", "replace", "update", "delete", "disaggregate"}
 
 
 class Registry(MutableMapping):
-    def __init__(self):
-        self.registry_fp = DATA_DIR / "registry.json"
+    def __init__(self, filepath: Optional[Path] = None):
+        self.registry_fp = filepath or DATA_DIR / "registry.json"
 
     def __load(self) -> dict:
         try:
