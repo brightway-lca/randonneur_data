@@ -421,5 +421,91 @@
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
     "filename": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere.json",
     "compression": false
+  },
+  "generic-brightway-units-normalization": {
+    "name": "generic-brightway-units-normalization",
+    "description": "Standard units normalization used in most Brightway projects",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-07-25T06:47:10.575370+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes",
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "Node.unit"
+        }
+      },
+      "target": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "Node.unit"
+        }
+      }
+    },
+    "source_id": "bw_interfaces_schemas-1",
+    "target_id": "bw_interfaces_schemas-1",
+    "homepage": "https://github.com/brightway-lca/bw_interface_schemas",
+    "filename": "generic-brightway-units-normalization.json",
+    "compression": false
+  },
+  "generic-brightway-unit-conversions": {
+    "name": "generic-brightway-unit-conversions",
+    "description": "Standard unit conversions used in most Brightway projects",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-07-25T06:47:27.662777+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes",
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "Node.unit"
+        }
+      },
+      "target": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "Node.unit"
+        }
+      }
+    },
+    "source_id": "bw_interfaces_schemas-1",
+    "target_id": "bw_interfaces_schemas-1",
+    "homepage": "https://github.com/brightway-lca/bw_interface_schemas",
+    "filename": "generic-brightway-unit-conversions.json",
+    "compression": false
   }
 }
