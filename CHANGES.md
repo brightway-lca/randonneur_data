@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2024-08-13
+
+* Update ecoinvent version migrations with additional patches
+
 ## [0.1.0] - 2024-08-13
 
 Initial public release
