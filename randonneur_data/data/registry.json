@@ -14,8 +14,8 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-25T11:32:03.343229+00:00",
-    "version": "2.0.0",
+    "created": "2024-08-13T12:43:14.823451+00:00",
+    "version": "2.1.0",
     "licenses": [
       {
         "name": "CC BY 4.0",
@@ -32,7 +32,13 @@
         "labels": {
           "identifier": "Process[*].\"Process identifier\".text",
           "name": "Process[*].Products[*].text[0]",
-          "platform_id": "Process[*].\"Platform Identifier\""
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
         }
       },
       "target": {
@@ -66,8 +72,8 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-25T11:32:09.696699+00:00",
-    "version": "2.0.0",
+    "created": "2024-08-13T12:43:30.653570+00:00",
+    "version": "2.1.0",
     "licenses": [
       {
         "name": "CC BY 4.0",
@@ -84,7 +90,13 @@
         "labels": {
           "identifier": "Process[*].\"Process identifier\".text",
           "name": "Process[*].Products[*].text[0]",
-          "platform_id": "Process[*].\"Platform Identifier\""
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
         }
       },
       "target": {
@@ -118,8 +130,8 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-25T11:32:15.398528+00:00",
-    "version": "2.0.0",
+    "created": "2024-08-13T12:43:36.140695+00:00",
+    "version": "2.1.0",
     "licenses": [
       {
         "name": "CC BY 4.0",
@@ -136,7 +148,13 @@
         "labels": {
           "identifier": "Process[*].\"Process identifier\".text",
           "name": "Process[*].Products[*].text[0]",
-          "platform_id": "Process[*].\"Platform Identifier\""
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
         }
       },
       "target": {
@@ -280,7 +298,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-24T11:22:27.519875+00:00",
+    "created": "2024-07-30T11:38:41.014328+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -506,6 +524,67 @@
     "target_id": "bw_interfaces_schemas-1",
     "homepage": "https://github.com/brightway-lca/bw_interface_schemas",
     "filename": "generic-brightway-unit-conversions.json",
+    "compression": false
+  },
+  "simapro-9-ecoinvent-3-context": {
+    "name": "simapro-9-ecoinvent-3-context",
+    "description": "Context mapping from SimaPro 9 to ecoinvent 3",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-07-29T10:26:45.751954+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "SimaPro-9-ecoinvent-3-context",
+    "filename": "simapro-9-ecoinvent-3-context.json",
     "compression": false
   }
 }
