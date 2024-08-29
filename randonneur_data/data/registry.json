@@ -586,5 +586,173 @@
     "target_id": "SimaPro-9-ecoinvent-3-context",
     "filename": "simapro-9-ecoinvent-3-context.json",
     "compression": false
+  },
+  "SimaPro-9-ecoinvent-3.9-biosphere": {
+    "name": "SimaPro-9-ecoinvent-3.9-biosphere",
+    "description": "Flowmapper 0.1.1 elementary flow correspondence from SimaPro-9 to ecoinvent-3.9-biosphere",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-08-29T14:56:56.572345+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "CAS number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.9-biosphere",
+    "filename": "simapro-biosphere-2024-ecoinvent-3.9-biosphere.xz",
+    "compression": "lzma"
+  },
+  "ecoinvent-2.2-biosphere-context-ecoinvent-3.0-biosphere-context": {
+    "name": "ecoinvent-2.2-biosphere-context-ecoinvent-3.0-biosphere-context",
+    "description": "Convert context (category and subcategory) labels from ecoinvent 2 to 3 standards",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-08-29T18:09:28.794527+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes",
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@name",
+          "unit": "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@unit",
+          "context": [
+            "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@category",
+            "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@subCategory"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "ecoinvent-2.2-biosphere",
+    "target_id": "ecoinvent-3.0-biosphere",
+    "filename": "ecoinvent-2.2-biosphere-context-ecoinvent-3.0-biosphere-context.json",
+    "compression": false
+  },
+  "ecoinvent-2.2-biosphere-ecoinvent-3.0-biosphere": {
+    "name": "ecoinvent-2.2-biosphere-ecoinvent-3.0-biosphere",
+    "description": "Convert biosphere flow names from ecoinvent 2 to 3",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-08-29T19:09:57.487154+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes",
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@name",
+          "unit": "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@unit",
+          "context": [
+            "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@category",
+            "//*:exchange[*:outputGroup = '4' or *:outputGroup = '5']/@subCategory"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "ecoinvent-2.2-biosphere",
+    "target_id": "ecoinvent-3.0-biosphere",
+    "filename": "ecoinvent-2.2-biosphere-ecoinvent-3.0-biosphere.json",
+    "compression": false
   }
 }
