@@ -45,10 +45,30 @@ class Registry(MutableMapping):
         return key in self.__load()
 
     def __str__(self) -> str:
-        s = "\n\t".join(sorted(self))
-        return f"`randonneur_data` registry with {len(self)} files:\n\t{s}"
+        def format_file(obj: dict) -> str:
+            licenses = [elem["name"] for elem in obj.get("licenses", [])]
+            authors = ", ".join(
+                [
+                    f"{elem['title']} ({elem['role']})"
+                    for elem in obj.get("contributors", [])
+                ]
+            )
+            return f"""\t{obj['name']}
+\t\tDescription: {obj['description']}
+\t\tSource: {obj['source_id']}
+\t\tTarget: {obj['target_id']}
+\t\tGraph objects to be modified: {obj['graph_context']}
+\t\tAuthors: {authors}
+\t\tVersion: {obj.get("version", "(unknown)")}
+\t\tLicenses: {licenses}
+"""
 
-    __repr__ = lambda x: str(x)
+        return f"`randonneur_data` with {len(self)} files:\n" + "".join(
+            format_file(val) for val in sorted(self.values(), key=lambda x: x["name"].lower())
+        )
+
+    def __repr__(self) -> str:
+        return f"`randonneur_data` registry at {str(self.registry_fp.parent)} with {len(self)} files and id {id(self)}"
 
     def __delitem__(self, name) -> None:
         data = self.__load()
