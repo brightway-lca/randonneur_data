@@ -340,7 +340,7 @@
   },
   "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere": {
     "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
-    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.2.0",
+    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.3",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -353,7 +353,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-24T11:36:32.682192+00:00",
+    "created": "2024-08-30T07:02:25.258115+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -371,7 +371,12 @@
         "labels": {
           "name": "//*:elementaryExchange/*:name/text()",
           "unit": "//*:elementaryExchange/*:unitName/text()",
-          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
         }
       },
       "target": {
@@ -379,19 +384,24 @@
         "labels": {
           "name": "//*:elementaryExchange/*:name/text()",
           "unit": "//*:elementaryExchange/*:unitName/text()",
-          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
         }
       }
     },
     "source_id": "ecoinvent-3.8-biosphere",
     "target_id": "ecoinvent-3.9-biosphere",
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
-    "filename": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere.json",
-    "compression": false
+    "filename": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere.xz",
+    "compression": "lzma"
   },
   "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere": {
     "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere",
-    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.2.0",
+    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.3",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -404,7 +414,7 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-07-24T11:38:11.144509+00:00",
+    "created": "2024-08-30T07:02:27.768757+00:00",
     "version": "2.0.0",
     "licenses": [
       {
@@ -422,7 +432,12 @@
         "labels": {
           "name": "//*:elementaryExchange/*:name/text()",
           "unit": "//*:elementaryExchange/*:unitName/text()",
-          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
         }
       },
       "target": {
@@ -430,15 +445,20 @@
         "labels": {
           "name": "//*:elementaryExchange/*:name/text()",
           "unit": "//*:elementaryExchange/*:unitName/text()",
-          "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
         }
       }
     },
     "source_id": "ecoinvent-3.9.1-biosphere",
     "target_id": "ecoinvent-3.10-biosphere",
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
-    "filename": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere.json",
-    "compression": false
+    "filename": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere.xz",
+    "compression": "lzma"
   },
   "generic-brightway-units-normalization": {
     "name": "generic-brightway-units-normalization",
