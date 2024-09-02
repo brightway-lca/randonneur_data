@@ -1,6 +1,6 @@
 {
   "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
-  "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.2.0",
+  "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.3",
   "contributors": [
     {
       "title": "ecoinvent association",
@@ -13,7 +13,7 @@
       "role": "wrangler"
     }
   ],
-  "created": "2024-07-24T11:36:32.682192+00:00",
+  "created": "2024-08-30T06:46:34.167742+00:00",
   "version": "2.0.0",
   "licenses": [
     {
@@ -31,7 +31,11 @@
       "labels": {
         "name": "//*:elementaryExchange/*:name/text()",
         "unit": "//*:elementaryExchange/*:unitName/text()",
-        "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ]
       }
     },
     "target": {
@@ -39,7 +43,11 @@
       "labels": {
         "name": "//*:elementaryExchange/*:name/text()",
         "unit": "//*:elementaryExchange/*:unitName/text()",
-        "uuid": "//*:elementaryExchange/@elementaryExchangeId"
+        "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ]
       }
     }
   },
