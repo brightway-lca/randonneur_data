@@ -133,6 +133,9 @@ class Registry(MutableMapping):
         self[data["name"]] = data
         return new_path
 
+    def file_mapping_schema(self, label: str) -> dict:
+        return self.get_file(label)['mapping']
+
     def get_file(self, label: str) -> dict:
         metadata = self.__load()[label]
         if metadata.get("compression") == "lzma":
