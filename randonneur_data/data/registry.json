@@ -556,8 +556,8 @@
         "role": "author"
       }
     ],
-    "created": "2024-07-29T10:26:45.751954+00:00",
-    "version": "2.0.0",
+    "created": "2024-09-01T21:16:03.588440+00:00",
+    "version": "3.0.0",
     "licenses": [
       {
         "name": "CC BY 4.0",
@@ -575,6 +575,12 @@
           "identifier": "Process[*].\"Process identifier\".text",
           "name": "Process[*].Products[*].text[0]",
           "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
           "context": [
             "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
             "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
@@ -592,6 +598,7 @@
           "name": "//*:elementaryExchange/*:name/text()",
           "unit": "//*:elementaryExchange/*:unitName/text()",
           "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
           "context": [
             "//*:elementaryExchange/*:compartment/*:compartment/text()",
             "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
@@ -617,7 +624,7 @@
         "role": "author"
       }
     ],
-    "created": "2024-08-29T14:56:56.572345+00:00",
+    "created": "2024-08-30T10:44:25.252311+00:00",
     "version": "1.0.0",
     "licenses": [
       {
@@ -966,5 +973,129 @@
     "target_id": "ecoinvent-3.5-{a}",
     "filename": "simapro-ecoinvent-3.5-consequential.xz",
     "compression": "lzma"
+  },
+  "SimaPro-9-ecoinvent-3.8-biosphere-manual-matches": {
+    "name": "SimaPro-9-ecoinvent-3.8-biosphere-manual-matches",
+    "description": "Manual matches of SimaPro or older ecoinvent flows to recent ecoinvent flow list",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-08-30T11:22:58.979942+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.8-biosphere",
+    "filename": "simapro-9-ecoinvent-3.8-biosphere-manual-matches.json",
+    "compression": false
+  },
+  "SimaPro-9-ecoinvent-3.9-biosphere-manual-matches": {
+    "name": "SimaPro-9-ecoinvent-3.9-biosphere-manual-matches",
+    "description": "Manual matches of SimaPro or older ecoinvent flows to recent ecoinvent flow list",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-08-30T13:12:09.378755+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.9-biosphere",
+    "filename": "simapro-9-ecoinvent-3.9-biosphere-manual-matches.json",
+    "compression": false
   }
 }
