@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2] - 2024-09-02
+
+* Add validation when adding data
+* Updated imperfect migrations
+* Added many migration files
+
 ## [0.1.2] - 2024-08-15
 
 * Update ecoinvent version migrations with even moar patches
