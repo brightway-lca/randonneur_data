@@ -13,6 +13,7 @@ from collections.abc import MutableMapping
 from pathlib import Path
 from typing import Any, Optional
 
+
 DATA_DIR = Path(__file__).parent.resolve() / "data"
 DATA_LABELS = {"create", "replace", "update", "delete", "disaggregate"}
 
@@ -73,6 +74,7 @@ class Registry(MutableMapping):
     def __delitem__(self, name) -> None:
         data = self.__load()
         del data[name]
+
         self.__save(data)
 
     def __len__(self) -> int:
@@ -84,10 +86,27 @@ class Registry(MutableMapping):
     def __hash__(self) -> int:
         return hash(self.__load())
 
+    def validate_file(self, filepath: Path) -> None:
+        try:
+            from randonneur.validation import Contributors, MappingFields, DatapackageMetadata, validate_data_for_verb, VERBS
+        except ImportError:
+            raise ImportError("`validate_file` only available if `randonneur` has been installed.")
+
+        data = json.load(open(filepath))
+        for contributor in data['contributors']:
+            Contributors(**contributor)
+        MappingFields(**data.get("mapping", {}).get("source", {}))
+        MappingFields(**data.get("mapping", {}).get("target", {}))
+        DatapackageMetadata(**data)
+        for verb in filter(lambda x: x in data, VERBS):
+            validate_data_for_verb(verb, data[verb], data['mapping'])
+
     def add_file(self, filepath: Path, replace: bool = False) -> Path:
         """Add existing file to data repo."""
         if not isinstance(filepath, Path):
             filepath = Path(filepath)
+
+        self.validate_file(filepath)
 
         new_path = DATA_DIR / filepath.name
         if new_path.exists() and not replace:
