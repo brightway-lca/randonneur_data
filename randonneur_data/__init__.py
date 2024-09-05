@@ -8,6 +8,7 @@ __version__ = "0.2.1"
 
 import json
 import lzma
+import random
 import shutil
 from collections.abc import MutableMapping
 from pathlib import Path
@@ -143,9 +144,9 @@ class Registry(MutableMapping):
         if verb and verb not in data:
             raise KeyError("`{verb}` not given in datapackage `{label}`")
         elif verb:
-            return {verb: data[verb][:number]}
+            return {verb: random.sample(data[verb], number)}
         else:
-            return {verb: data[verb][:number] for verb in DATA_LABELS if verb in data}
+            return {verb: random.sample(data[verb], number) for verb in DATA_LABELS if verb in data}
 
     def schema(self, label: str) -> dict:
         """
