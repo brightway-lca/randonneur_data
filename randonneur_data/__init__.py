@@ -133,7 +133,24 @@ class Registry(MutableMapping):
         self[data["name"]] = data
         return new_path
 
-    def file_mapping_schema(self, label: str) -> dict:
+    def sample(self, label: str, number: int = 2, verb: Optional[str] = None) -> dict:
+        """
+        Sample `number` transformations for each verb present in datapackage `label`.
+
+        If `verb` is given, limit samples to that verb only.
+        """
+        data = self.get_file(label)
+        if verb and verb not in data:
+            raise KeyError("`{verb}` not given in datapackage `{label}`")
+        elif verb:
+            return {verb: data[verb][:number]}
+        else:
+            return {verb: data[verb][:number] for verb in DATA_LABELS if verb in data}
+
+    def schema(self, label: str) -> dict:
+        """
+        Get mapping schema for datapackage `label`
+        """
         return self.get_file(label)['mapping']
 
     def get_file(self, label: str) -> dict:
