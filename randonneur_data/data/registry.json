@@ -1097,5 +1097,73 @@
     "target_id": "ecoinvent-3.9-biosphere",
     "filename": "simapro-9-ecoinvent-3.9-biosphere-manual-matches.json",
     "compression": false
+  },
+  "simapro-9-ecoinvent-3-water-slash-m3": {
+    "name": "simapro-9-ecoinvent-3-water-slash-m3",
+    "description": "Specific mapping to handle regionalized 'Water/m3, <place>' pattern for all possible locations",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-05T08:12:30.110795+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "CAS number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3-biosphere",
+    "filename": "simapro-9-ecoinvent-3-water-slash-m3.xz",
+    "compression": "lzma"
   }
 }
