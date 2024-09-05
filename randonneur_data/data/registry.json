@@ -340,7 +340,7 @@
   },
   "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere": {
     "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
-    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.3",
+    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.4.1",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -353,12 +353,12 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-08-30T07:02:25.258115+00:00",
+    "created": "2024-09-05T19:29:05.624925+00:00",
     "version": "2.0.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
@@ -401,7 +401,7 @@
   },
   "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere": {
     "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere",
-    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.3",
+    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.4.1",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -414,12 +414,12 @@
         "role": "wrangler"
       }
     ],
-    "created": "2024-08-30T07:02:27.768757+00:00",
+    "created": "2024-09-05T19:29:08.110235+00:00",
     "version": "2.0.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
@@ -984,12 +984,12 @@
         "role": "author"
       }
     ],
-    "created": "2024-08-30T11:22:58.979942+00:00",
-    "version": "1.0.0",
+    "created": "2024-09-05T09:14:28.839404+00:00",
+    "version": "2.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
@@ -1046,12 +1046,12 @@
         "role": "author"
       }
     ],
-    "created": "2024-08-30T13:12:09.378755+00:00",
-    "version": "1.0.0",
+    "created": "2024-09-05T09:14:07.500749+00:00",
+    "version": "2.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
