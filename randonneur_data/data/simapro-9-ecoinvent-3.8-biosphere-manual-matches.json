@@ -8,12 +8,12 @@
       "role": "author"
     }
   ],
-  "created": "2024-08-30T11:22:58.979942+00:00",
-  "version": "1.0.0",
+  "created": "2024-09-05T09:14:28.839404+00:00",
+  "version": "2.0",
   "licenses": [
     {
-      "name": "CC BY 4.0",
-      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
       "title": "Creative Commons Attribution 4.0 International"
     }
   ],
@@ -192,6 +192,38 @@
       },
       "target": {
         "name": "Occupation, lake, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Occupation, lakes, artificial"
+      },
+      "target": {
+        "name": "Occupation, lake, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Occupation, rivers, artificial"
+      },
+      "target": {
+        "name": "Occupation, river, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to lakes, artificial"
+      },
+      "target": {
+        "name": "Transformation, to lake, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to rivers, artificial"
+      },
+      "target": {
+        "name": "Transformation, to river, artificial"
       }
     },
     {
@@ -516,34 +548,26 @@
     },
     {
       "source": {
-        "name": "Sulfur dioxide, CN"
+        "name": "Sulfur monoxide"
       },
       "target": {
-        "name": "Sulfur dioxide"
+        "name": "Sulfur oxides"
       }
     },
     {
       "source": {
-        "name": "Nitrogen oxides, CN"
+        "name": "Nitrogen, atmospheric"
       },
       "target": {
-        "name": "Nitrogen oxides"
+        "name": "Nitrogen"
       }
     },
     {
       "source": {
-        "name": "Ammonia, FR"
+        "name": "Phenols, unspecified"
       },
       "target": {
-        "name": "Ammonia"
-      }
-    },
-    {
-      "source": {
-        "name": "Ammonia, as N"
-      },
-      "target": {
-        "name": "Ammonia"
+        "name": "Phenol"
       }
     },
     {
@@ -588,18 +612,26 @@
     },
     {
       "source": {
-        "name": "Haloxyfop"
+        "name": "BOD5 (Biological Oxygen Demand)"
       },
       "target": {
-        "name": "haloxyfop-ethoxyethyl"
+        "name": "BOD5, Biological Oxygen Demand"
       }
     },
     {
       "source": {
-        "name": "BOD5 (Biological Oxygen Demand), CN"
+        "name": "COD (Chemical Oxygen Demand)"
       },
       "target": {
-        "name": "BOD5 (Biological Oxygen Demand)"
+        "name": "COD, Chemical Oxygen Demand"
+      }
+    },
+    {
+      "source": {
+        "name": "Haloxyfop"
+      },
+      "target": {
+        "name": "haloxyfop-ethoxyethyl"
       }
     },
     {
@@ -2108,22 +2140,6 @@
     },
     {
       "source": {
-        "name": "Copper, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore"
-      },
-      "target": {
-        "name": "Cu, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore"
-      },
-      "target": {
-        "name": "Cu, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore, in ground"
-      }
-    },
-    {
-      "source": {
         "name": "Diatomite"
       },
       "target": {
@@ -2992,14 +3008,6 @@
       },
       "target": {
         "name": "Transformation, to permanent crop, non-irrigated, intensive"
-      }
-    },
-    {
-      "source": {
-        "name": "Transformation, to urban/industrial fallow"
-      },
-      "target": {
-        "name": "Transformation, to urban/industrial fallow (non-use)"
       }
     },
     {
@@ -4664,6 +4672,30 @@
       },
       "target": {
         "name": "Water, unspecified natural origin"
+      }
+    },
+    {
+      "source": {
+        "name": "Copper, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore"
+      },
+      "target": {
+        "name": "Cu, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Copper, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore"
+      },
+      "target": {
+        "name": "Cu, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to urban/industrial fallow"
+      },
+      "target": {
+        "name": "Transformation, to urban/industrial fallow (non-use)"
       }
     }
   ]

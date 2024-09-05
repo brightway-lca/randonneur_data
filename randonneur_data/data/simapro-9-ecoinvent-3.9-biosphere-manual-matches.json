@@ -8,12 +8,12 @@
       "role": "author"
     }
   ],
-  "created": "2024-08-30T13:12:09.378755+00:00",
-  "version": "1.0.0",
+  "created": "2024-09-05T09:14:07.500749+00:00",
+  "version": "2.0",
   "licenses": [
     {
-      "name": "CC BY 4.0",
-      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
       "title": "Creative Commons Attribution 4.0 International"
     }
   ],
@@ -196,6 +196,38 @@
     },
     {
       "source": {
+        "name": "Occupation, lakes, artificial"
+      },
+      "target": {
+        "name": "Occupation, lake, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Occupation, rivers, artificial"
+      },
+      "target": {
+        "name": "Occupation, river, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to lakes, artificial"
+      },
+      "target": {
+        "name": "Transformation, to lake, artificial"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to rivers, artificial"
+      },
+      "target": {
+        "name": "Transformation, to river, artificial"
+      }
+    },
+    {
+      "source": {
         "name": "Occupation, water courses, artificial"
       },
       "target": {
@@ -356,14 +388,6 @@
     },
     {
       "source": {
-        "name": "Transformation, from arable, organic"
-      },
-      "target": {
-        "name": "Transformation, from arable land, unspecified use"
-      }
-    },
-    {
-      "source": {
         "name": "Transformation, to forest, intensive, short-cycle"
       },
       "target": {
@@ -444,14 +468,6 @@
     },
     {
       "source": {
-        "name": "Transformation, to urban/industrial fallow"
-      },
-      "target": {
-        "name": "Transformation, to urban/industrial fallow (non-use)"
-      }
-    },
-    {
-      "source": {
         "name": "Transformation, to water bodies, artificial"
       },
       "target": {
@@ -487,7 +503,7 @@
         "name": "Particulates, < 10 um (stationary)"
       },
       "target": {
-        "name": "Particulate Matter, > 2.5 um and < 10um"
+        "name": "Particulates, > 2.5 um, and < 10um"
       }
     },
     {
@@ -532,34 +548,26 @@
     },
     {
       "source": {
-        "name": "Sulfur dioxide, CN"
+        "name": "Sulfur monoxide"
       },
       "target": {
-        "name": "Sulfur dioxide"
+        "name": "Sulfur oxides"
       }
     },
     {
       "source": {
-        "name": "Nitrogen oxides, CN"
+        "name": "Nitrogen, atmospheric"
       },
       "target": {
-        "name": "Nitrogen oxides"
+        "name": "Nitrogen"
       }
     },
     {
       "source": {
-        "name": "Ammonia, FR"
+        "name": "Phenols, unspecified"
       },
       "target": {
-        "name": "Ammonia"
-      }
-    },
-    {
-      "source": {
-        "name": "Ammonia, as N"
-      },
-      "target": {
-        "name": "Ammonia"
+        "name": "Phenol"
       }
     },
     {
@@ -604,6 +612,22 @@
     },
     {
       "source": {
+        "name": "BOD5 (Biological Oxygen Demand)"
+      },
+      "target": {
+        "name": "BOD5, Biological Oxygen Demand"
+      }
+    },
+    {
+      "source": {
+        "name": "COD (Chemical Oxygen Demand)"
+      },
+      "target": {
+        "name": "COD, Chemical Oxygen Demand"
+      }
+    },
+    {
+      "source": {
         "name": "Haloxyfop"
       },
       "target": {
@@ -612,18 +636,10 @@
     },
     {
       "source": {
-        "name": "BOD5 (Biological Oxygen Demand), CN"
-      },
-      "target": {
-        "name": "BOD5 (Biological Oxygen Demand)"
-      }
-    },
-    {
-      "source": {
         "name": "Bauxite"
       },
       "target": {
-        "name": "Gangue"
+        "name": "Gangue, bauxite, in ground"
       }
     },
     {
@@ -631,7 +647,7 @@
         "name": "Copper ore"
       },
       "target": {
-        "name": "Copper, Cu 0.2%, in mixed ore"
+        "name": "Copper, Cu 0.2%, in mixed ore, in ground"
       }
     },
     {
@@ -639,23 +655,7 @@
         "name": "Copper, Cu 0.38%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Pb 0.014%, in ore"
       },
       "target": {
-        "name": "Copper, Cu 0.38%, in mixed ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore"
-      },
-      "target": {
-        "name": "Cu, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore"
-      },
-      "target": {
-        "name": "Cu, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore, in ground"
+        "name": "Copper, Cu 0.38%, in mixed ore, in ground"
       }
     },
     {
@@ -663,7 +663,7 @@
         "name": "Coal, 18 MJ per kg"
       },
       "target": {
-        "name": "Coal, hard, unspecified"
+        "name": "Coal, hard, unspecified, in ground"
       }
     },
     {
@@ -671,7 +671,7 @@
         "name": "Coal, brown, 10 MJ per kg"
       },
       "target": {
-        "name": "Coal, brown"
+        "name": "Coal, brown, in ground"
       }
     },
     {
@@ -679,7 +679,7 @@
         "name": "Coal, brown, 8 MJ per kg"
       },
       "target": {
-        "name": "Coal, brown"
+        "name": "Coal, brown, in ground"
       }
     },
     {
@@ -687,7 +687,7 @@
         "name": "Coal, hard"
       },
       "target": {
-        "name": "Coal, hard, unspecified"
+        "name": "Coal, hard, unspecified, in ground"
       }
     },
     {
@@ -695,7 +695,7 @@
         "name": "Crude oil"
       },
       "target": {
-        "name": "Oil, crude"
+        "name": "Oil, crude, in ground"
       }
     },
     {
@@ -844,14 +844,6 @@
     },
     {
       "source": {
-        "name": "Particulates, > 10 um"
-      },
-      "target": {
-        "name": "Particulate Matter, > 10 um"
-      }
-    },
-    {
-      "source": {
         "name": "Plutonium"
       },
       "target": {
@@ -896,294 +888,6 @@
       },
       "target": {
         "name": "Zinc"
-      }
-    },
-    {
-      "source": {
-        "name": "Ethene"
-      },
-      "target": {
-        "name": "Ethylene"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, process, unspecified natural origin/m3"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, cooling, unspecified natural origin/m3"
-      },
-      "target": {
-        "name": "Water, cooling, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin/m3"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Carbon"
-      },
-      "target": {
-        "name": "Elemental carbon"
-      }
-    },
-    {
-      "source": {
-        "name": "Radioactive species, unspecified"
-      },
-      "target": {
-        "name": "Radioactive species, Nuclides, unspecified"
-      }
-    },
-    {
-      "source": {
-        "name": "Methane, tetrachloro-, CFC-10"
-      },
-      "target": {
-        "name": "Methane, tetrachloro-, R-10"
-      }
-    },
-    {
-      "source": {
-        "name": "Methane, tetrachloro-, CFC-14"
-      },
-      "target": {
-        "name": "Methane, tetrachloro-, R-14"
-      }
-    },
-    {
-      "source": {
-        "name": "Cesium-136"
-      },
-      "target": {
-        "name": "Caesium-136"
-      }
-    },
-    {
-      "source": {
-        "name": "Cesium"
-      },
-      "target": {
-        "name": "Caesium"
-      }
-    },
-    {
-      "source": {
-        "name": "Cesium-137"
-      },
-      "target": {
-        "name": "Caesium-137"
-      }
-    },
-    {
-      "source": {
-        "name": "Particulates, < 2.5 um"
-      },
-      "target": {
-        "name": "Particulate Matter, < 2.5 um"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, Ag 9.7E-4%, Au 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore"
-      },
-      "target": {
-        "name": "Silver, Ag 9.7E-4%, in mixed ore"
-      }
-    },
-    {
-      "source": {
-        "name": "1-Butanol"
-      },
-      "target": {
-        "name": "Butanol"
-      }
-    },
-    {
-      "source": {
-        "name": "AOX, Adsorbable Organic Halogen as Cl"
-      },
-      "target": {
-        "name": "AOX, Adsorbable Organic Halogen"
-      }
-    },
-    {
-      "source": {
-        "name": "Zinc, Zn 0.63%, Au 9.7E-4%, Ag 9.7E-4%, Cu 0.38%, Pb 0.014%, in ore"
-      },
-      "target": {
-        "name": "Zinc, Zn 0.63%, in mixed ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Transformation, to urban"
-      },
-      "target": {
-        "name": "Transformation, to urban, continuously built"
-      }
-    },
-    {
-      "source": {
-        "name": "Occupation, urban"
-      },
-      "target": {
-        "name": "Occupation, urban, continuously built"
-      }
-    },
-    {
-      "source": {
-        "name": "VOC, volatile organic compounds, unspecified origin"
-      },
-      "target": {
-        "name": "VOC, volatile organic compounds"
-      }
-    },
-    {
-      "source": {
-        "name": "Lead, Pb 0.014%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, in ore"
-      },
-      "target": {
-        "name": "Lead, Pb 0.014%, in mixed ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Nickel, Ni 3.7E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Cu 5.2E-2% in ore"
-      },
-      "target": {
-        "name": "Ni, Ni 3.7E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Cu 5.2E-2% in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Platinum, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      },
-      "target": {
-        "name": "Pt, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Occupation, annual crop, non-irrigated, diverse-intensive"
-      },
-      "target": {
-        "name": "Occupation, annual crop, non-irrigated, intensive"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 9.7E-4%, in mixed ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Particulates, > 2.5 um, and < 10um"
-      },
-      "target": {
-        "name": "Particulate Matter, > 2.5 um and < 10um"
-      }
-    },
-    {
-      "source": {
-        "name": "Platinum, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      },
-      "target": {
-        "name": "Pt, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Sodium sulfate"
-      },
-      "target": {
-        "name": "Sodium sulphate, various forms"
-      }
-    },
-    {
-      "source": {
-        "name": "Transformation, from pasture and meadow, organic"
-      },
-      "target": {
-        "name": "Transformation, from pasture, man made, extensive"
-      }
-    },
-    {
-      "source": {
-        "name": "Palladium, Pd 2.0E-4%, Pt 4.8E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      },
-      "target": {
-        "name": "Pd, Pd 2.0E-4%, Pt 4.8E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Clay"
-      },
-      "target": {
-        "name": "Clay, bentonite"
-      }
-    },
-    {
-      "source": {
-        "name": "NMVOC, non-methane volatile organic compounds, unspecified origin"
-      },
-      "target": {
-        "name": "NMVOC, non-methane volatile organic compounds"
-      }
-    },
-    {
-      "source": {
-        "name": "Rhodium, Rh 2.0E-5%, Pt 2.5E-4%, Pd 7.3E-4%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      },
-      "target": {
-        "name": "Rh, Rh 2.0E-5%, Pt 2.5E-4%, Pd 7.3E-4%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Rhodium, Rh 2.4E-5%, Pt 4.8E-4%, Pd 2.0E-4%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      },
-      "target": {
-        "name": "Rh, Rh 2.4E-5%, Pt 4.8E-4%, Pd 2.0E-4%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Palladium, Pd 7.3E-4%, Pt 2.5E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      },
-      "target": {
-        "name": "Pd, Pd 7.3E-4%, Pt 2.5E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
-      }
-    },
-    {
-      "source": {
-        "name": "Energy, gross calorific value, in biomass, resource correction"
-      },
-      "target": {
-        "name": "Energy, gross calorific value, in biomass"
-      }
-    },
-    {
-      "source": {
-        "name": "Transformation, to arable, organic"
-      },
-      "target": {
-        "name": "Transformation, to arable land, unspecified use"
       }
     },
     {
@@ -1764,6 +1468,14 @@
     },
     {
       "source": {
+        "name": "1-Butanol"
+      },
+      "target": {
+        "name": "Butanol"
+      }
+    },
+    {
+      "source": {
         "name": "1-Propanol"
       },
       "target": {
@@ -1828,6 +1540,14 @@
     },
     {
       "source": {
+        "name": "Carbon"
+      },
+      "target": {
+        "name": "Elemental carbon"
+      }
+    },
+    {
+      "source": {
         "name": "Carbon monoxide, land transformation"
       },
       "target": {
@@ -1864,6 +1584,14 @@
       },
       "target": {
         "name": "Methane, from soil or biomass stock"
+      }
+    },
+    {
+      "source": {
+        "name": "Methane, tetrachloro-, CFC-10"
+      },
+      "target": {
+        "name": "Methane, tetrachloro-, R-10"
       }
     },
     {
@@ -2564,6 +2292,14 @@
     },
     {
       "source": {
+        "name": "Gold, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore"
+      },
+      "target": {
+        "name": "Gold, Au 9.7E-4%, in mixed ore, in ground"
+      }
+    },
+    {
+      "source": {
         "name": "Granite"
       },
       "target": {
@@ -2640,6 +2376,14 @@
       },
       "target": {
         "name": "Lead, 5.0% in sulfide, Pb 3.0%, Zn, Ag, Cd, In, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Lead, Pb 0.014%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, in ore"
+      },
+      "target": {
+        "name": "Lead, Pb 0.014%, in mixed ore, in ground"
       }
     },
     {
@@ -2764,6 +2508,14 @@
     },
     {
       "source": {
+        "name": "Nickel, Ni 3.7E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Cu 5.2E-2% in ore"
+      },
+      "target": {
+        "name": "Ni, Ni 3.7E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Cu 5.2E-2% in ore, in ground"
+      }
+    },
+    {
+      "source": {
         "name": "Occupation, arable, greenhouse"
       },
       "target": {
@@ -2836,6 +2588,22 @@
     },
     {
       "source": {
+        "name": "Palladium, Pd 2.0E-4%, Pt 4.8E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
+      },
+      "target": {
+        "name": "Pd, Pd 2.0E-4%, Pt 4.8E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Palladium, Pd 7.3E-4%, Pt 2.5E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
+      },
+      "target": {
+        "name": "Pd, Pd 7.3E-4%, Pt 2.5E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore, in ground"
+      }
+    },
+    {
+      "source": {
         "name": "Peat"
       },
       "target": {
@@ -2864,6 +2632,22 @@
       },
       "target": {
         "name": "Phosphorus, 18% in apatite, 4% in crude ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Platinum, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
+      },
+      "target": {
+        "name": "Pt, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0%, Cu 3.2E+0% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Platinum, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
+      },
+      "target": {
+        "name": "Pt, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2%, Cu 5.2E-2% in ore, in ground"
       }
     },
     {
@@ -2904,6 +2688,22 @@
       },
       "target": {
         "name": "Rhenium, in crude ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Rhodium, Rh 2.0E-5%, Pt 2.5E-4%, Pd 7.3E-4%, Ni 2.3E+0%, Cu 3.2E+0% in ore"
+      },
+      "target": {
+        "name": "Rh, Rh 2.0E-5%, Pt 2.5E-4%, Pd 7.3E-4%, Ni 2.3E+0%, Cu 3.2E+0% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Rhodium, Rh 2.4E-5%, Pt 4.8E-4%, Pd 2.0E-4%, Ni 3.7E-2%, Cu 5.2E-2% in ore"
+      },
+      "target": {
+        "name": "Rh, Rh 2.4E-5%, Pt 4.8E-4%, Pd 2.0E-4%, Ni 3.7E-2%, Cu 5.2E-2% in ore, in ground"
       }
     },
     {
@@ -2972,6 +2772,14 @@
     },
     {
       "source": {
+        "name": "Silver, Ag 9.7E-4%, Au 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore"
+      },
+      "target": {
+        "name": "Silver, Ag 9.7E-4%, in mixed ore, in ground"
+      }
+    },
+    {
+      "source": {
         "name": "Sodium chloride"
       },
       "target": {
@@ -2984,6 +2792,14 @@
       },
       "target": {
         "name": "Sodium nitrate, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Sodium sulfate"
+      },
+      "target": {
+        "name": "Sodium sulphate, various forms, in ground"
       }
     },
     {
@@ -3296,6 +3112,14 @@
       },
       "target": {
         "name": "Water, unspecified natural origin"
+      }
+    },
+    {
+      "source": {
+        "name": "Water, cooling, unspecified natural origin/m3"
+      },
+      "target": {
+        "name": "Water, cooling, unspecified natural origin"
       }
     },
     {
@@ -3752,6 +3576,14 @@
       },
       "target": {
         "name": "Xenon, in air"
+      }
+    },
+    {
+      "source": {
+        "name": "Zinc, Zn 0.63%, Au 9.7E-4%, Ag 9.7E-4%, Cu 0.38%, Pb 0.014%, in ore"
+      },
+      "target": {
+        "name": "Zinc, Zn 0.63%, in mixed ore, in ground"
       }
     },
     {
@@ -4840,6 +4672,30 @@
       },
       "target": {
         "name": "Water, unspecified natural origin"
+      }
+    },
+    {
+      "source": {
+        "name": "Copper, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore"
+      },
+      "target": {
+        "name": "Cu, Cu 3.2E+0%, Pt 2.5E-4%, Pd 7.3E-4%, Rh 2.0E-5%, Ni 2.3E+0% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Copper, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore"
+      },
+      "target": {
+        "name": "Cu, Cu 5.2E-2%, Pt 4.8E-4%, Pd 2.0E-4%, Rh 2.4E-5%, Ni 3.7E-2% in ore, in ground"
+      }
+    },
+    {
+      "source": {
+        "name": "Transformation, to urban/industrial fallow"
+      },
+      "target": {
+        "name": "Transformation, to urban/industrial fallow (non-use)"
       }
     }
   ]
