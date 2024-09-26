@@ -1165,5 +1165,145 @@
     "target_id": "ecoinvent-3-biosphere",
     "filename": "simapro-9-ecoinvent-3-water-slash-m3.xz",
     "compression": "lzma"
+  },
+  "agribalyse-3.1.1-delete-aggregated-ecoinvent": {
+    "name": "agribalyse-3.1.1-delete-aggregated-ecoinvent",
+    "description": "Delete ecoinvent activities from Agribalyse 3.1.1 given as aggregated processes. You need to use the `Process identifier` value, the names are not unique and include modified activities based on ecoinvent which shouldn't be deleted.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-23T06:27:14.911298+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      }
+    },
+    "source_id": "agribalyse-3.1.1",
+    "target_id": "agribalyse-3.1.1",
+    "homepage": "https://www.data.gouv.fr/fr/datasets/agribalyse-3-1-1-synthese/",
+    "filename": "agribalyse-3.1.1-delete-aggregated-ecoinvent.xz",
+    "compression": "lzma"
+  },
+  "agribalyse-3.1.1-restore-simapro-ecoinvent-names": {
+    "name": "agribalyse-3.1.1-restore-simapro-ecoinvent-names",
+    "description": "Restore names of linked ecoinvent processes to original SimaPro form.\nChanges `Foo, S - Copied from Ecoinvent U` to `Foo, U`, i.e. the standard way that ecoinvent processes are given in SimaPro.\nDone in preparation for harmonization and linking via standard Randonneur transformations like `simapro-ecoinvent-3.8-cutoff`.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-23T06:40:03.201702+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      }
+    },
+    "source_id": "agribalyse-3.1.1",
+    "target_id": "agribalyse-3.1.1",
+    "homepage": "https://www.data.gouv.fr/fr/datasets/agribalyse-3-1-1-synthese/",
+    "filename": "agribalyse-3.1.1-restore-simapro-ecoinvent-names.xz",
+    "compression": "lzma"
   }
 }

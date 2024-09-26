@@ -144,9 +144,13 @@ class Registry(MutableMapping):
         if verb and verb not in data:
             raise KeyError("`{verb}` not given in datapackage `{label}`")
         elif verb:
-            return {verb: random.sample(data[verb], number)}
+            return {verb: random.sample(data[verb], min(number, len(data[verb])))}
         else:
-            return {verb: random.sample(data[verb], number) for verb in DATA_LABELS if verb in data}
+            return {
+                verb: random.sample(data[verb], min(number, len(data[verb])))
+                for verb in DATA_LABELS
+                if verb in data
+            }
 
     def schema(self, label: str) -> dict:
         """
