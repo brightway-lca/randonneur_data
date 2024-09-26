@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3] - 2024-09-26
+
+* Added lots of new data transformations
+
 ## [0.2.1] - 2024-09-05
 
 * Added `.sample()` and `.schema()` convenience functions
