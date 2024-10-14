@@ -3,7 +3,7 @@ __all__ = (
     "Registry",
 )
 
-__version__ = "0.3"
+__version__ = "0.4"
 
 
 import json
@@ -15,13 +15,14 @@ from pathlib import Path
 from typing import Any, Optional
 
 
-DATA_DIR = Path(__file__).parent.resolve() / "data"
+DEFAULT_DATA_DIR = Path(__file__).parent.resolve() / "data"
 DATA_LABELS = {"create", "replace", "update", "delete", "disaggregate"}
 
 
 class Registry(MutableMapping):
     def __init__(self, filepath: Optional[Path] = None):
-        self.registry_fp = filepath or DATA_DIR / "registry.json"
+        self.registry_fp = filepath or DEFAULT_DATA_DIR / "registry.json"
+        self.data_dir = self.registry_fp.parent
 
     def __load(self) -> dict:
         try:
@@ -70,7 +71,7 @@ class Registry(MutableMapping):
         )
 
     def __repr__(self) -> str:
-        return f"`randonneur_data` registry at {str(self.registry_fp.parent)} with {len(self)} files and id {id(self)}"
+        return f"`randonneur_data` registry at {str(self.data_dir)} with {len(self)} files and id {id(self)}"
 
     def __delitem__(self, name) -> None:
         data = self.__load()
@@ -109,7 +110,7 @@ class Registry(MutableMapping):
 
         self.validate_file(filepath)
 
-        new_path = DATA_DIR / filepath.name
+        new_path = self.data_dir / filepath.name
         if new_path.exists() and not replace:
             raise ValueError(f"File {new_path} already exists and `replace` is `False`")
 
@@ -121,7 +122,7 @@ class Registry(MutableMapping):
         if size > 2e5:
             data["filename"] = f"{new_path.stem}.xz"
             data["compression"] = "lzma"
-            new_path = new_path.parent / data["filename"]
+            new_path = self.data_dir / data["filename"]
             with lzma.LZMAFile(
                 new_path, mode="w", check=lzma.CHECK_SHA256, preset=9
             ) as lzma_file:
@@ -163,9 +164,9 @@ class Registry(MutableMapping):
         if metadata.get("compression") == "lzma":
             return json.load(
                 lzma.LZMAFile(
-                    filename=DATA_DIR / metadata["filename"],
+                    filename=self.data_dir / metadata["filename"],
                     mode="rb",
                 )
             )
         else:
-            return json.load(open(DATA_DIR / metadata["filename"]))
+            return json.load(open(self.data_dir / metadata["filename"]))

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4] - 2024-10-14
+
+* Fixed bugs with custom registry paths
+* Added transformations for Agribalyse and Agrifootprint
+
 ## [0.3] - 2024-09-26
 
 * Added lots of new data transformations

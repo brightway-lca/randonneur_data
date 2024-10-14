@@ -1246,8 +1246,8 @@
         "role": "author"
       }
     ],
-    "created": "2024-09-23T06:40:03.201702+00:00",
-    "version": "1.0.0",
+    "created": "2024-09-30T10:03:45.210662+00:00",
+    "version": "1.1.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -1305,5 +1305,331 @@
     "homepage": "https://www.data.gouv.fr/fr/datasets/agribalyse-3-1-1-synthese/",
     "filename": "agribalyse-3.1.1-restore-simapro-ecoinvent-names.xz",
     "compression": "lzma"
+  },
+  "agribalyse-3.1.1-biosphere-ecoinvent-3.8-biosphere": {
+    "name": "agribalyse-3.1.1-biosphere-ecoinvent-3.8-biosphere",
+    "description": "Flowmapper 0.2 elementary flow correspondence from agribalyse-3.1.1-biosphere to ecoinvent-3.8-biosphere",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-30T10:43:39.733415+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "CAS number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "agribalyse-3.1.1-biosphere",
+    "target_id": "ecoinvent-3.8-biosphere",
+    "filename": "agribalyse-3.1.1-unlinked-ecoinvent-3.8-biosphere.json",
+    "compression": false
+  },
+  "SimaPro-9-ecoinvent-3.8-biosphere": {
+    "name": "SimaPro-9-ecoinvent-3.8-biosphere",
+    "description": "Flowmapper 0.2 elementary flow correspondence from SimaPro-9 to ecoinvent-3.8-biosphere",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-30T11:54:28.569551+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "CAS number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "SimaPro-9",
+    "target_id": "ecoinvent-3.8-biosphere",
+    "filename": "agribalyse-3.1.1-unlinked-ecoinvent-3.8-biosphere.json",
+    "compression": false
+  },
+  "agribalyse-3.1.1-ecoinvent-3.10-biosphere-manual-matches": {
+    "name": "agribalyse-3.1.1-ecoinvent-3.10-biosphere-manual-matches",
+    "description": "Manual matches of Agribalyse 3.1.1 to recent ecoinvent flow list",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-09-30T12:49:04.425817+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        }
+      }
+    },
+    "source_id": "agribalyse-3.1.1-biosphere",
+    "target_id": "ecoinvent-3.10-biosphere",
+    "filename": "agribalyse-3.1.1-ecoinvent-3.10-biosphere-manual-matches.json",
+    "compression": false
+  },
+  "agrifootprint-2022-delete-aggregated-ecoinvent": {
+    "name": "agrifootprint-2022-delete-aggregated-ecoinvent",
+    "description": "Delete ecoinvent activities from Agrifootprint 2022 energy allocation given as aggregated processes.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-10-14T05:44:55.333495+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "nodes"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      }
+    },
+    "source_id": "agrifootprint-2022",
+    "target_id": "agrifootprint-2022",
+    "homepage": "https://blonksustainability.nl/tools/agri-footprint",
+    "filename": "agrifootprint-2022-delete-aggregated-ecoinvent.json",
+    "compression": false
+  },
+  "agrifootprint-2022-restore-simapro-ecoinvent-names": {
+    "name": "agrifootprint-2022-restore-simapro-ecoinvent-names",
+    "description": "Restore names of linked ecoinvent processes to original SimaPro form.\nChanges `Foo, S - Copied from ecoinvent U` to `Foo, U`, i.e. the standard way that ecoinvent processes are given in SimaPro.\nDone in preparation for harmonization and linking via standard Randonneur transformations like `simapro-ecoinvent-3.8-cutoff`.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "role": "author"
+      }
+    ],
+    "created": "2024-10-14T05:48:24.688460+00:00",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      }
+    },
+    "source_id": "agrifootprint-2022",
+    "target_id": "agrofootprint-2022",
+    "homepage": "https://blonksustainability.nl/tools/agri-footprint",
+    "filename": "agrifootprint-2022-restore-simapro-ecoinvent-names.json",
+    "compression": false
   }
 }
