@@ -8,7 +8,7 @@
       "role": "author"
     }
   ],
-  "created": "2024-10-14T05:48:24.688460+00:00",
+  "created": "2024-10-14T06:30:19.438855+00:00",
   "version": "1.1.0",
   "licenses": [
     {
@@ -71,7 +71,7 @@
         "name": "Activated bentonite {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Activated bentonite {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Activated bentonite {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -79,7 +79,7 @@
         "name": "Activated carbon, granular {GLO}| market for activated carbon, granular | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Activated carbon, granular {GLO}| market for activated carbon, granular | Cut-off, S - Copied from ecoinvent U"
+        "name": "Activated carbon, granular {GLO}| market for activated carbon, granular | Cut-off, U"
       }
     },
     {
@@ -87,7 +87,7 @@
         "name": "Asbestos, crysotile type {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Asbestos, crysotile type {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Asbestos, crysotile type {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -95,7 +95,7 @@
         "name": "Base oil {RoW}| base oil production, petroleum refinery operation | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Base oil {RoW}| base oil production, petroleum refinery operation | Cut-off, S - Copied from ecoinvent U"
+        "name": "Base oil {RoW}| base oil production, petroleum refinery operation | Cut-off, U"
       }
     },
     {
@@ -103,7 +103,7 @@
         "name": "Benzene {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Benzene {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Benzene {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -111,7 +111,7 @@
         "name": "Biowaste {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Biowaste {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Biowaste {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -119,7 +119,7 @@
         "name": "Calcium carbonate, precipitated {RoW}| market for calcium carbonate, precipitated | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Calcium carbonate, precipitated {RoW}| market for calcium carbonate, precipitated | Cut-off, S - Copied from ecoinvent U"
+        "name": "Calcium carbonate, precipitated {RoW}| market for calcium carbonate, precipitated | Cut-off, U"
       }
     },
     {
@@ -127,7 +127,7 @@
         "name": "Concrete slab {RoW}| market for concrete slab | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Concrete slab {RoW}| market for concrete slab | Cut-off, S - Copied from ecoinvent U"
+        "name": "Concrete slab {RoW}| market for concrete slab | Cut-off, U"
       }
     },
     {
@@ -135,7 +135,7 @@
         "name": "Copper sulfate {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Copper sulfate {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Copper sulfate {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -143,7 +143,7 @@
         "name": "Diesel {GLO}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Diesel {GLO}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Diesel {GLO}| market group for | Cut-off, U"
       }
     },
     {
@@ -151,7 +151,7 @@
         "name": "Electricity, low voltage {AR}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {AR}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {AR}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -159,7 +159,7 @@
         "name": "Electricity, low voltage {AT}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {AT}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {AT}| market for | Cut-off, U"
       }
     },
     {
@@ -167,7 +167,7 @@
         "name": "Electricity, low voltage {AU}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {AU}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {AU}| market for | Cut-off, U"
       }
     },
     {
@@ -175,7 +175,7 @@
         "name": "Electricity, low voltage {BE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {BE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {BE}| market for | Cut-off, U"
       }
     },
     {
@@ -183,7 +183,7 @@
         "name": "Electricity, low voltage {BG}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {BG}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {BG}| market for | Cut-off, U"
       }
     },
     {
@@ -191,7 +191,7 @@
         "name": "Electricity, low voltage {BR}| market group for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {BR}| market group for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {BR}| market group for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -199,7 +199,7 @@
         "name": "Electricity, low voltage {BY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {BY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {BY}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -207,7 +207,7 @@
         "name": "Electricity, low voltage {CA}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CA}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CA}| market group for | Cut-off, U"
       }
     },
     {
@@ -215,7 +215,7 @@
         "name": "Electricity, low voltage {CH}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CH}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CH}| market for | Cut-off, U"
       }
     },
     {
@@ -223,7 +223,7 @@
         "name": "Electricity, low voltage {CL}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CL}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CL}| market for | Cut-off, U"
       }
     },
     {
@@ -231,7 +231,7 @@
         "name": "Electricity, low voltage {CN}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CN}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CN}| market group for | Cut-off, U"
       }
     },
     {
@@ -239,7 +239,7 @@
         "name": "Electricity, low voltage {CO}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CO}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CO}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -247,7 +247,7 @@
         "name": "Electricity, low voltage {CR}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CR}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CR}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -255,7 +255,7 @@
         "name": "Electricity, low voltage {CY}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CY}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CY}| market for | Cut-off, U"
       }
     },
     {
@@ -263,7 +263,7 @@
         "name": "Electricity, low voltage {CZ}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {CZ}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {CZ}| market for | Cut-off, U"
       }
     },
     {
@@ -271,7 +271,7 @@
         "name": "Electricity, low voltage {DE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {DE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {DE}| market for | Cut-off, U"
       }
     },
     {
@@ -279,7 +279,7 @@
         "name": "Electricity, low voltage {DK}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {DK}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {DK}| market for | Cut-off, U"
       }
     },
     {
@@ -287,7 +287,7 @@
         "name": "Electricity, low voltage {EE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {EE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {EE}| market for | Cut-off, U"
       }
     },
     {
@@ -295,7 +295,7 @@
         "name": "Electricity, low voltage {EG}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {EG}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {EG}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -303,7 +303,7 @@
         "name": "Electricity, low voltage {ES}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {ES}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {ES}| market for | Cut-off, U"
       }
     },
     {
@@ -311,7 +311,7 @@
         "name": "Electricity, low voltage {ET}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {ET}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {ET}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -319,7 +319,7 @@
         "name": "Electricity, low voltage {FI}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {FI}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {FI}| market for | Cut-off, U"
       }
     },
     {
@@ -327,7 +327,7 @@
         "name": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {FR}| market for | Cut-off, U"
       }
     },
     {
@@ -335,7 +335,7 @@
         "name": "Electricity, low voltage {GB}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {GB}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {GB}| market for | Cut-off, U"
       }
     },
     {
@@ -343,7 +343,7 @@
         "name": "Electricity, low voltage {GR}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {GR}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {GR}| market for | Cut-off, U"
       }
     },
     {
@@ -351,7 +351,7 @@
         "name": "Electricity, low voltage {HU}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {HU}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {HU}| market for | Cut-off, U"
       }
     },
     {
@@ -359,7 +359,7 @@
         "name": "Electricity, low voltage {ID}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {ID}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {ID}| market for | Cut-off, U"
       }
     },
     {
@@ -367,7 +367,7 @@
         "name": "Electricity, low voltage {IE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {IE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {IE}| market for | Cut-off, U"
       }
     },
     {
@@ -375,7 +375,7 @@
         "name": "Electricity, low voltage {IN}| market group for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {IN}| market group for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {IN}| market group for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -383,7 +383,7 @@
         "name": "Electricity, low voltage {IT}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {IT}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {IT}| market for | Cut-off, U"
       }
     },
     {
@@ -391,7 +391,7 @@
         "name": "Electricity, low voltage {JP}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {JP}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {JP}| market for | Cut-off, U"
       }
     },
     {
@@ -399,7 +399,7 @@
         "name": "Electricity, low voltage {KH}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {KH}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {KH}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -407,7 +407,7 @@
         "name": "Electricity, low voltage {LT}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {LT}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {LT}| market for | Cut-off, U"
       }
     },
     {
@@ -415,7 +415,7 @@
         "name": "Electricity, low voltage {LV}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {LV}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {LV}| market for | Cut-off, U"
       }
     },
     {
@@ -423,7 +423,7 @@
         "name": "Electricity, low voltage {MX}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {MX}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {MX}| market for | Cut-off, U"
       }
     },
     {
@@ -431,7 +431,7 @@
         "name": "Electricity, low voltage {MY}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {MY}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {MY}| market for | Cut-off, U"
       }
     },
     {
@@ -439,7 +439,7 @@
         "name": "Electricity, low voltage {NL}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {NL}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {NL}| market for | Cut-off, U"
       }
     },
     {
@@ -447,7 +447,7 @@
         "name": "Electricity, low voltage {NO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {NO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {NO}| market for | Cut-off, U"
       }
     },
     {
@@ -455,7 +455,7 @@
         "name": "Electricity, low voltage {NZ}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {NZ}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {NZ}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -463,7 +463,7 @@
         "name": "Electricity, low voltage {PE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PE}| market for | Cut-off, U"
       }
     },
     {
@@ -471,7 +471,7 @@
         "name": "Electricity, low voltage {PH}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PH}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PH}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -479,7 +479,7 @@
         "name": "Electricity, low voltage {PK}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PK}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PK}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -487,7 +487,7 @@
         "name": "Electricity, low voltage {PL}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PL}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PL}| market for | Cut-off, U"
       }
     },
     {
@@ -495,7 +495,7 @@
         "name": "Electricity, low voltage {PT}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PT}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PT}| market for | Cut-off, U"
       }
     },
     {
@@ -503,7 +503,7 @@
         "name": "Electricity, low voltage {PY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {PY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {PY}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -511,7 +511,7 @@
         "name": "Electricity, low voltage {RAF}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RAF}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RAF}| market group for | Cut-off, U"
       }
     },
     {
@@ -519,7 +519,7 @@
         "name": "Electricity, low voltage {RAS}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RAS}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RAS}| market group for | Cut-off, U"
       }
     },
     {
@@ -527,7 +527,7 @@
         "name": "Electricity, low voltage {RER}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RER}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RER}| market group for | Cut-off, U"
       }
     },
     {
@@ -535,7 +535,7 @@
         "name": "Electricity, low voltage {RLA}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RLA}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RLA}| market group for | Cut-off, U"
       }
     },
     {
@@ -543,7 +543,7 @@
         "name": "Electricity, low voltage {RME}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RME}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RME}| market group for | Cut-off, U"
       }
     },
     {
@@ -551,7 +551,7 @@
         "name": "Electricity, low voltage {RNA}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RNA}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RNA}| market group for | Cut-off, U"
       }
     },
     {
@@ -559,7 +559,7 @@
         "name": "Electricity, low voltage {RO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RO}| market for | Cut-off, U"
       }
     },
     {
@@ -567,7 +567,7 @@
         "name": "Electricity, low voltage {RU}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {RU}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {RU}| market for | Cut-off, U"
       }
     },
     {
@@ -575,7 +575,7 @@
         "name": "Electricity, low voltage {SD}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {SD}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {SD}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -583,7 +583,7 @@
         "name": "Electricity, low voltage {SE}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {SE}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {SE}| market for | Cut-off, U"
       }
     },
     {
@@ -591,7 +591,7 @@
         "name": "Electricity, low voltage {SI}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {SI}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {SI}| market for | Cut-off, U"
       }
     },
     {
@@ -599,7 +599,7 @@
         "name": "Electricity, low voltage {SK}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {SK}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {SK}| market for | Cut-off, U"
       }
     },
     {
@@ -607,7 +607,7 @@
         "name": "Electricity, low voltage {SN}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {SN}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {SN}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -615,7 +615,7 @@
         "name": "Electricity, low voltage {TH}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {TH}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {TH}| market for | Cut-off, U"
       }
     },
     {
@@ -623,7 +623,7 @@
         "name": "Electricity, low voltage {TR}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {TR}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {TR}| market for | Cut-off, U"
       }
     },
     {
@@ -631,7 +631,7 @@
         "name": "Electricity, low voltage {UA}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {UA}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {UA}| market for | Cut-off, U"
       }
     },
     {
@@ -639,7 +639,7 @@
         "name": "Electricity, low voltage {US}| market group for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {US}| market group for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {US}| market group for | Cut-off, U"
       }
     },
     {
@@ -647,7 +647,7 @@
         "name": "Electricity, low voltage {UY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {UY}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {UY}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -655,7 +655,7 @@
         "name": "Electricity, low voltage {VE}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {VE}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {VE}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -663,7 +663,7 @@
         "name": "Electricity, low voltage {VN}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {VN}| market for electricity, low voltage | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {VN}| market for electricity, low voltage | Cut-off, U"
       }
     },
     {
@@ -671,7 +671,7 @@
         "name": "Electricity, low voltage {ZA}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Electricity, low voltage {ZA}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Electricity, low voltage {ZA}| market for | Cut-off, U"
       }
     },
     {
@@ -679,7 +679,7 @@
         "name": "Ethanol, without water, in 99.7% solution state, from ethylene {RoW}| market for ethanol, without water, in 99.7% solution state, from ethylene | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Ethanol, without water, in 99.7% solution state, from ethylene {RoW}| market for ethanol, without water, in 99.7% solution state, from ethylene | Cut-off, S - Copied from ecoinvent U"
+        "name": "Ethanol, without water, in 99.7% solution state, from ethylene {RoW}| market for ethanol, without water, in 99.7% solution state, from ethylene | Cut-off, U"
       }
     },
     {
@@ -687,7 +687,7 @@
         "name": "Formaldehyde {RoW}| market for formaldehyde | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Formaldehyde {RoW}| market for formaldehyde | Cut-off, S - Copied from ecoinvent U"
+        "name": "Formaldehyde {RoW}| market for formaldehyde | Cut-off, U"
       }
     },
     {
@@ -695,7 +695,7 @@
         "name": "Heat, district or industrial, natural gas {Europe without Switzerland}| heat production, natural gas, at industrial furnace >100kW | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Heat, district or industrial, natural gas {Europe without Switzerland}| heat production, natural gas, at industrial furnace >100kW | Cut-off, S - Copied from ecoinvent U"
+        "name": "Heat, district or industrial, natural gas {Europe without Switzerland}| heat production, natural gas, at industrial furnace >100kW | Cut-off, U"
       }
     },
     {
@@ -703,7 +703,7 @@
         "name": "Heat, district or industrial, natural gas {RoW}| heat production, natural gas, at industrial furnace >100kW | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Heat, district or industrial, natural gas {RoW}| heat production, natural gas, at industrial furnace >100kW | Cut-off, S - Copied from ecoinvent U"
+        "name": "Heat, district or industrial, natural gas {RoW}| heat production, natural gas, at industrial furnace >100kW | Cut-off, U"
       }
     },
     {
@@ -711,7 +711,7 @@
         "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, heavy fuel oil, at industrial furnace 1MW | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, heavy fuel oil, at industrial furnace 1MW | Cut-off, S - Copied from ecoinvent U"
+        "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, heavy fuel oil, at industrial furnace 1MW | Cut-off, U"
       }
     },
     {
@@ -719,7 +719,7 @@
         "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, light fuel oil, at industrial furnace 1MW | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, light fuel oil, at industrial furnace 1MW | Cut-off, S - Copied from ecoinvent U"
+        "name": "Heat, district or industrial, other than natural gas {RoW}| heat production, light fuel oil, at industrial furnace 1MW | Cut-off, U"
       }
     },
     {
@@ -727,7 +727,7 @@
         "name": "Heavy fuel oil {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Heavy fuel oil {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Heavy fuel oil {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -735,7 +735,7 @@
         "name": "Hexane {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Hexane {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Hexane {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -743,7 +743,7 @@
         "name": "Hydrochloric acid, without water, in 30% solution state {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Hydrochloric acid, without water, in 30% solution state {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Hydrochloric acid, without water, in 30% solution state {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -751,7 +751,7 @@
         "name": "Inert waste {RoW}| market for inert waste | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Inert waste {RoW}| market for inert waste | Cut-off, S - Copied from ecoinvent U"
+        "name": "Inert waste {RoW}| market for inert waste | Cut-off, U"
       }
     },
     {
@@ -759,7 +759,7 @@
         "name": "Kaolin {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Kaolin {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Kaolin {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -767,7 +767,7 @@
         "name": "Kerosene {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Kerosene {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Kerosene {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -775,7 +775,7 @@
         "name": "Lime {RoW}| market for lime | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Lime {RoW}| market for lime | Cut-off, S - Copied from ecoinvent U"
+        "name": "Lime {RoW}| market for lime | Cut-off, U"
       }
     },
     {
@@ -783,7 +783,7 @@
         "name": "Limestone, unprocessed {RoW}| limestone quarry operation | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Limestone, unprocessed {RoW}| limestone quarry operation | Cut-off, S - Copied from ecoinvent U"
+        "name": "Limestone, unprocessed {RoW}| limestone quarry operation | Cut-off, U"
       }
     },
     {
@@ -791,7 +791,7 @@
         "name": "Municipal solid waste {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Municipal solid waste {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Municipal solid waste {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -799,7 +799,7 @@
         "name": "Naphtha {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Naphtha {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Naphtha {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -807,7 +807,7 @@
         "name": "Natural gas, low pressure {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Natural gas, low pressure {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Natural gas, low pressure {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -815,7 +815,7 @@
         "name": "Nitrogen, liquid {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Nitrogen, liquid {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Nitrogen, liquid {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -823,7 +823,7 @@
         "name": "Packaging film, low density polyethylene {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Packaging film, low density polyethylene {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Packaging film, low density polyethylene {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -831,7 +831,7 @@
         "name": "Polypropylene, granulate {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Polypropylene, granulate {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Polypropylene, granulate {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -839,7 +839,7 @@
         "name": "Quicklime, milled, loose {RoW}| market for quicklime, milled, loose | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Quicklime, milled, loose {RoW}| market for quicklime, milled, loose | Cut-off, S - Copied from ecoinvent U"
+        "name": "Quicklime, milled, loose {RoW}| market for quicklime, milled, loose | Cut-off, U"
       }
     },
     {
@@ -847,7 +847,7 @@
         "name": "Sand {RoW}| market for sand | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sand {RoW}| market for sand | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sand {RoW}| market for sand | Cut-off, U"
       }
     },
     {
@@ -855,15 +855,16 @@
         "name": "Saw dust, wet, measured as dry mass {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Saw dust, wet, measured as dry mass {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
-      }
+        "name": "Sawdust, wet, measured as dry mass {Europe without Switzerland}| market for sawdust, wet, measured as dry mass | Cut-off, U"
+      },
+      "comment": "Used in Europe and USA"
     },
     {
       "source": {
         "name": "Scrap steel {RoW}| market for scrap steel | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Scrap steel {RoW}| market for scrap steel | Cut-off, S - Copied from ecoinvent U"
+        "name": "Scrap steel {RoW}| market for scrap steel | Cut-off, U"
       }
     },
     {
@@ -871,7 +872,7 @@
         "name": "Sodium bicarbonate {GLO}| market for sodium bicarbonate | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sodium bicarbonate {GLO}| market for sodium bicarbonate | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sodium bicarbonate {GLO}| market for sodium bicarbonate | Cut-off, U"
       }
     },
     {
@@ -879,7 +880,7 @@
         "name": "Sodium chloride, powder {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sodium chloride, powder {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sodium chloride, powder {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -887,7 +888,7 @@
         "name": "Sodium hydroxide, without water, in 50% solution state {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sodium hydroxide, without water, in 50% solution state {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sodium hydroxide, without water, in 50% solution state {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -895,7 +896,7 @@
         "name": "Steel, unalloyed {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Steel, unalloyed {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Steel, unalloyed {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -903,7 +904,7 @@
         "name": "Sulfur {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sulfur {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sulfur {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -911,7 +912,7 @@
         "name": "Sulfur dioxide, liquid {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sulfur dioxide, liquid {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sulfur dioxide, liquid {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -919,7 +920,7 @@
         "name": "Sulfuric acid {RoW}| market for sulfuric acid | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Sulfuric acid {RoW}| market for sulfuric acid | Cut-off, S - Copied from ecoinvent U"
+        "name": "Sulfuric acid {RoW}| market for sulfuric acid | Cut-off, U"
       }
     },
     {
@@ -927,7 +928,7 @@
         "name": "Tap water {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Tap water {RoW}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Tap water {RoW}| market for | Cut-off, U"
       }
     },
     {
@@ -935,7 +936,7 @@
         "name": "Tractor, 4-wheel, agricultural {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Tractor, 4-wheel, agricultural {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Tractor, 4-wheel, agricultural {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -943,7 +944,7 @@
         "name": "Wastewater, average {RoW}| market for wastewater, average | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Wastewater, average {RoW}| market for wastewater, average | Cut-off, S - Copied from ecoinvent U"
+        "name": "Wastewater, average {RoW}| market for wastewater, average | Cut-off, U"
       }
     },
     {
@@ -951,7 +952,7 @@
         "name": "Water, deionised {RoW}| market for water, deionised | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Water, deionised {RoW}| market for water, deionised | Cut-off, S - Copied from ecoinvent U"
+        "name": "Water, deionised {RoW}| market for water, deionised | Cut-off, U"
       }
     },
     {
@@ -959,7 +960,7 @@
         "name": "Zinc oxide {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Zinc oxide {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Zinc oxide {GLO}| market for | Cut-off, U"
       }
     },
     {
@@ -967,7 +968,7 @@
         "name": "Zinc sulfide {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
       },
       "target": {
-        "name": "Zinc sulfide {GLO}| market for | Cut-off, S - Copied from ecoinvent U"
+        "name": "Zinc sulfide {GLO}| market for | Cut-off, U"
       }
     }
   ]
