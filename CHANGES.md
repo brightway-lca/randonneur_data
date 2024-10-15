@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5] - 2024-10-15
+
+* [#5 - SimaPro correspondence files include unit which can replace units with conversion](https://github.com/brightway-lca/randonneur_data/issues/5)
+* Fix ecoinvent migrations making incorrect unit conversions
+
 ## [0.4.1] - 2024-10-14
 
 * Add additional Agrifootprint transformation
