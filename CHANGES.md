@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.3] - 2024-11-27
+
+* Removed mappings from Agribalyse which lied about being ecoinvent processes
+
 ## [0.5.2] - 2024-11-26
 
 * Updated mappings from Agribalyse 3.1.1
