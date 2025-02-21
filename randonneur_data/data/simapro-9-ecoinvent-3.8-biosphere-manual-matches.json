@@ -76,6 +76,22 @@
     },
     {
       "source": {
+        "name": "Discarded fish, demersal"
+      },
+      "target": {
+        "name": "Discarded fish, demersal, to ocean"
+      }
+    },
+    {
+      "source": {
+        "name": "Discarded fish, pelagic"
+      },
+      "target": {
+        "name": "Discarded fish, pelagic, to ocean"
+      }
+    },
+    {
+      "source": {
         "name": "Occupation, agriculture"
       },
       "target": {
@@ -596,14 +612,6 @@
     },
     {
       "source": {
-        "name": "Antimony, ion"
-      },
-      "target": {
-        "name": "Antimony"
-      }
-    },
-    {
-      "source": {
         "name": "Formetanate"
       },
       "target": {
@@ -724,170 +732,10 @@
     },
     {
       "source": {
-        "name": "Arsenic (V)"
-      },
-      "target": {
-        "name": "Arsenic"
-      }
-    },
-    {
-      "source": {
-        "name": "Barium (II)"
-      },
-      "target": {
-        "name": "Barium"
-      }
-    },
-    {
-      "source": {
-        "name": "Beryllium (II)"
-      },
-      "target": {
-        "name": "Beryllium"
-      }
-    },
-    {
-      "source": {
-        "name": "Cadmium (II)"
-      },
-      "target": {
-        "name": "Cadmium"
-      }
-    },
-    {
-      "source": {
-        "name": "Calcium"
-      },
-      "target": {
-        "name": "Calcium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Chromium (III)"
-      },
-      "target": {
-        "name": "Chromium III"
-      }
-    },
-    {
-      "source": {
-        "name": "Chromium (VI)"
-      },
-      "target": {
-        "name": "Chromium VI"
-      }
-    },
-    {
-      "source": {
-        "name": "Chromium, ion"
-      },
-      "target": {
-        "name": "Chromium"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, ion"
-      },
-      "target": {
-        "name": "Copper"
-      }
-    },
-    {
-      "source": {
-        "name": "Lead (II)"
-      },
-      "target": {
-        "name": "Lead"
-      }
-    },
-    {
-      "source": {
-        "name": "Mercury (II)"
-      },
-      "target": {
-        "name": "Mercury"
-      }
-    },
-    {
-      "source": {
-        "name": "Manganese (II)"
-      },
-      "target": {
-        "name": "Manganese"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum (VI)"
-      },
-      "target": {
-        "name": "Molybdenum"
-      }
-    },
-    {
-      "source": {
-        "name": "Nickel (II)"
-      },
-      "target": {
-        "name": "Nickel"
-      }
-    },
-    {
-      "source": {
         "name": "Oils, biogenic"
       },
       "target": {
         "name": "Oils, non-fossil"
-      }
-    },
-    {
-      "source": {
-        "name": "Plutonium"
-      },
-      "target": {
-        "name": "Plutonium-238"
-      }
-    },
-    {
-      "source": {
-        "name": "Potassium (I)"
-      },
-      "target": {
-        "name": "Potassium"
-      }
-    },
-    {
-      "source": {
-        "name": "Ruthenium"
-      },
-      "target": {
-        "name": "Ruthenium-103"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver (I)"
-      },
-      "target": {
-        "name": "Silver"
-      }
-    },
-    {
-      "source": {
-        "name": "Thallium (I)"
-      },
-      "target": {
-        "name": "Thallium"
-      }
-    },
-    {
-      "source": {
-        "name": "Zinc (II)"
-      },
-      "target": {
-        "name": "Zinc"
       }
     },
     {
@@ -1620,6 +1468,14 @@
     },
     {
       "source": {
+        "name": "Methane, chlorofluoro-, HCFC-31"
+      },
+      "target": {
+        "name": "Methane, chloro-fluoro-, HCFC-31"
+      }
+    },
+    {
+      "source": {
         "name": "Parathion, methyl"
       },
       "target": {
@@ -1628,10 +1484,18 @@
     },
     {
       "source": {
-        "name": "Pentane, 2,2,4-trimethyl-"
+        "name": "Butyric acid, 4-(2,4-dichlorophenoxy)-"
       },
       "target": {
-        "name": "2,2,4-Trimethyl pentane"
+        "name": "2,4-DB"
+      }
+    },
+    {
+      "source": {
+        "name": "Pentane, 2-methyl-"
+      },
+      "target": {
+        "name": "2-Methyl pentane"
       }
     },
     {
@@ -1740,6 +1604,22 @@
     },
     {
       "source": {
+        "name": "Nitrogen monoxide"
+      },
+      "target": {
+        "name": "Nitric oxide"
+      }
+    },
+    {
+      "source": {
+        "name": "Metolachlor, (S)"
+      },
+      "target": {
+        "name": "Metolachlor"
+      }
+    },
+    {
+      "source": {
         "name": "Oxydemeton methyl"
       },
       "target": {
@@ -1756,34 +1636,10 @@
     },
     {
       "source": {
-        "name": "Triallate"
-      },
-      "target": {
         "name": "Tri-allate"
-      }
-    },
-    {
-      "source": {
-        "name": "Acrylate"
       },
       "target": {
-        "name": "Acrylate, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Ammonium"
-      },
-      "target": {
-        "name": "Ammonium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Arsenic"
-      },
-      "target": {
-        "name": "Arsenic, ion"
+        "name": "Triallate"
       }
     },
     {
@@ -1792,30 +1648,6 @@
       },
       "target": {
         "name": "Benz(a)anthracene"
-      }
-    },
-    {
-      "source": {
-        "name": "Cadmium"
-      },
-      "target": {
-        "name": "Cadmium, 0.30% in sulfide, Cd 0.18%, Pb, Zn, Ag, In, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Chromium"
-      },
-      "target": {
-        "name": "Chromium, 25.5% in chromite, 11.6% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper"
-      },
-      "target": {
-        "name": "Copper, ion"
       }
     },
     {
@@ -1836,106 +1668,10 @@
     },
     {
       "source": {
-        "name": "Iron"
-      },
-      "target": {
-        "name": "Iron, 46% in ore, 25% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Lithium"
-      },
-      "target": {
-        "name": "Lithium, 0.15% in brine, in ground"
-      }
-    },
-    {
-      "source": {
         "name": "Naphthalene"
       },
       "target": {
         "name": "Naphtalene"
-      }
-    },
-    {
-      "source": {
-        "name": "Nickel"
-      },
-      "target": {
-        "name": "Nickel, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Perchlorate"
-      },
-      "target": {
-        "name": "Perchlorate, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Potassium"
-      },
-      "target": {
-        "name": "Potassium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver"
-      },
-      "target": {
-        "name": "Silver, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Sodium"
-      },
-      "target": {
-        "name": "Sodium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Thiocyanate"
-      },
-      "target": {
-        "name": "Thiocyanate, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Tin"
-      },
-      "target": {
-        "name": "Tin, 79% in cassiterite, 0.1% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Titanium"
-      },
-      "target": {
-        "name": "Titanium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Vanadium"
-      },
-      "target": {
-        "name": "Vanadium, ion"
-      }
-    },
-    {
-      "source": {
-        "name": "Zinc"
-      },
-      "target": {
-        "name": "Zinc, 9.0% in sulfide, Zn 5.3%, Pb, Ag, Cd, In, in ground"
       }
     },
     {
@@ -1948,266 +1684,10 @@
     },
     {
       "source": {
-        "name": "Aluminium"
+        "name": "Gas, mine, off-gas, process, coal mining, 36 MJ per m3"
       },
       "target": {
-        "name": "Aluminium, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Anhydrite"
-      },
-      "target": {
-        "name": "Anhydrite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Argon"
-      },
-      "target": {
-        "name": "Argon-40"
-      }
-    },
-    {
-      "source": {
-        "name": "Barite"
-      },
-      "target": {
-        "name": "Barite, 15% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Basalt"
-      },
-      "target": {
-        "name": "Basalt, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Borax"
-      },
-      "target": {
-        "name": "Borax, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Bromine"
-      },
-      "target": {
-        "name": "Bromine, 0.23% in water"
-      }
-    },
-    {
-      "source": {
-        "name": "Calcite"
-      },
-      "target": {
-        "name": "Calcite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Cerium"
-      },
-      "target": {
-        "name": "Cerium, 24% in bastnasite, 2.4% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Chrysotile"
-      },
-      "target": {
-        "name": "Chrysotile, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Cinnabar"
-      },
-      "target": {
-        "name": "Cinnabar, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Clay, bentonite"
-      },
-      "target": {
-        "name": "Clay, bentonite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Clay, unspecified"
-      },
-      "target": {
-        "name": "Clay, unspecified, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Coal, brown"
-      },
-      "target": {
-        "name": "Coal, brown, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Cobalt"
-      },
-      "target": {
-        "name": "Cobalt, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Colemanite"
-      },
-      "target": {
-        "name": "Colemanite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 0.52% in sulfide, Cu 0.27% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 0.52% in sulfide, Cu 0.27% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 0.59% in sulfide, Cu 0.22% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 0.59% in sulfide, Cu 0.22% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 0.97% in sulfide, Cu 0.36% and Mo 4.1E-2% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 0.97% in sulfide, Cu 0.36% and Mo 4.1E-2% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 0.99% in sulfide, Cu 0.36% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 0.99% in sulfide, Cu 0.36% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 1.13% in sulfide, Cu 0.76% and Ni 0.76% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 1.13% in sulfide, Cu 0.76% and Ni 0.76% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 1.18% in sulfide, Cu 0.39% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 1.18% in sulfide, Cu 0.39% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 1.42% in sulfide, Cu 0.81% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 1.42% in sulfide, Cu 0.81% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Copper, 2.19% in sulfide, Cu 1.83% and Mo 8.2E-3% in crude ore"
-      },
-      "target": {
-        "name": "Copper, 2.19% in sulfide, Cu 1.83% and Mo 8.2E-3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Diatomite"
-      },
-      "target": {
-        "name": "Diatomite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Dolomite"
-      },
-      "target": {
-        "name": "Dolomite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Europium"
-      },
-      "target": {
-        "name": "Europium, 0.06% in bastnasite, 0.006% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Feldspar"
-      },
-      "target": {
-        "name": "Feldspar, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Fluorine"
-      },
-      "target": {
-        "name": "Fluorine, 4.5% in apatite, 1% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Fluorine, 4.5% in apatite, 3% in crude ore"
-      },
-      "target": {
-        "name": "Fluorine, 4.5% in apatite, 3% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Fluorspar"
-      },
-      "target": {
-        "name": "Fluorspar, 92%, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gadolinium"
-      },
-      "target": {
-        "name": "Gadolinium, 0.15% in bastnasite, 0.015% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gallium"
-      },
-      "target": {
-        "name": "Gallium, in ground"
+        "name": "Gas, mine, off-gas, process, coal mining"
       }
     },
     {
@@ -2220,7 +1700,7 @@
     },
     {
       "source": {
-        "name": "Gas, natural/m3"
+        "name": "Gas, natural, 36 MJ per m3"
       },
       "target": {
         "name": "Gas, natural, in ground"
@@ -2228,66 +1708,10 @@
     },
     {
       "source": {
-        "name": "Gold"
+        "name": "Gas, natural/m3"
       },
       "target": {
-        "name": "Gold, Au 1.4E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 1.1E-4%, Ag 4.2E-3%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 1.1E-4%, Ag 4.2E-3%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 1.3E-4%, Ag 4.6E-5%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 1.3E-4%, Ag 4.6E-5%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 2.1E-4%, Ag 2.1E-4%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 2.1E-4%, Ag 2.1E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 4.3E-4%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 4.3E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 4.9E-5%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 4.9E-5%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 6.7E-4%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 6.7E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gold, Au 7.1E-4%, in ore"
-      },
-      "target": {
-        "name": "Gold, Au 7.1E-4%, in ore, in ground"
+        "name": "Gas, natural, in ground"
       }
     },
     {
@@ -2300,86 +1724,6 @@
     },
     {
       "source": {
-        "name": "Granite"
-      },
-      "target": {
-        "name": "Granite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gravel"
-      },
-      "target": {
-        "name": "Gravel, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Gypsum"
-      },
-      "target": {
-        "name": "Gypsum, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Indium"
-      },
-      "target": {
-        "name": "Indium, 0.005% in sulfide, In 0.003%, Pb, Zn, Ag, Cd, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Iodine"
-      },
-      "target": {
-        "name": "Iodine, 0.03% in water"
-      }
-    },
-    {
-      "source": {
-        "name": "Kaolinite"
-      },
-      "target": {
-        "name": "Kaolinite, 24% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Kieserite"
-      },
-      "target": {
-        "name": "Kieserite, 25% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Krypton"
-      },
-      "target": {
-        "name": "Krypton, in air"
-      }
-    },
-    {
-      "source": {
-        "name": "Lanthanum"
-      },
-      "target": {
-        "name": "Lanthanum, 7.2% in bastnasite, 0.72% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Lead"
-      },
-      "target": {
-        "name": "Lead, 5.0% in sulfide, Pb 3.0%, Zn, Ag, Cd, In, in ground"
-      }
-    },
-    {
-      "source": {
         "name": "Lead, Pb 0.014%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, in ore"
       },
       "target": {
@@ -2388,114 +1732,14 @@
     },
     {
       "source": {
-        "name": "Magnesite"
-      },
-      "target": {
-        "name": "Magnesite, 60% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Magnesium"
-      },
-      "target": {
-        "name": "Magnesium, 0.13% in water"
-      }
-    },
-    {
-      "source": {
-        "name": "Manganese"
-      },
-      "target": {
-        "name": "Manganese, 35.7% in sedimentary deposit, 14.2% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Metamorphous rock, graphite containing"
-      },
-      "target": {
-        "name": "Metamorphous rock, graphite containing, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum"
-      },
-      "target": {
-        "name": "Molybdenum, 0.11% in sulfide, Mo 4.1E-2% and Cu 0.36% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.010% in sulfide, Mo 8.2E-3% and Cu 1.83% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.010% in sulfide, Mo 8.2E-3% and Cu 1.83% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.014% in sulfide, Mo 8.2E-3% and Cu 0.81% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.014% in sulfide, Mo 8.2E-3% and Cu 0.81% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.016% in sulfide, Mo 8.2E-3% and Cu 0.27% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.016% in sulfide, Mo 8.2E-3% and Cu 0.27% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.022% in sulfide, Mo 8.2E-3% and Cu 0.22% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.022% in sulfide, Mo 8.2E-3% and Cu 0.22% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.022% in sulfide, Mo 8.2E-3% and Cu 0.36% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.022% in sulfide, Mo 8.2E-3% and Cu 0.36% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Molybdenum, 0.025% in sulfide, Mo 8.2E-3% and Cu 0.39% in crude ore"
-      },
-      "target": {
-        "name": "Molybdenum, 0.025% in sulfide, Mo 8.2E-3% and Cu 0.39% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Neodymium"
       },
       "target": {
         "name": "Neodymium, 4% in bastnasite, 0.4% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Nickel, 1.13% in sulfide, Ni 0.76% and Cu 0.76% in crude ore"
-      },
-      "target": {
-        "name": "Nickel, 1.13% in sulfide, Ni 0.76% and Cu 0.76% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Nickel, 1.98% in silicates, 1.04% in crude ore"
-      },
-      "target": {
-        "name": "Nickel, 1.98% in silicates, 1.04% in crude ore, in ground"
       }
     },
     {
@@ -2572,18 +1816,10 @@
     },
     {
       "source": {
-        "name": "Oil, crude"
+        "name": "Oil, crude, 43.4 MJ per kg"
       },
       "target": {
         "name": "Oil, crude, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Olivine"
-      },
-      "target": {
-        "name": "Olivine, in ground"
       }
     },
     {
@@ -2604,34 +1840,14 @@
     },
     {
       "source": {
-        "name": "Peat"
-      },
-      "target": {
-        "name": "Peat, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Perlite"
-      },
-      "target": {
-        "name": "Perlite, in ground"
-      }
-    },
-    {
-      "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Phosphorus"
       },
       "target": {
         "name": "Phosphorus, 18% in apatite, 12% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Phosphorus, 18% in apatite, 4% in crude ore"
-      },
-      "target": {
-        "name": "Phosphorus, 18% in apatite, 4% in crude ore, in ground"
       }
     },
     {
@@ -2652,6 +1868,10 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Potassium chloride"
       },
       "target": {
@@ -2660,6 +1880,10 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Praseodymium"
       },
       "target": {
@@ -2668,22 +1892,10 @@
     },
     {
       "source": {
-        "name": "Pumice"
-      },
-      "target": {
-        "name": "Pumice, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Pyrite"
-      },
-      "target": {
-        "name": "Pyrite, in ground"
-      }
-    },
-    {
-      "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Rhenium"
       },
       "target": {
@@ -2708,6 +1920,10 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Samarium"
       },
       "target": {
@@ -2716,58 +1932,14 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Sand"
       },
       "target": {
         "name": "Sand, unspecified, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Shale"
-      },
-      "target": {
-        "name": "Shale, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, 0.007% in sulfide, Ag 0.004%, Pb, Zn, Cd, In"
-      },
-      "target": {
-        "name": "Silver, 0.007% in sulfide, Ag 0.004%, Pb, Zn, Cd, In, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, 3.2ppm in sulfide, Ag 1.2ppm, Cu and Te, in crude ore"
-      },
-      "target": {
-        "name": "Silver, 3.2ppm in sulfide, Ag 1.2ppm, Cu and Te, in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, Ag 2.1E-4%, Au 2.1E-4%, in ore"
-      },
-      "target": {
-        "name": "Silver, Ag 2.1E-4%, Au 2.1E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, Ag 4.2E-3%, Au 1.1E-4%, in ore"
-      },
-      "target": {
-        "name": "Silver, Ag 4.2E-3%, Au 1.1E-4%, in ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Silver, Ag 4.6E-5%, Au 1.3E-4%, in ore"
-      },
-      "target": {
-        "name": "Silver, Ag 4.6E-5%, Au 1.3E-4%, in ore, in ground"
       }
     },
     {
@@ -2780,22 +1952,10 @@
     },
     {
       "source": {
-        "name": "Sodium chloride"
-      },
-      "target": {
-        "name": "Sodium chloride, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Sodium nitrate"
-      },
-      "target": {
-        "name": "Sodium nitrate, in ground"
-      }
-    },
-    {
-      "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Sodium sulfate"
       },
       "target": {
@@ -2804,38 +1964,10 @@
     },
     {
       "source": {
-        "name": "Spodumene"
-      },
-      "target": {
-        "name": "Spodumene, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Stibnite"
-      },
-      "target": {
-        "name": "Stibnite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Sulfur"
-      },
-      "target": {
-        "name": "Sulfur, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Talc"
-      },
-      "target": {
-        "name": "Talc, in ground"
-      }
-    },
-    {
-      "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Tantalum"
       },
       "target": {
@@ -2844,34 +1976,14 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Tellurium"
       },
       "target": {
         "name": "Tellurium, 0.5ppm in sulfide, Te 0.2ppm, Cu and Ag, in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "TiO2, 54% in ilmenite, 18% in crude ore"
-      },
-      "target": {
-        "name": "TiO2, 54% in ilmenite, 18% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "TiO2, 54% in ilmenite, 2.6% in crude ore"
-      },
-      "target": {
-        "name": "TiO2, 54% in ilmenite, 2.6% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "TiO2, 95% in rutile, 0.40% in crude ore"
-      },
-      "target": {
-        "name": "TiO2, 95% in rutile, 0.40% in crude ore, in ground"
       }
     },
     {
@@ -3012,550 +2124,6 @@
     },
     {
       "source": {
-        "name": "Ulexite"
-      },
-      "target": {
-        "name": "Ulexite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Uranium"
-      },
-      "target": {
-        "name": "Uranium, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Vermiculite"
-      },
-      "target": {
-        "name": "Vermiculite, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, AT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, AU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, BA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, BE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, BG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, BR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, CA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, CH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, CL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, CN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, cooling, unspecified natural origin/m3"
-      },
-      "target": {
-        "name": "Water, cooling, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, CZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, DE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, DK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, ES"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, Europe without Switzerland"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, FI"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, FR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, GB"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, GLO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, GR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, HR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, HU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, ID"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, IE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, IN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, IR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, IT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, JP"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, KR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, LU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, MA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, MX"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, MY"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, NL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, NO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, NORDEL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, PE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, PG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, PH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, PL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, PT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RAF"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RAS"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RER"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RLA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RME"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RNA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RoW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RS"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, RU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, SE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, SI"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, SK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, TH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, TR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, TW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, TZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, UA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, UCTE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, UCTE without Germany"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, US"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, WEU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, ZA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
         "name": "Water_3.1_m3"
       },
       "target": {
@@ -3588,1090 +2156,14 @@
     },
     {
       "source": {
+        "context": [
+          "Resources",
+          "in ground"
+        ],
         "name": "Zirconium"
       },
       "target": {
         "name": "Zirconium, 50% in zircon, 0.39% in crude ore, in ground"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, BA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, HR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, PG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, AT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, BE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, BG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, CA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, CH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, CN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, CZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, DE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, DK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, ES"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, Europe without Switzerland"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, FI"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, FR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, GB"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, GLO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, HU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, IT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, JP"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, KR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, LU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, NL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, NO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, PL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, PT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, RER"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, RNA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, RoW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, RU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, SE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, SK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, TR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, TW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, lake, US"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, AT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, AU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, BE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, BG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, BR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, CA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, CH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, CN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, CZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, DE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, DK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, ES"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, Europe without Switzerland"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, FI"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, FR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, GB"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, GLO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, HU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, IN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, IT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, JP"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, KR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, LU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, MY"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, NL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, NO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, PE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, PH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, PL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, PT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RAS"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RER"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RLA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RNA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RoW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, RU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, SE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, SK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, TR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, TW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, TZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, US"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, WEU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, river, ZA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, Europe without Switzerland"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, GLO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, NORDEL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, RAF"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, RER"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, RNA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, RoW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, TW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, unspecified natural origin, WEU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, AT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, AU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, BE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, BG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, BR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, CA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, CH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, CN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, CZ"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, DE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, DK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, ES"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, Europe without Switzerland"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, FI"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, FR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, GB"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, GLO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, HU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, ID"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, IN"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, IT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, JP"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, KR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, LU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, MA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, MY"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, NL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, NO"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, NORDEL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, PE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, PG"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, PH"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, PL"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, PT"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, RER"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, RLA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, RNA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, RoW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, RU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, SE"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, SK"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, TR"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, TW"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, US"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, WEU"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
-      }
-    },
-    {
-      "source": {
-        "name": "Water, well, in ground, ZA"
-      },
-      "target": {
-        "name": "Water, unspecified natural origin"
       }
     },
     {
