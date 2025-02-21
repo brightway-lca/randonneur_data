@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.5] - 2025-02-21
+
+* Minor fixes for SimaPro 9 - ecoinvent 3.8 manual mappings
+
+## [0.5.4] - 2024-12-02
+
+* Add Agrifootprint transformations to ecoinvent unmodified names
+
 ## [0.5.3] - 2024-11-27
 
 * Removed mappings from Agribalyse which lied about being ecoinvent processes
