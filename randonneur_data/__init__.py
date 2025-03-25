@@ -90,13 +90,13 @@ class Registry(MutableMapping):
 
     def validate_file(self, filepath: Path) -> None:
         try:
-            from randonneur.validation import Contributors, MappingFields, DatapackageMetadata, validate_data_for_verb, VERBS
+            from randonneur.validation import Contributor, MappingFields, DatapackageMetadata, validate_data_for_verb, VERBS
         except ImportError:
             raise ImportError("`validate_file` only available if `randonneur` has been installed.")
 
         data = json.load(open(filepath))
         for contributor in data['contributors']:
-            Contributors(**contributor)
+            Contributor(**contributor)
         MappingFields(**data.get("mapping", {}).get("source", {}))
         MappingFields(**data.get("mapping", {}).get("target", {}))
         DatapackageMetadata(**data)
