@@ -1757,5 +1757,64 @@
     "homepage": "https://blonksustainability.nl/tools/agri-footprint",
     "filename": "agrifootprint-biosphere-ecoinvent-3.8-biosphere.xz",
     "compression": "lzma"
+  },
+  "ecoinvent-3.10.1-cutoff-ecoinvent-3.11-cutoff": {
+    "name": "ecoinvent-3.10.1-cutoff-ecoinvent-3.11-cutoff",
+    "description": "Data migration file from ecoinvent-3.10.1-cutoff to ecoinvent-3.11-cutoff generated with `ecoinvent_migrate` version 0.6.1",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2025-03-25T10:19:41.203960+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-cutoff",
+    "target_id": "ecoinvent-3.11-cutoff",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.10.1-cutoff-ecoinvent-3.11-cutoff.xz",
+    "compression": "lzma"
   }
 }
