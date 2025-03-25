@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6] - 2025-03-25
+
+* Add ecoinvent 3.10.1-3.11 mappings
+* Compatibility with upstream `randonneur` changes
+
 ## [0.5.5] - 2025-02-21
 
 * Minor fixes for SimaPro 9 - ecoinvent 3.8 manual mappings
