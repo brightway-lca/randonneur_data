@@ -1902,7 +1902,7 @@
         ]
       }
     ],
-    "created": "2025-09-11T10:12:03.393063+00:00",
+    "created": "2025-10-03T21:19:43.417518+00:00",
     "version": "1.0.0",
     "licenses": [
       {
@@ -1954,6 +1954,154 @@
     "source_id": "ecoinvent-3.9.1-biosphere",
     "target_id": "EF-3.1-biosphere",
     "filename": "ecoinvent-3.9.1-biosphere-EF-3.1-biosphere.xz",
+    "compression": "lzma"
+  },
+  "ecoinvent-3.10.1-biosphere-EF-3.1-biosphere": {
+    "name": "ecoinvent-3.10.1-biosphere-EF-3.1-biosphere",
+    "description": "Biosphere flow mapping from ecoinvent 3.10.1 to EF 3.1. Uses GLAD mappings, combined with extra manual and algorithmic matches. Not complete; some ecoinvent flows don't have matches in EF 3.1.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "DataCurator",
+          "ContactPerson"
+        ]
+      },
+      {
+        "title": "UNEP Economy Division Mapping Taskforce",
+        "path": "https://github.com/UNEP-Economy-Division/GLAD-ElementaryFlowResources",
+        "roles": [
+          "DataCollector"
+        ]
+      }
+    ],
+    "created": "2025-10-03T21:20:07.605622+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:baseName/text()",
+          "CAS number": "//*:CASNumber/text()",
+          "uuid": "//*:UUID/text()",
+          "unit_group_flow_property": "//*:flowProperty[@dataSetInternalID=//*:referenceToReferenceFlowProperty/text()]/*:referenceToFlowPropertyDataSet/@refObjectId",
+          "unit_name": null,
+          "unit_scaling": "//*:flowProperty[@dataSetInternalID=//*:referenceToReferenceFlowProperty/text()]/*:meanValue/text()",
+          "context": [
+            "//*:category[@level=\"0\"]/text()",
+            "//*:category[@level=\"1\"]/text()",
+            "//*:category[@level=\"2\"]/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-biosphere",
+    "target_id": "EF-3.1-biosphere",
+    "filename": "ecoinvent-3.10.1-biosphere-EF-3.1-biosphere.xz",
+    "compression": "lzma"
+  },
+  "ecoinvent-3.11-biosphere-EF-3.1-biosphere": {
+    "name": "ecoinvent-3.11-biosphere-EF-3.1-biosphere",
+    "description": "Biosphere flow mapping from ecoinvent 3.11 to EF 3.1. Uses GLAD mappings, combined with extra manual and algorithmic matches. Not complete; some ecoinvent flows don't have matches in EF 3.1.",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "DataCurator",
+          "ContactPerson"
+        ]
+      },
+      {
+        "title": "UNEP Economy Division Mapping Taskforce",
+        "path": "https://github.com/UNEP-Economy-Division/GLAD-ElementaryFlowResources",
+        "roles": [
+          "DataCollector"
+        ]
+      }
+    ],
+    "created": "2025-10-03T21:19:50.573917+00:00",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "uuid": "//*:elementaryExchange/@elementaryExchangeId",
+          "formula": "//*:elementaryExchange/@formula",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:baseName/text()",
+          "CAS number": "//*:CASNumber/text()",
+          "uuid": "//*:UUID/text()",
+          "unit_group_flow_property": "//*:flowProperty[@dataSetInternalID=//*:referenceToReferenceFlowProperty/text()]/*:referenceToFlowPropertyDataSet/@refObjectId",
+          "unit_name": null,
+          "unit_scaling": "//*:flowProperty[@dataSetInternalID=//*:referenceToReferenceFlowProperty/text()]/*:meanValue/text()",
+          "context": [
+            "//*:category[@level=\"0\"]/text()",
+            "//*:category[@level=\"1\"]/text()",
+            "//*:category[@level=\"2\"]/text()"
+          ]
+        },
+        "as-tuple": [
+          "context"
+        ]
+      }
+    },
+    "source_id": "ecoinvent-3.11-biosphere",
+    "target_id": "EF-3.1-biosphere",
+    "filename": "ecoinvent-3.11-biosphere-EF-3.1-biosphere.xz",
     "compression": "lzma"
   }
 }
