@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.2] - 2025-10-06
+
+* Update ecoinvent - EF 3.1 mappings to align with energy densities expected in EF 3.1
+
 ## [0.6.1] - 2025-10-03
 
 * Add ecoinvent - EF 3.1 mappings
