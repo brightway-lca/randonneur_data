@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7] - 2025-11-29
+
+* Move default compression to GZ to allow for native browser decoding
+
 ## [0.6.2] - 2025-10-06
 
 * Update ecoinvent - EF 3.1 mappings to align with energy densities expected in EF 3.1
