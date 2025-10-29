@@ -1,11 +1,13 @@
 __all__ = (
     "__version__",
+    "DEFAULT_DATA_DIR",
     "Registry",
 )
 
 __version__ = "0.6.2"
 
 
+import gzip
 import json
 import lzma
 import random
@@ -120,13 +122,11 @@ class Registry(MutableMapping):
 
         size = filepath.stat().st_size
         if size > 2e5:
-            data["filename"] = f"{new_path.stem}.xz"
-            data["compression"] = "lzma"
+            data["filename"] = f"{new_path.stem}.gz"
+            data["compression"] = "gzip"
             new_path = self.data_dir / data["filename"]
-            with lzma.LZMAFile(
-                new_path, mode="w", check=lzma.CHECK_SHA256, preset=9
-            ) as lzma_file:
-                lzma_file.write(open(filepath, "rb").read())
+            with gzip.open(new_path, mode="wb", compresslevel=9) as gz_file:
+                gz_file.write(open(filepath, "rb").read())
         else:
             data["filename"] = filepath.name
             data["compression"] = False
@@ -161,12 +161,19 @@ class Registry(MutableMapping):
 
     def get_file(self, label: str) -> dict:
         metadata = self.__load()[label]
-        if metadata.get("compression") == "lzma":
+        compression = metadata.get("compression")
+        filepath = self.data_dir / metadata["filename"]
+        
+        if compression == "gzip":
+            with gzip.open(filepath, mode="rt", encoding="utf-8") as gz_file:
+                return json.load(gz_file)
+        elif compression == "lzma":
+            # Backward compatibility with existing .xz files
             return json.load(
                 lzma.LZMAFile(
-                    filename=self.data_dir / metadata["filename"],
+                    filename=filepath,
                     mode="rb",
                 )
             )
         else:
-            return json.load(open(self.data_dir / metadata["filename"]))
+            return json.load(open(filepath))
