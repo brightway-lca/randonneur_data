@@ -471,3 +471,275 @@ class TestRealRegistry:
             assert file_path.suffix == ".json"
         elif metadata["compression"] == "lzma":
             assert file_path.suffix == ".xz"
+
+
+class TestRegistryMethods:
+    """Tests for Registry class methods and dunder methods."""
+
+    def test_init_with_default_path(self, temp_dir):
+        """Test Registry initialization with default path."""
+        registry = Registry()
+        assert registry.data_dir == DEFAULT_DATA_DIR
+        assert registry.registry_fp == DEFAULT_DATA_DIR / "registry.json"
+
+    def test_init_with_custom_path(self, temp_dir):
+        """Test Registry initialization with custom filepath."""
+        custom_registry_path = temp_dir / "custom_registry.json"
+        registry = Registry(filepath=custom_registry_path)
+        assert registry.registry_fp == custom_registry_path
+        assert registry.data_dir == temp_dir
+
+    def test_registry_creates_empty_if_missing(self, temp_dir):
+        """Test that registry creates empty dict if file doesn't exist."""
+        non_existent = temp_dir / "missing.json"
+        registry = Registry(filepath=non_existent)
+        # Should create empty registry
+        assert len(registry) == 0
+        assert non_existent.exists()
+
+    def test_str_representation(self, registry):
+        """Test __str__ method."""
+        # Add a test entry
+        registry["test-entry"] = {
+            "name": "test-entry",
+            "description": "Test description",
+            "source_id": "source",
+            "target_id": "target",
+            "graph_context": ["edges"],
+            "contributors": [
+                {"title": "Author", "role": "author"}
+            ],
+            "licenses": [{"name": "MIT"}],
+            "version": "1.0.0",
+        }
+        
+        str_repr = str(registry)
+        assert "randonneur_data" in str_repr
+        assert "test-entry" in str_repr
+        assert "Test description" in str_repr
+        assert "source" in str_repr
+        assert "target" in str_repr
+        assert "Author (author)" in str_repr
+
+    def test_repr_representation(self, registry):
+        """Test __repr__ method."""
+        repr_str = repr(registry)
+        assert "randonneur_data" in repr_str
+        assert "registry" in repr_str.lower()
+        assert str(registry.data_dir) in repr_str
+
+    def test_delitem_removes_entry(self, registry):
+        """Test __delitem__ removes entries."""
+        registry["test-delete"] = {"name": "test-delete"}
+        assert "test-delete" in registry
+        
+        del registry["test-delete"]
+        assert "test-delete" not in registry
+
+    def test_hash_implementation(self, registry):
+        """Test __hash__ method raises TypeError (dicts are not hashable)."""
+        # Note: The current implementation tries to hash a dict which raises TypeError
+        # This documents the existing behavior - dicts are unhashable
+        with pytest.raises(TypeError, match="unhashable type"):
+            hash(registry)
+
+    def test_get_file_raises_keyerror_for_missing_label(self, registry):
+        """Test that get_file raises KeyError for missing label."""
+        with pytest.raises(KeyError):
+            registry.get_file("non-existent-entry")
+
+    def test_add_file_with_string_path(self, registry, temp_dir):
+        """Test add_file accepts string paths (converts to Path)."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-string.json"
+        datapackage = create_minimal_datapackage("test-string", size=100)
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        
+        # Pass as string
+        result_path = registry.add_file(str(test_file))
+        assert result_path.exists()
+        assert "test-string" in registry
+
+    def test_add_file_replace_false_raises_when_exists(self, registry, temp_dir):
+        """Test add_file raises ValueError when file exists and replace=False."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-duplicate.json"
+        datapackage = create_minimal_datapackage("test-duplicate", size=100)
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        
+        # Add file first time
+        registry.add_file(test_file)
+        
+        # Try to add again without replace
+        with pytest.raises(ValueError, match="already exists and `replace` is `False`"):
+            registry.add_file(test_file, replace=False)
+
+    def test_add_file_replace_true_overwrites(self, registry, temp_dir):
+        """Test add_file with replace=True overwrites existing file."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-replace.json"
+        datapackage1 = create_minimal_datapackage("test-replace", size=100)
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage1, f)
+        
+        registry.validate_file = lambda x: None
+        
+        # Add file first time
+        result1 = registry.add_file(test_file)
+        assert result1.exists()
+        assert registry["test-replace"]["description"] == "Test datapackage test-replace"
+        
+        # Modify the datapackage
+        datapackage2 = create_minimal_datapackage("test-replace", size=100)
+        datapackage2["description"] = "Modified description"
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage2, f)
+        
+        # Add with replace=True
+        result2 = registry.add_file(test_file, replace=True)
+        assert registry["test-replace"]["description"] == "Modified description"
+
+    def test_sample_method_with_verb(self, registry, temp_dir):
+        """Test sample method with specific verb."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-sample.json"
+        
+        datapackage = create_minimal_datapackage("test-sample", size=100)
+        # Add some verb data
+        datapackage["create"] = [
+            {"source": {"id": f"item-{i}"}, "target": {"id": f"target-{i}"}}
+            for i in range(10)
+        ]
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        registry.add_file(test_file)
+        
+        # Sample with verb
+        samples = registry.sample("test-sample", number=3, verb="create")
+        assert "create" in samples
+        assert len(samples["create"]) == 3
+        assert all("source" in item for item in samples["create"])
+
+    def test_sample_method_without_verb(self, registry, temp_dir):
+        """Test sample method without verb (all verbs)."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-sample-all.json"
+        
+        datapackage = create_minimal_datapackage("test-sample-all", size=100)
+        datapackage["create"] = [
+            {"source": {"id": f"item-{i}"}, "target": {"id": f"target-{i}"}}
+            for i in range(5)
+        ]
+        datapackage["update"] = [
+            {"source": {"id": f"item-{i}"}, "target": {"id": f"target-{i}"}}
+            for i in range(3)
+        ]
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        registry.add_file(test_file)
+        
+        # Sample without verb
+        samples = registry.sample("test-sample-all", number=2)
+        assert "create" in samples
+        assert "update" in samples
+        assert len(samples["create"]) == 2
+        assert len(samples["update"]) == 2
+
+    def test_sample_method_raises_on_missing_verb(self, registry, temp_dir):
+        """Test sample method raises KeyError when verb doesn't exist."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-sample-error.json"
+        
+        datapackage = create_minimal_datapackage("test-sample-error", size=100)
+        # No verb data
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        registry.add_file(test_file)
+        
+        # Should raise KeyError
+        with pytest.raises(KeyError, match="not given in datapackage"):
+            registry.sample("test-sample-error", verb="create")
+
+    def test_sample_method_limits_to_available_count(self, registry, temp_dir):
+        """Test sample method limits number to available items."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-sample-limit.json"
+        
+        datapackage = create_minimal_datapackage("test-sample-limit", size=100)
+        # Only 2 items
+        datapackage["create"] = [
+            {"source": {"id": "item-1"}, "target": {"id": "target-1"}},
+            {"source": {"id": "item-2"}, "target": {"id": "target-2"}},
+        ]
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        registry.add_file(test_file)
+        
+        # Request 10 but only 2 available
+        samples = registry.sample("test-sample-limit", number=10, verb="create")
+        assert len(samples["create"]) == 2
+
+    def test_schema_method(self, registry, temp_dir):
+        """Test schema method returns mapping."""
+        source_dir = temp_dir / "source"
+        source_dir.mkdir()
+        test_file = source_dir / "test-schema.json"
+        
+        datapackage = create_minimal_datapackage("test-schema", size=100)
+        expected_mapping = datapackage["mapping"]
+        
+        with open(test_file, "w") as f:
+            json.dump(datapackage, f)
+        
+        registry.validate_file = lambda x: None
+        registry.add_file(test_file)
+        
+        schema = registry.schema("test-schema")
+        assert schema == expected_mapping
+        assert "source" in schema
+        assert "target" in schema
+
+    def test_mutable_mapping_interface(self, registry):
+        """Test that Registry implements MutableMapping correctly."""
+        # Test __setitem__, __getitem__, __contains__, __len__, __iter__
+        registry["test1"] = {"name": "test1"}
+        registry["test2"] = {"name": "test2"}
+        
+        assert "test1" in registry
+        assert "test2" in registry
+        assert len(registry) == 2
+        assert registry["test1"]["name"] == "test1"
+        
+        # Test iteration
+        keys = list(registry)
+        assert "test1" in keys
+        assert "test2" in keys
