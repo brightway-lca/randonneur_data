@@ -1,0 +1,130 @@
+{
+  "name": "ecoinvent-3.6-biosphere-ecoinvent-3.7-biosphere",
+  "description": "ecoinvent elementary flow correspondence from 3.6 to 3.7",
+  "contributors": [
+    {
+      "title": "Chris Mutel",
+      "roles": [
+        "author"
+      ],
+      "path": "https://chris.mutel.org"
+    }
+  ],
+  "created": "2025-11-15T13:45:37.764969+00:00",
+  "version": "1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "graph_context": [
+    "edges"
+  ],
+  "mapping": {
+    "source": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    },
+    "target": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    }
+  },
+  "source_id": "ecoinvent-3.6-biosphere",
+  "target_id": "ecoinvent-3.7-biosphere",
+  "update": [
+    {
+      "source": {
+        "identifier": "d22719d0-8afd-45d3-b9eb-222112f84cc7",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in water"
+        ],
+        "name": "Fish, pelagic, in ocean"
+      },
+      "target": {
+        "identifier": "d22719d0-8afd-45d3-b9eb-222112f84cc7",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "biotic"
+        ],
+        "name": "Fish, pelagic, in ocean"
+      },
+      "comment": "Changed context from 3.6 to 3.7.",
+      "source_version": "ecoinvent-3.6-biosphere",
+      "target_version": "ecoinvent-3.7-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "55219a64-a6ed-4675-9210-7ed14c82a05f",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in water"
+        ],
+        "name": "Fish, demersal, in ocean"
+      },
+      "target": {
+        "identifier": "55219a64-a6ed-4675-9210-7ed14c82a05f",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "biotic"
+        ],
+        "name": "Fish, demersal, in ocean"
+      },
+      "comment": "Changed context from 3.6 to 3.7.",
+      "source_version": "ecoinvent-3.6-biosphere",
+      "target_version": "ecoinvent-3.7-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "fa8bd05b-015d-5a82-878c-bde991551695",
+        "unit": "kg",
+        "context": [
+          "water",
+          "unspecified"
+        ],
+        "name": "Acrolein",
+        "cas_number": "000108-99-6"
+      },
+      "target": {
+        "identifier": "fa8bd05b-015d-5a82-878c-bde991551695",
+        "unit": "kg",
+        "context": [
+          "water",
+          "unspecified"
+        ],
+        "name": "Acrolein",
+        "cas_number": "000107-02-8"
+      },
+      "comment": "Changed cas_number from 3.6 to 3.7.",
+      "source_version": "ecoinvent-3.6-biosphere",
+      "target_version": "ecoinvent-3.7-biosphere"
+    }
+  ]
+}

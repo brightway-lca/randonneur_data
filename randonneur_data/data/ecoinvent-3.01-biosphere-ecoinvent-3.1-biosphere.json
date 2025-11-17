@@ -1,0 +1,3125 @@
+{
+  "name": "ecoinvent-3.01-biosphere-ecoinvent-3.1-biosphere",
+  "description": "ecoinvent elementary flow correspondence from 3.01 to 3.1",
+  "contributors": [
+    {
+      "title": "Chris Mutel",
+      "roles": [
+        "author"
+      ],
+      "path": "https://chris.mutel.org"
+    }
+  ],
+  "created": "2025-11-15T13:45:40.475502+00:00",
+  "version": "1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "graph_context": [
+    "edges"
+  ],
+  "mapping": {
+    "source": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    },
+    "target": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    }
+  },
+  "source_id": "ecoinvent-3.01-biosphere",
+  "target_id": "ecoinvent-3.1-biosphere",
+  "update": [
+    {
+      "source": {
+        "identifier": "c10f1360-e1dc-44fa-8c2d-00bdd8524724",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Azinphos-methyl",
+        "synonyms": [
+          "GUTHION (AZINPHOS-METHYL)",
+          "guthion",
+          "O,O-dimethyl S-(1,2,3-benzotriazinyl-4-keto)methyl phosphorodithioate",
+          "Gusathion",
+          "N-methylbenzazimide, dimethyl dithiophosphoric acid ester",
+          " crysthyon",
+          " Guthion, Gusation",
+          "Gusthion M",
+          "Guthion(R)",
+          " Gusathion M",
+          " metiltriazotion",
+          " methylazinphos",
+          "gusathion-20",
+          "O,O-dimethyl S-(3,4-dihydro-4-keto-1,2,3-benzotriazinyl-3-methyl) dithiophosphat",
+          "Methyl gusathion",
+          "crysthion 2l",
+          "gothnion",
+          "Gution",
+          "gusathion k",
+          "Crysthyon 2L",
+          " gusathion methyl",
+          " DBD",
+          "Methyl guthion",
+          "Ketokil No. 52",
+          "gusathion 25"
+        ],
+        "cas_number": "000086-50-0"
+      },
+      "target": {
+        "identifier": "c10f1360-e1dc-44fa-8c2d-00bdd8524724",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Azinphos-methyl",
+        "synonyms": [
+          "GUTHION (AZINPHOS-METHYL)",
+          "guthion",
+          "O,O-dimethyl S-(1,2,3-benzotriazinyl-4-keto)methyl phosphorodithioate",
+          "Gusathion",
+          "N-methylbenzazimide, dimethyl dithiophosphoric acid ester",
+          " crysthyon",
+          "Ketokil No. 52",
+          "gusathion 25",
+          "Gution",
+          "gusathion k",
+          "Crysthyon 2L",
+          " gusathion methyl",
+          " DBD",
+          "Methyl guthion",
+          "gusathion-20",
+          "O,O-dimethyl S-(3,4-dihydro-4-keto-1,2,3-benzotriazinyl-3-methyl) dithiophosphat",
+          "Methyl gusathion",
+          "crysthion 2l",
+          "gothnion",
+          " Guthion, Gusation",
+          "Gusthion M",
+          "Guthion(R)",
+          " Gusathion M",
+          " metiltriazotion",
+          " methylazinphos"
+        ],
+        "cas_number": "000086-50-0"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "5d02269c-1130-47a5-aa86-00d79802dc88",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Thiobencarb",
+        "synonyms": [
+          " 4-Chlorobenzyl N,N-diethylthiocarbamate",
+          "4-Chlorobenzyl diethylthiolcarbamate",
+          " Toluenethiol, p-chloro-, diethylcarbamate",
+          " Bolero",
+          " THIOBENCARB (SATURN)",
+          " S-((4-chlorophenyl)methyl) diethylcarbamothioate",
+          " IMC 3950",
+          " Saturn",
+          " Bolero 8E",
+          " diethylcarbamothioic acid S-[(4-chlorophenyl)methyl] ester",
+          " Bencarb",
+          " Carbamic acid, diethylthio-, S-(p-chlorobenzyl)ester",
+          " benthiocarb",
+          "thiobencarb atrazine"
+        ],
+        "cas_number": "028249-77-6"
+      },
+      "target": {
+        "identifier": "5d02269c-1130-47a5-aa86-00d79802dc88",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Thiobencarb",
+        "synonyms": [
+          " 4-Chlorobenzyl N,N-diethylthiocarbamate",
+          "4-Chlorobenzyl diethylthiolcarbamate",
+          " Toluenethiol, p-chloro-, diethylcarbamate",
+          " Bolero",
+          " THIOBENCARB (SATURN)",
+          " S-((4-chlorophenyl)methyl) diethylcarbamothioate",
+          " benthiocarb",
+          "thiobencarb atrazine",
+          " IMC 3950",
+          " Saturn",
+          " Bolero 8E",
+          " diethylcarbamothioic acid S-[(4-chlorophenyl)methyl] ester",
+          " Bencarb",
+          " Carbamic acid, diethylthio-, S-(p-chlorobenzyl)ester"
+        ],
+        "cas_number": "028249-77-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "934c5e25-5370-421c-b079-07d01c49dedb",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diuron",
+        "synonyms": [
+          " Diurex",
+          " Diater",
+          " DMU",
+          " Di-on",
+          "Diuron 4L",
+          " Aguron",
+          " Cekiuron",
+          " Karmex DL",
+          " Vonduron",
+          " Direx 80W",
+          " 3-(3,4-Dichlorophenyl)-1,1-Dimethylurea",
+          " 1-(3,4-Dichlorophenyl)-3,3-dimethylurea",
+          " DCMU",
+          " Karmex 80W",
+          " M Velpar",
+          " Unidron",
+          " Urox D",
+          " Karmex",
+          " Direx 4L",
+          " Diuron 80",
+          " N'-(3,4-Dichlorophenyl)-N,N-Dimethylurea",
+          " Drexel diuron 4L",
+          " Dynex",
+          " Dailon",
+          " Xarmex, Krovar",
+          " Crisuron",
+          "1,1-Dimethyl-3-(3,4-Dichlorophenyl)urea"
+        ],
+        "cas_number": "000330-54-1"
+      },
+      "target": {
+        "identifier": "934c5e25-5370-421c-b079-07d01c49dedb",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diuron",
+        "synonyms": [
+          " Diurex",
+          " Diater",
+          " DMU",
+          " Di-on",
+          "Diuron 4L",
+          " Aguron",
+          " Xarmex, Krovar",
+          " Crisuron",
+          "1,1-Dimethyl-3-(3,4-Dichlorophenyl)urea",
+          " Direx 4L",
+          " Diuron 80",
+          " N'-(3,4-Dichlorophenyl)-N,N-Dimethylurea",
+          " Drexel diuron 4L",
+          " Dynex",
+          " Dailon",
+          " DCMU",
+          " Karmex 80W",
+          " M Velpar",
+          " Unidron",
+          " Urox D",
+          " Karmex",
+          " Cekiuron",
+          " Karmex DL",
+          " Vonduron",
+          " Direx 80W",
+          " 3-(3,4-Dichlorophenyl)-1,1-Dimethylurea",
+          " 1-(3,4-Dichlorophenyl)-3,3-dimethylurea"
+        ],
+        "cas_number": "000330-54-1"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "ef4884eb-c75d-4ef8-9170-11b20401cbca",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "MSMA",
+        "synonyms": [
+          " Clean Crop MSMA 6 Plus",
+          " Trans-Vert",
+          " monosodium acid metharsonate",
+          " MSMA",
+          " methylarsonic acid, monosodium salt",
+          " Drexel MSMA 6 Plus",
+          " Ansar 170",
+          " phyban",
+          " Weed-s-rad",
+          " Methanearsonic acid sodium salt",
+          "Ansar",
+          " Drexel MSMA 6.6",
+          " Weed-Hoe",
+          " Vertac MSMA 660",
+          " methylarsenic acid, sodium salt",
+          " sodium acid methanearsonate",
+          " Arsanote",
+          " Bueno 6",
+          " Mesamate",
+          " methanearsonic acid, monosodium salt",
+          " Merge",
+          " Target MSMA",
+          " Daconate 6",
+          " Arsonate",
+          " Bueno",
+          " silvisar 550",
+          " Phyban H.C.",
+          " Monosodium methanearsonate",
+          " Vertac MSMA 600",
+          " Monosodium Acid Methanearsonate",
+          " Ansar 6.6",
+          " Dal-E-Rad",
+          " Monosodium methylarsonate",
+          " Vertac MSMA 400",
+          " weed 108",
+          " Monate merge 823",
+          " Merge 823",
+          " Ansar 529",
+          " Clean Crop MSMA 6.6",
+          " Herb-All",
+          " Deconate",
+          " Drexar 530"
+        ],
+        "cas_number": "002163-80-6"
+      },
+      "target": {
+        "identifier": "ef4884eb-c75d-4ef8-9170-11b20401cbca",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "MSMA",
+        "synonyms": [
+          " Clean Crop MSMA 6 Plus",
+          " Trans-Vert",
+          " monosodium acid metharsonate",
+          " MSMA",
+          " methylarsonic acid, monosodium salt",
+          " Drexel MSMA 6 Plus",
+          " Drexar 530",
+          " Monate merge 823",
+          " Merge 823",
+          " Ansar 529",
+          " Clean Crop MSMA 6.6",
+          " Herb-All",
+          " Deconate",
+          " Monosodium Acid Methanearsonate",
+          " Ansar 6.6",
+          " Dal-E-Rad",
+          " Monosodium methylarsonate",
+          " Vertac MSMA 400",
+          " weed 108",
+          " Arsonate",
+          " Bueno",
+          " silvisar 550",
+          " Phyban H.C.",
+          " Monosodium methanearsonate",
+          " Vertac MSMA 600",
+          " Bueno 6",
+          " Mesamate",
+          " methanearsonic acid, monosodium salt",
+          " Merge",
+          " Target MSMA",
+          " Daconate 6",
+          " Weed-Hoe",
+          " Vertac MSMA 660",
+          " methylarsenic acid, sodium salt",
+          " sodium acid methanearsonate",
+          " Arsanote",
+          " Ansar 170",
+          " phyban",
+          " Weed-s-rad",
+          " Methanearsonic acid sodium salt",
+          "Ansar",
+          " Drexel MSMA 6.6"
+        ],
+        "cas_number": "002163-80-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "82688564-c9d5-43ab-876e-1eb16fd97130",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Sethoxydim",
+        "synonyms": [
+          " sethodydim",
+          " 2-[1-(Ethoxyimino)butyl]-5-[2-(ethylthio)propyl]-3-hydroxy-2-cyclohexen-1-one",
+          " Fervinal",
+          " Alloxol S",
+          " Poast 1.5E",
+          "2-[1-(Ethoximino)butyl]-5-[2-(ethylthio)-propyl]-3-hydroxy-2-cyclohexen-1-one",
+          " Poast plus",
+          " Checkmate",
+          " Aljaden",
+          " Poast",
+          " BAS 9052",
+          " AS 9052 O H",
+          " 2-(N-ethoxybutyrimidoyl)-5-(2-ethylthiopropyl)-3-hydroxy-2-cyclohexen-1-one",
+          " Nabu",
+          " NP 55",
+          " Cyethoxydim",
+          " Expand",
+          "Tritex-extra"
+        ],
+        "cas_number": "074051-80-2"
+      },
+      "target": {
+        "identifier": "82688564-c9d5-43ab-876e-1eb16fd97130",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Sethoxydim",
+        "synonyms": [
+          " sethodydim",
+          " 2-[1-(Ethoxyimino)butyl]-5-[2-(ethylthio)propyl]-3-hydroxy-2-cyclohexen-1-one",
+          " Fervinal",
+          " Alloxol S",
+          " Poast 1.5E",
+          "2-[1-(Ethoximino)butyl]-5-[2-(ethylthio)-propyl]-3-hydroxy-2-cyclohexen-1-one",
+          " 2-(N-ethoxybutyrimidoyl)-5-(2-ethylthiopropyl)-3-hydroxy-2-cyclohexen-1-one",
+          " Nabu",
+          " NP 55",
+          " Cyethoxydim",
+          " Expand",
+          "Tritex-extra",
+          " Poast plus",
+          " Checkmate",
+          " Aljaden",
+          " Poast",
+          " BAS 9052",
+          " AS 9052 O H"
+        ],
+        "cas_number": "074051-80-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "21b5487b-4086-490b-9f98-1f5503feee7c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Ethoprop",
+        "synonyms": [
+          "O-ethyl S,S-dipropyl dithiophosphate",
+          " phosethoprop",
+          " Prophos",
+          " Ethyl S,S-dipropyl phosphorodithioate",
+          " JOLT",
+          " O-Ethyl-S,S-dipropylphosphorodithioate",
+          " S,S-Dipropyl O-ethyl phosphorodithioate",
+          " Mocap",
+          " Holdem",
+          " ethoprophos",
+          " Rovokil",
+          " Phosphorodithioic acid O-ethyl S,S-dipropyl ester",
+          " ethoprop",
+          " MOCAP 10G"
+        ],
+        "cas_number": "013194-48-4"
+      },
+      "target": {
+        "identifier": "21b5487b-4086-490b-9f98-1f5503feee7c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Ethoprop",
+        "synonyms": [
+          "O-ethyl S,S-dipropyl dithiophosphate",
+          " phosethoprop",
+          " Prophos",
+          " Ethyl S,S-dipropyl phosphorodithioate",
+          " JOLT",
+          " O-Ethyl-S,S-dipropylphosphorodithioate",
+          " ethoprop",
+          " MOCAP 10G",
+          " S,S-Dipropyl O-ethyl phosphorodithioate",
+          " Mocap",
+          " Holdem",
+          " ethoprophos",
+          " Rovokil",
+          " Phosphorodithioic acid O-ethyl S,S-dipropyl ester"
+        ],
+        "cas_number": "013194-48-4"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "9d32dff3-1e0e-44e1-8dab-2534399d5353",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "DSMA",
+        "synonyms": [
+          " Dinate",
+          " Disodium Acid Methane Arsenate",
+          "Ansar 184",
+          " Crab-E-Rad",
+          " Weedone Crabgrass Killer",
+          " Weed-E-Rad 360",
+          " Diarsen",
+          " Maa, disodium salt",
+          " Methar",
+          " Ansar 8100",
+          " Jon-trol",
+          " disodium methylarsonate",
+          " Vertac dsma-lq",
+          " Metharsinat",
+          " Chipco crab-kleen",
+          " Di-Tac",
+          " Weed-e-rad",
+          " Disodium monomethylarsonate",
+          " Methar 30",
+          " Disodium methanearsonate",
+          " Arrhenal",
+          " Sodar",
+          " DAL-E-RAD 100",
+          " Versar DSMA-LQ",
+          " Metharsan",
+          " DSMA",
+          " Methanearsonic acid, disodium salt",
+          " Arsinyl",
+          " DMSA",
+          " Namate",
+          " Methanearsonic Acid Na",
+          " Methylarsonic acid, disodium salt",
+          " Scotts Clout",
+          " Calar-e-rad"
+        ],
+        "cas_number": "000144-21-8"
+      },
+      "target": {
+        "identifier": "9d32dff3-1e0e-44e1-8dab-2534399d5353",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "DSMA",
+        "synonyms": [
+          " Dinate",
+          " Disodium Acid Methane Arsenate",
+          "Ansar 184",
+          " Crab-E-Rad",
+          " Weedone Crabgrass Killer",
+          " Weed-E-Rad 360",
+          " Methanearsonic Acid Na",
+          " Methylarsonic acid, disodium salt",
+          " Scotts Clout",
+          " Calar-e-rad",
+          " Metharsan",
+          " DSMA",
+          " Methanearsonic acid, disodium salt",
+          " Arsinyl",
+          " DMSA",
+          " Namate",
+          " Methar 30",
+          " Disodium methanearsonate",
+          " Arrhenal",
+          " Sodar",
+          " DAL-E-RAD 100",
+          " Versar DSMA-LQ",
+          " Vertac dsma-lq",
+          " Metharsinat",
+          " Chipco crab-kleen",
+          " Di-Tac",
+          " Weed-e-rad",
+          " Disodium monomethylarsonate",
+          " Diarsen",
+          " Maa, disodium salt",
+          " Methar",
+          " Ansar 8100",
+          " Jon-trol",
+          " disodium methylarsonate"
+        ],
+        "cas_number": "000144-21-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "b268aafb-2e5a-4bb1-a3ab-37f378ee8090",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Phosmet",
+        "synonyms": [
+          " Imidan",
+          " Phthalimidomethyl-O,O-dimethyl phosphorodithioate",
+          " Decemthion",
+          " PMP",
+          " Ftalophos",
+          " Decemthion P-6",
+          "Appa",
+          " Phthalophos",
+          "Phthalimide, N-(mercaptomethyl)-, S-ester with O,O-dimethyl phosphorodithioate",
+          " Dimethylphthalimidiomethyl dithiophosphate",
+          " Kemolate",
+          " Prolate",
+          " Dimethyl S-(phthalimidomethyl) phosphorodithioate",
+          " Dimethyl phosphorodithioate S-ester with N-(mercaptomethyl)phthalimide",
+          " Percolate",
+          " Smidan",
+          " Stauffer R-1504"
+        ],
+        "cas_number": "000732-11-6"
+      },
+      "target": {
+        "identifier": "b268aafb-2e5a-4bb1-a3ab-37f378ee8090",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Phosmet",
+        "synonyms": [
+          " Imidan",
+          " Phthalimidomethyl-O,O-dimethyl phosphorodithioate",
+          " Decemthion",
+          " PMP",
+          " Ftalophos",
+          " Decemthion P-6",
+          " Dimethyl S-(phthalimidomethyl) phosphorodithioate",
+          " Dimethyl phosphorodithioate S-ester with N-(mercaptomethyl)phthalimide",
+          " Percolate",
+          " Smidan",
+          " Stauffer R-1504",
+          "Appa",
+          " Phthalophos",
+          "Phthalimide, N-(mercaptomethyl)-, S-ester with O,O-dimethyl phosphorodithioate",
+          " Dimethylphthalimidiomethyl dithiophosphate",
+          " Kemolate",
+          " Prolate"
+        ],
+        "cas_number": "000732-11-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "13be989f-9a8e-420d-b27d-47c3565eb77c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Piperonyl butoxide",
+        "synonyms": [
+          " pyrenone 606",
+          " butocide",
+          " Vex",
+          " pybuthrin",
+          " 4,5-Methylenedioxy-2-propylbenzyldiethyleneglycol butyl ether",
+          " 6-Propylpiperonyl Butyl Diethylene Glycol Ether",
+          " 5-((2-(2-butoxyethoxy)ethoxy)methyl)-6-propyl-1,3-benzodioxole",
+          "(3,4-methylenedioxy-6-propylbenzyl)(butyl) diethylene glycol ether",
+          " 6-(propylpiperonyl)-butyl carbityl ether",
+          " Propylpiperonyl butyl diethyleneglycol ether",
+          " synpren-fish",
+          " Scourge",
+          " PB",
+          " Alleviate",
+          " 3,4-Methylenedioxy-6-propylbenzyl n-butyl diethylene glycol ether",
+          " butyl-carbityl (6-propylpiperonyl) ether",
+          " Obilique",
+          " nia 5273",
+          " Butacide",
+          " alpha-(2-(2-butoxyethoxy)ethoxy)-4,5-methylenedioxy-2-propyltoluene",
+          " Benzodioxole, 5-((2-(2-butoxyethoxy)ethoxy)methyl)-6-propyl-",
+          " butyl carbitol 6-propylpiperonyl ether"
+        ],
+        "cas_number": "000051-03-6"
+      },
+      "target": {
+        "identifier": "13be989f-9a8e-420d-b27d-47c3565eb77c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Piperonyl butoxide",
+        "synonyms": [
+          " pyrenone 606",
+          " butocide",
+          " Vex",
+          " pybuthrin",
+          " 4,5-Methylenedioxy-2-propylbenzyldiethyleneglycol butyl ether",
+          " nia 5273",
+          " Butacide",
+          " alpha-(2-(2-butoxyethoxy)ethoxy)-4,5-methylenedioxy-2-propyltoluene",
+          " Benzodioxole, 5-((2-(2-butoxyethoxy)ethoxy)methyl)-6-propyl-",
+          " butyl carbitol 6-propylpiperonyl ether",
+          " Scourge",
+          " PB",
+          " Alleviate",
+          " 3,4-Methylenedioxy-6-propylbenzyl n-butyl diethylene glycol ether",
+          " butyl-carbityl (6-propylpiperonyl) ether",
+          " Obilique",
+          " 6-Propylpiperonyl Butyl Diethylene Glycol Ether",
+          " 5-((2-(2-butoxyethoxy)ethoxy)methyl)-6-propyl-1,3-benzodioxole",
+          "(3,4-methylenedioxy-6-propylbenzyl)(butyl) diethylene glycol ether",
+          " 6-(propylpiperonyl)-butyl carbityl ether",
+          " Propylpiperonyl butyl diethyleneglycol ether",
+          " synpren-fish"
+        ],
+        "cas_number": "000051-03-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "2bf4e40e-ed11-457a-ae60-53a5cc43fdc7",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox 216",
+          " Lannate(R)",
+          " Lannabait",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " Lanox",
+          " Nu-bait II",
+          " LANOX 90",
+          " Lannate LB",
+          " Lannate",
+          "Methomyl 5G",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          " Insecticide 1179",
+          " Nudrin",
+          " Mesomile"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "target": {
+        "identifier": "2bf4e40e-ed11-457a-ae60-53a5cc43fdc7",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox 216",
+          " Lannate(R)",
+          " Lannabait",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " Lanox",
+          " Nu-bait II",
+          " Nudrin",
+          " Mesomile",
+          " LANOX 90",
+          " Lannate LB",
+          " Lannate",
+          "Methomyl 5G",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          " Insecticide 1179"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "2d9f9c6b-8dca-4641-8ff9-53cb8beabd13",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Lead, Pb 0.014%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, in ore, in ground",
+        "cas_number": "007439-92-1"
+      },
+      "target": {
+        "identifier": "2d9f9c6b-8dca-4641-8ff9-53cb8beabd13",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Lead, Pb 0.014%, in mixed ore, in ground",
+        "cas_number": "007439-92-1"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "5afa470c-ab8c-4ec3-8a18-5c0bed973571",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Copper, Cu 0.38%, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Pb 0.014%, in ore, in ground",
+        "cas_number": "007440-50-8"
+      },
+      "target": {
+        "identifier": "5afa470c-ab8c-4ec3-8a18-5c0bed973571",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Copper, Cu 0.38%, in mixed ore, in ground",
+        "cas_number": "007440-50-8"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "98287294-2ab7-4781-bb9e-5d045cdce2a2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Dicrotophos",
+        "synonyms": [
+          "Phosphoric acid (E)-3-(dimethylamino)-1-methyl-3-oxo-1-propenyl dimethyl ester",
+          "Bidrin",
+          " Crotonamide, 3-hydroxy-N,N-dimethyl-, cis-, dimethyl phosphate",
+          " Dimethyl phosphate ester with 3-hydroxy-N,N-dimethyl-cis-crotonamide",
+          " Dimethyl O-(N,N-dimethylcarbamoyl-1-methylvinyl) phosphate",
+          "Diapadrin",
+          " Dimethyl cis-2-dimethylcarbamoyl-1-methylvinyl phosphate",
+          " Bidirl",
+          " Dimethylcarbamoyl-1-methylvinyl dimethylphosphate",
+          "dimethyl 1-methyl-3-(N,N-dimethylamino)-3-oxo-1-propenyl phosphate, (E)-",
+          " Carbicron",
+          " Carbomicron",
+          " Dicrotophos",
+          " C709",
+          " Hydroxy-N,N-dimethyl-cis-crotonamide dimethyl phosphate",
+          " Karbicron",
+          " Penetrex",
+          " Mauget Inject-A-Cide B",
+          " Ektafos",
+          " SD3562",
+          " Oleobidrin",
+          " Chiles' Go-Better"
+        ],
+        "cas_number": "000141-66-2"
+      },
+      "target": {
+        "identifier": "98287294-2ab7-4781-bb9e-5d045cdce2a2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Dicrotophos",
+        "synonyms": [
+          "Phosphoric acid (E)-3-(dimethylamino)-1-methyl-3-oxo-1-propenyl dimethyl ester",
+          "Bidrin",
+          " Crotonamide, 3-hydroxy-N,N-dimethyl-, cis-, dimethyl phosphate",
+          " Dimethyl phosphate ester with 3-hydroxy-N,N-dimethyl-cis-crotonamide",
+          " Dimethyl O-(N,N-dimethylcarbamoyl-1-methylvinyl) phosphate",
+          "Diapadrin",
+          " Ektafos",
+          " SD3562",
+          " Oleobidrin",
+          " Chiles' Go-Better",
+          " Dicrotophos",
+          " C709",
+          " Hydroxy-N,N-dimethyl-cis-crotonamide dimethyl phosphate",
+          " Karbicron",
+          " Penetrex",
+          " Mauget Inject-A-Cide B",
+          " Dimethyl cis-2-dimethylcarbamoyl-1-methylvinyl phosphate",
+          " Bidirl",
+          " Dimethylcarbamoyl-1-methylvinyl dimethylphosphate",
+          "dimethyl 1-methyl-3-(N,N-dimethylamino)-3-oxo-1-propenyl phosphate, (E)-",
+          " Carbicron",
+          " Carbomicron"
+        ],
+        "cas_number": "000141-66-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "13825fb9-6e24-409a-bfcd-5dc4fd61ef98",
+        "unit": "kg",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "name": "Sulphur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "target": {
+        "identifier": "13825fb9-6e24-409a-bfcd-5dc4fd61ef98",
+        "unit": "kg",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "name": "Sulfur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "b00950bc-99cb-4ee2-bbc0-5f878ea170c3",
+        "unit": "kg",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "name": "Sulphur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "target": {
+        "identifier": "b00950bc-99cb-4ee2-bbc0-5f878ea170c3",
+        "unit": "kg",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "name": "Sulfur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "48430c70-95e0-4036-9854-72cc772ac8b2",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "name": "Sulphur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "target": {
+        "identifier": "48430c70-95e0-4036-9854-72cc772ac8b2",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "name": "Sulfur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "aeb3e625-906a-4993-9f02-785f8cfd1ea5",
+        "unit": "kg",
+        "context": [
+          "air",
+          "lower stratosphere + upper troposphere"
+        ],
+        "name": "Sulphur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "target": {
+        "identifier": "aeb3e625-906a-4993-9f02-785f8cfd1ea5",
+        "unit": "kg",
+        "context": [
+          "air",
+          "lower stratosphere + upper troposphere"
+        ],
+        "name": "Sulfur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "1e7ae105-f032-4d62-b169-788cd6b9b384",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Carboxin",
+        "synonyms": [
+          " Carboxanilido-2,3-dihydro-6-methyl-1,4-oxathiin",
+          "D 735",
+          " Krisvax",
+          "1,4-Oxathiin-3-carboxanilide, 5,6-dihydro-2-methyl-",
+          " Vitavax",
+          " 5,6-Dihydro-2-methyl-1,4-oxathiin-3-carboxanalide",
+          " Oxatin",
+          " Kemikar",
+          " Kisvax",
+          " F 735",
+          " DCMO",
+          " 2,3-Dihydro-5-carboxanilido-6-methyl-1,4-oxathiin",
+          " Vivatex",
+          " 5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide"
+        ],
+        "cas_number": "005234-68-4"
+      },
+      "target": {
+        "identifier": "1e7ae105-f032-4d62-b169-788cd6b9b384",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Carboxin",
+        "synonyms": [
+          " Carboxanilido-2,3-dihydro-6-methyl-1,4-oxathiin",
+          "D 735",
+          " Krisvax",
+          "1,4-Oxathiin-3-carboxanilide, 5,6-dihydro-2-methyl-",
+          " Vitavax",
+          " 2,3-Dihydro-5-carboxanilido-6-methyl-1,4-oxathiin",
+          " Vivatex",
+          " 5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide",
+          " 5,6-Dihydro-2-methyl-1,4-oxathiin-3-carboxanalide",
+          " Oxatin",
+          " Kemikar",
+          " Kisvax",
+          " F 735",
+          " DCMO"
+        ],
+        "cas_number": "005234-68-4"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "8939217c-4acd-48c2-8a19-7b3afb7e5d3b",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Dicofol",
+        "synonyms": [
+          " 1,1-bis-(chlorophenyl)-2,2,2-trichloroethanol",
+          "1,1-Bis-(p-chlorophenyl)-2,2,2-trichloroethanol",
+          " para,para'-kelthane",
+          " Decofol",
+          " FW 293",
+          " kelthanethanol",
+          " Bis(chlorophenyl)-2,2,2-trichloroethanol",
+          " keltane",
+          " Acarin",
+          " DTMC",
+          " dichlorokelthane",
+          " Carbox",
+          " Milbol",
+          " p,p'-Dicofol",
+          " Mifol",
+          " di-(p-chlorophenyl)trichloromethylcarbinol",
+          " Mitigan",
+          " 2,2,2-trichloro-1,1-bis(4-chlorophenyl)ethanol",
+          " 4-Chloro-alpha-(4-chlorophenyl)-alpha-(trichloromethyl)benzenemethanol",
+          " kelthane a",
+          " Kelthane",
+          " Cekudifol",
+          " hilfol 18.5 ec",
+          " CPCA",
+          " 4,4'-Dichloro-alpha-(trichloromethyl)benzhydrol",
+          "carbax",
+          " Hifol"
+        ],
+        "cas_number": "000115-32-2"
+      },
+      "target": {
+        "identifier": "8939217c-4acd-48c2-8a19-7b3afb7e5d3b",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Dicofol",
+        "synonyms": [
+          " 1,1-bis-(chlorophenyl)-2,2,2-trichloroethanol",
+          "1,1-Bis-(p-chlorophenyl)-2,2,2-trichloroethanol",
+          " para,para'-kelthane",
+          " Decofol",
+          " FW 293",
+          " kelthanethanol",
+          " CPCA",
+          " 4,4'-Dichloro-alpha-(trichloromethyl)benzhydrol",
+          "carbax",
+          " Hifol",
+          " 2,2,2-trichloro-1,1-bis(4-chlorophenyl)ethanol",
+          " 4-Chloro-alpha-(4-chlorophenyl)-alpha-(trichloromethyl)benzenemethanol",
+          " kelthane a",
+          " Kelthane",
+          " Cekudifol",
+          " hilfol 18.5 ec",
+          " Carbox",
+          " Milbol",
+          " p,p'-Dicofol",
+          " Mifol",
+          " di-(p-chlorophenyl)trichloromethylcarbinol",
+          " Mitigan",
+          " Bis(chlorophenyl)-2,2,2-trichloroethanol",
+          " keltane",
+          " Acarin",
+          " DTMC",
+          " dichlorokelthane"
+        ],
+        "cas_number": "000115-32-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "cd08eddd-d946-40cf-b0b5-87f6dbd7eb21",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Carbaryl",
+        "synonyms": [
+          " 1-naphthol methylcarbamate",
+          " Carbomate",
+          " Septene",
+          " Naphthyl N-methylcarbamate",
+          " Panam",
+          " Sevin",
+          " 1-naphthyl N-methylcarbamate",
+          " Padrin",
+          " Derbac",
+          " 1-naphthyl methylcarbamate",
+          " alpha-naphthyl N-methyl carbamate",
+          " Sevimol",
+          " Dicarbam",
+          " Devicarb",
+          " Savit",
+          " Ravyon",
+          " Tricarnam",
+          " Carbaril",
+          " Naphthyl methylcarbamate",
+          " Bug Master",
+          " Tornado",
+          " methylcarbamic acid 1-naphthyl ester",
+          " Tercyl",
+          "Carbatox",
+          " Carbamec",
+          " NAC",
+          "1-naphthalenol methylcarbamate",
+          " Denapon",
+          " Clinicide",
+          " Carbamine",
+          " Thinsec",
+          " Carpolin",
+          " Methyl-alpha-naphthylurethane",
+          " Murvin",
+          " Seffein",
+          " Hexavin",
+          " Karbaspray",
+          " Crunch",
+          " Carylderm",
+          " Patrin",
+          " Cekubaryl",
+          " OMS 29, UC 7744",
+          " Arylam"
+        ],
+        "cas_number": "000063-25-2"
+      },
+      "target": {
+        "identifier": "cd08eddd-d946-40cf-b0b5-87f6dbd7eb21",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Carbaryl",
+        "synonyms": [
+          " 1-naphthol methylcarbamate",
+          " Carbomate",
+          " Septene",
+          " Naphthyl N-methylcarbamate",
+          " Panam",
+          " Sevin",
+          " Arylam",
+          " Karbaspray",
+          " Crunch",
+          " Carylderm",
+          " Patrin",
+          " Cekubaryl",
+          " OMS 29, UC 7744",
+          " Thinsec",
+          " Carpolin",
+          " Methyl-alpha-naphthylurethane",
+          " Murvin",
+          " Seffein",
+          " Hexavin",
+          " Carbamec",
+          " NAC",
+          "1-naphthalenol methylcarbamate",
+          " Denapon",
+          " Clinicide",
+          " Carbamine",
+          " Naphthyl methylcarbamate",
+          " Bug Master",
+          " Tornado",
+          " methylcarbamic acid 1-naphthyl ester",
+          " Tercyl",
+          "Carbatox",
+          " Dicarbam",
+          " Devicarb",
+          " Savit",
+          " Ravyon",
+          " Tricarnam",
+          " Carbaril",
+          " 1-naphthyl N-methylcarbamate",
+          " Padrin",
+          " Derbac",
+          " 1-naphthyl methylcarbamate",
+          " alpha-naphthyl N-methyl carbamate",
+          " Sevimol"
+        ],
+        "cas_number": "000063-25-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "aa2f15ce-fc50-4252-89d8-89e06b4f588a",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Molinate",
+        "synonyms": [
+          " Yulan",
+          " Ethyl 1-hexamethyleneiminecarbothiolate",
+          " Felan",
+          " Hydram",
+          " Carbamothioic acid, N,N-hexamethylene-, S-ethyl ester",
+          "Ordram",
+          " Jalan",
+          " Carbamic acid, hexamethylenethio-, S-ethyl ester",
+          " Azepine-1-carbothioic acid, hexahydro-, S-ethyl ester",
+          "1H-Azepine-1 carbothioic acid, hexahydro-S-ethyl ester",
+          " hexahydro-1H-Azepine-1-carbothioic acid S-ethyl ester",
+          " Sakkimol",
+          " Ordram 8E",
+          " Yalan",
+          " Ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Ethyl 1-hexamethyleneiminecarbothioate",
+          " Ordram 10G",
+          " S-ethyl 1-hexamethyleneiminothiocarbamate",
+          " S-ethyl perhydroazepine-1-thiocarboxylate",
+          " S-ethyl hexahydro-1H-azepine-1-carbothioate"
+        ],
+        "cas_number": "002212-67-1"
+      },
+      "target": {
+        "identifier": "aa2f15ce-fc50-4252-89d8-89e06b4f588a",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Molinate",
+        "synonyms": [
+          " Yulan",
+          " Ethyl 1-hexamethyleneiminecarbothiolate",
+          " Felan",
+          " Hydram",
+          " Carbamothioic acid, N,N-hexamethylene-, S-ethyl ester",
+          " S-ethyl 1-hexamethyleneiminothiocarbamate",
+          " S-ethyl perhydroazepine-1-thiocarboxylate",
+          " S-ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Sakkimol",
+          " Ordram 8E",
+          " Yalan",
+          " Ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Ethyl 1-hexamethyleneiminecarbothioate",
+          " Ordram 10G",
+          "Ordram",
+          " Jalan",
+          " Carbamic acid, hexamethylenethio-, S-ethyl ester",
+          " Azepine-1-carbothioic acid, hexahydro-, S-ethyl ester",
+          "1H-Azepine-1 carbothioic acid, hexahydro-S-ethyl ester",
+          " hexahydro-1H-Azepine-1-carbothioic acid S-ethyl ester"
+        ],
+        "cas_number": "002212-67-1"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "cf3d3dbc-0e4b-402d-92a1-8ea6b4869ed5",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Gold, Au 9.7E-4%, Ag 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore, in ground",
+        "cas_number": "007440-57-5"
+      },
+      "target": {
+        "identifier": "cf3d3dbc-0e4b-402d-92a1-8ea6b4869ed5",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Gold, Au 9.7E-4%, in mixed ore, in ground",
+        "cas_number": "007440-57-5"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "aaa7a82f-7d09-48ed-8f08-8eb3c7eeb928",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Oxamyl",
+        "synonyms": [
+          " N',N'-dimethyl-N-[(methylcarbamoyl)oxy]-1-thiooxamimidic acid methyl ester",
+          " Thioxamyl",
+          " methyl 1-(dimethylcarbamoyl)-N-(methylcarbamoyloxy)thioformimidate",
+          " Methylcarbamic acid, o-((((dimethylcarbamoyl)methylthio)methylene)amino) deriv.",
+          " Vydate",
+          " Vydate L",
+          " S-methyl N',N'-dimethyl-N-(methylcarbamoyloxy)-1-thio-oxamimidate(I)",
+          " Oxamyl",
+          " Methyl N',N'-dimethyl-N-((methylcarbamoyl)oxy)-1-thiooxamimidate",
+          " dioxamyl",
+          " N,N-dimethyl-2-methylcarbamoyloxyimino-2-(methylthio)acetamide",
+          " N,N-dimethyl-alpha-methylcarbamoyloxyimino-alpha-(methylthio)acetamide",
+          " DPX 1410",
+          "Dimethylamino-1-(methylthio)glyoxal O-(methylcarbamoyl)monoxime",
+          " methyl 2-(dimethylamino)-N-[[(methylamino)carbonyl]oxy]-2-oxoethanimidothioate"
+        ],
+        "cas_number": "023135-22-0"
+      },
+      "target": {
+        "identifier": "aaa7a82f-7d09-48ed-8f08-8eb3c7eeb928",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Oxamyl",
+        "synonyms": [
+          " N',N'-dimethyl-N-[(methylcarbamoyl)oxy]-1-thiooxamimidic acid methyl ester",
+          " Thioxamyl",
+          " methyl 1-(dimethylcarbamoyl)-N-(methylcarbamoyloxy)thioformimidate",
+          " Methylcarbamic acid, o-((((dimethylcarbamoyl)methylthio)methylene)amino) deriv.",
+          " Vydate",
+          " Vydate L",
+          " DPX 1410",
+          "Dimethylamino-1-(methylthio)glyoxal O-(methylcarbamoyl)monoxime",
+          " methyl 2-(dimethylamino)-N-[[(methylamino)carbonyl]oxy]-2-oxoethanimidothioate",
+          " S-methyl N',N'-dimethyl-N-(methylcarbamoyloxy)-1-thio-oxamimidate(I)",
+          " Oxamyl",
+          " Methyl N',N'-dimethyl-N-((methylcarbamoyl)oxy)-1-thiooxamimidate",
+          " dioxamyl",
+          " N,N-dimethyl-2-methylcarbamoyloxyimino-2-(methylthio)acetamide",
+          " N,N-dimethyl-alpha-methylcarbamoyloxyimino-alpha-(methylthio)acetamide"
+        ],
+        "cas_number": "023135-22-0"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "9c649513-6b8d-4c6d-bb74-927cc1c8fc8d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Disulfoton",
+        "synonyms": [
+          "O,O-diethyl S-(2-(ethylthio)ethyl) phosphorodithioate",
+          " Dimaz",
+          " Diethyl S-(2-(ethylthio)ethyl) phosphorodithioate",
+          " Disyston(R)",
+          " Terraclor Super-X",
+          "disulfoton+",
+          " Glebofos",
+          " Root-X",
+          " Diethyl S-(2-ethylmercaptoethyl) dithiophosphate",
+          " Dot-Son Brand Stand-Aid",
+          " Dithiosystox",
+          " thiometon-ethyl",
+          " Di-Syston",
+          " BAY 19639",
+          " Solvirex",
+          " Ethylthiometon",
+          " Thiodemeton",
+          " Rigo Insyst-D",
+          " Ekatin TD",
+          " Disystox",
+          " dithiodemeton",
+          " Disipton",
+          " Frumen AL",
+          " Frumin G",
+          " O,O-diethyl-S-ethylmercaptoethyl dithiophosphate",
+          " Phosphorodithioic acid O,O-diethyl S-[2-(ethylthio)ethyl] ester",
+          " Frumin AL"
+        ],
+        "cas_number": "000298-04-4"
+      },
+      "target": {
+        "identifier": "9c649513-6b8d-4c6d-bb74-927cc1c8fc8d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Disulfoton",
+        "synonyms": [
+          "O,O-diethyl S-(2-(ethylthio)ethyl) phosphorodithioate",
+          " Dimaz",
+          " Diethyl S-(2-(ethylthio)ethyl) phosphorodithioate",
+          " Disyston(R)",
+          " Terraclor Super-X",
+          "disulfoton+",
+          " O,O-diethyl-S-ethylmercaptoethyl dithiophosphate",
+          " Phosphorodithioic acid O,O-diethyl S-[2-(ethylthio)ethyl] ester",
+          " Frumin AL",
+          " Ekatin TD",
+          " Disystox",
+          " dithiodemeton",
+          " Disipton",
+          " Frumen AL",
+          " Frumin G",
+          " Di-Syston",
+          " BAY 19639",
+          " Solvirex",
+          " Ethylthiometon",
+          " Thiodemeton",
+          " Rigo Insyst-D",
+          " Glebofos",
+          " Root-X",
+          " Diethyl S-(2-ethylmercaptoethyl) dithiophosphate",
+          " Dot-Son Brand Stand-Aid",
+          " Dithiosystox",
+          " thiometon-ethyl"
+        ],
+        "cas_number": "000298-04-4"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "c6b0b28d-dddf-4610-b62e-971d328fae57",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Pyrithiobac sodium salt",
+        "synonyms": [
+          " pyrithiobac-sodium",
+          " pyrithiobac sodium salt",
+          " Staple",
+          " KIH 2031",
+          " Sodium 2-chloro-6-(4,6-dimethoxypyrimidin-2-ylthio)benzoate",
+          "DPX-PE350",
+          " sodium 2-chloro-6-((4,6-dimethoxy-2-pyrimidinyl)thio)benzoate",
+          " Benzoic acid, 2-chloro-6-{(4,6-dimethoxy-2-pyrimidinyl)thio}-, sodium salt"
+        ],
+        "cas_number": "123343-16-8"
+      },
+      "target": {
+        "identifier": "c6b0b28d-dddf-4610-b62e-971d328fae57",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Pyrithiobac sodium salt",
+        "synonyms": [
+          " Benzoic acid, 2-chloro-6-{(4,6-dimethoxy-2-pyrimidinyl)thio}-, sodium salt",
+          " pyrithiobac sodium salt",
+          " Staple",
+          " KIH 2031",
+          " Sodium 2-chloro-6-(4,6-dimethoxypyrimidin-2-ylthio)benzoate",
+          "DPX-PE350",
+          " sodium 2-chloro-6-((4,6-dimethoxy-2-pyrimidinyl)thio)benzoate",
+          " pyrithiobac-sodium"
+        ],
+        "cas_number": "123343-16-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "7000de19-18c4-4bfd-90a2-9b1f2346eb99",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Prometryn",
+        "synonyms": [
+          " Caparol",
+          "Selectin",
+          " Primatol Q",
+          " Prometrex",
+          " Uvon",
+          " Bis(isopropylamino)-6-(methylthio)-S-triazine",
+          " Gesagard",
+          " Cotton-Pro",
+          " Caparol 80W",
+          "2,4-Bis(isopropylamino)-6-methylthio-1,3,5-triazine",
+          " Caparol 4L",
+          " G-34161",
+          " N,N'-Bis(1-methylethyl)-6-methylthio-1,3,5-triazine-2,4-diamine"
+        ],
+        "cas_number": "007287-19-6"
+      },
+      "target": {
+        "identifier": "7000de19-18c4-4bfd-90a2-9b1f2346eb99",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Prometryn",
+        "synonyms": [
+          " Caparol",
+          "Selectin",
+          " Primatol Q",
+          " Prometrex",
+          " Uvon",
+          " Bis(isopropylamino)-6-(methylthio)-S-triazine",
+          " N,N'-Bis(1-methylethyl)-6-methylthio-1,3,5-triazine-2,4-diamine",
+          " Gesagard",
+          " Cotton-Pro",
+          " Caparol 80W",
+          "2,4-Bis(isopropylamino)-6-methylthio-1,3,5-triazine",
+          " Caparol 4L",
+          " G-34161"
+        ],
+        "cas_number": "007287-19-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "0d8a4e41-a58c-49f9-82dc-9d57b3d0602c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Etridiazole",
+        "synonyms": [
+          " Tuban",
+          " Ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+          " Pansoil",
+          " Terrazole",
+          " ETCMTB",
+          " Aaterra",
+          " Terraflo",
+          " Terracoat I21",
+          " Ethazol",
+          " OM 2425",
+          " Terracoat",
+          " Truban",
+          " Olin Mathieson 2,424",
+          " Etridiazole",
+          " Terracoat L 21",
+          " Koban",
+          "5-ethoxy-3-(trichloromethyl)-1,2,4-Thiadiazole",
+          " Dwell",
+          " ETMT",
+          " OM 2424"
+        ],
+        "cas_number": "002593-15-9"
+      },
+      "target": {
+        "identifier": "0d8a4e41-a58c-49f9-82dc-9d57b3d0602c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Etridiazole",
+        "synonyms": [
+          " Tuban",
+          " Ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+          " Pansoil",
+          " Terrazole",
+          " ETCMTB",
+          " Dwell",
+          " ETMT",
+          " OM 2424",
+          " Truban",
+          " Olin Mathieson 2,424",
+          " Etridiazole",
+          " Terracoat L 21",
+          " Koban",
+          "5-ethoxy-3-(trichloromethyl)-1,2,4-Thiadiazole",
+          " Aaterra",
+          " Terraflo",
+          " Terracoat I21",
+          " Ethazol",
+          " OM 2425",
+          " Terracoat"
+        ],
+        "cas_number": "002593-15-9"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "863ebe6d-0f48-4c32-94df-a6369f963a2e",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Maleic hydrazide",
+        "synonyms": [
+          " maleic acid hydrazide",
+          " MAH",
+          " Pyridazinediol",
+          " vondrax",
+          " Vondaldehyde",
+          " malazide",
+          "maleic hydrazine",
+          " 1,2,3,6-tetrahydro-3,6-dioxopyridazine",
+          " MH-40",
+          " regulox 36",
+          " royal mh-30",
+          " Maleic acid hydrazine",
+          " maleic acid cyclic hydrazide",
+          " slow-it",
+          "(+/-)-3,6-dihydroxypyridazine",
+          " regulox w",
+          " N,N'-maleoylhydrazine",
+          " Super-de-sprout",
+          " regulox 50 w",
+          " Maleoylhydrazine",
+          "Maleic hydrazide acid",
+          " mh 36 bayer",
+          " regulox",
+          " stuntman",
+          " vondalhyde",
+          " maintain 3",
+          " MH 30",
+          " malzid",
+          " KMH",
+          " Slo-gro",
+          " malein 30",
+          " Royal Slo-Gro"
+        ],
+        "cas_number": "000123-33-1"
+      },
+      "target": {
+        "identifier": "863ebe6d-0f48-4c32-94df-a6369f963a2e",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Maleic hydrazide",
+        "synonyms": [
+          " maleic acid hydrazide",
+          " MAH",
+          " Pyridazinediol",
+          " vondrax",
+          " Vondaldehyde",
+          " malazide",
+          " malein 30",
+          " Royal Slo-Gro",
+          " vondalhyde",
+          " maintain 3",
+          " MH 30",
+          " malzid",
+          " KMH",
+          " Slo-gro",
+          " regulox 50 w",
+          " Maleoylhydrazine",
+          "Maleic hydrazide acid",
+          " mh 36 bayer",
+          " regulox",
+          " stuntman",
+          " maleic acid cyclic hydrazide",
+          " slow-it",
+          "(+/-)-3,6-dihydroxypyridazine",
+          " regulox w",
+          " N,N'-maleoylhydrazine",
+          " Super-de-sprout",
+          "maleic hydrazine",
+          " 1,2,3,6-tetrahydro-3,6-dioxopyridazine",
+          " MH-40",
+          " regulox 36",
+          " royal mh-30",
+          " Maleic acid hydrazine"
+        ],
+        "cas_number": "000123-33-1"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "ff904733-0b42-4928-a984-b231b8ff1823",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Fluometuron",
+        "synonyms": [
+          "herbicide c-2059",
+          " pakhtaran",
+          " Cortoran",
+          " 1,1-Dimethyl-3-(alpha,alpha,alpha-trifluoro-m-tolyl) urea",
+          " Cotoran 80W",
+          " N-(m-trifluoromethylphenyl)-N',N'-dimethylurea",
+          " Cottenex",
+          " Cotoran 80WP",
+          " Meturon 4L",
+          "1,1-dimethyl-3-(3-trifluoromethylphenyl)urea",
+          " Urea, N'-(3-(trifluoromethyl)phenyl)-N,N-dimethyl-",
+          " Cotoran 4L",
+          " 3-(m-Trifluoromethyl-phenyl)-1,1-Dimethyl urea",
+          " Cotoran",
+          " N,N-dimethyl-N'-[3-(trifluoromethyl)phenyl]urea",
+          " Lanex",
+          " Dimethyl-3-(a,a,a-trifluoro-m-tolyl)urea",
+          " Cottonex",
+          " ciba 2059",
+          " C 2059",
+          " Flumeturon",
+          " Fluometuraon"
+        ],
+        "cas_number": "002164-17-2"
+      },
+      "target": {
+        "identifier": "ff904733-0b42-4928-a984-b231b8ff1823",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Fluometuron",
+        "synonyms": [
+          "herbicide c-2059",
+          " pakhtaran",
+          " Cortoran",
+          " 1,1-Dimethyl-3-(alpha,alpha,alpha-trifluoro-m-tolyl) urea",
+          " Cotoran 80W",
+          " N-(m-trifluoromethylphenyl)-N',N'-dimethylurea",
+          " ciba 2059",
+          " C 2059",
+          " Flumeturon",
+          " Fluometuraon",
+          " 3-(m-Trifluoromethyl-phenyl)-1,1-Dimethyl urea",
+          " Cotoran",
+          " N,N-dimethyl-N'-[3-(trifluoromethyl)phenyl]urea",
+          " Lanex",
+          " Dimethyl-3-(a,a,a-trifluoro-m-tolyl)urea",
+          " Cottonex",
+          " Cottenex",
+          " Cotoran 80WP",
+          " Meturon 4L",
+          "1,1-dimethyl-3-(3-trifluoromethylphenyl)urea",
+          " Urea, N'-(3-(trifluoromethyl)phenyl)-N,N-dimethyl-",
+          " Cotoran 4L"
+        ],
+        "cas_number": "002164-17-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "f9c73aca-3d5c-4072-81dd-b8e0643530a6",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quizalofop ethyl ester",
+        "synonyms": [
+          " Assure ",
+          " Quizalofop-ethyl",
+          " DPX-Y6202",
+          " quizalofop ethyl ester",
+          " Targa",
+          " NC 302",
+          " Quizalofop-Et",
+          " Ethyl 2-(4-(6-chloro-2-quinoxalyloxy)phenoxy)propionate",
+          " FBC-32197",
+          " Pilot",
+          " EXP-3864",
+          " INY-6202",
+          " ethyl 2-(4-(6-chloro-quinoxalin-2-yl-oxy)phenoxy)propanoate",
+          "2-[4-[(6-Chloro-2-quinoxalinyl)oxy]phenoxy]propanoic acid ethyl ester"
+        ],
+        "cas_number": "076578-14-8"
+      },
+      "target": {
+        "identifier": "f9c73aca-3d5c-4072-81dd-b8e0643530a6",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quizalofop ethyl ester",
+        "synonyms": [
+          " Assure ",
+          " Quizalofop-ethyl",
+          " DPX-Y6202",
+          " quizalofop ethyl ester",
+          " Targa",
+          " NC 302",
+          " ethyl 2-(4-(6-chloro-quinoxalin-2-yl-oxy)phenoxy)propanoate",
+          "2-[4-[(6-Chloro-2-quinoxalinyl)oxy]phenoxy]propanoic acid ethyl ester",
+          " Quizalofop-Et",
+          " Ethyl 2-(4-(6-chloro-2-quinoxalyloxy)phenoxy)propionate",
+          " FBC-32197",
+          " Pilot",
+          " EXP-3864",
+          " INY-6202"
+        ],
+        "cas_number": "076578-14-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "9f6d9658-e3f7-4c8b-96da-bfec6511ae7d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Tribufos",
+        "synonyms": [
+          "Ortho phosphate defoliant",
+          " E-Z-Off D",
+          " Merphos oxide ",
+          " MERPHOSOXIDE (S,S,S-TRIBUTYL PHOSPHOROTRITHIOATE)",
+          " De-Green",
+          " S,S,S-Tributyltrithiophosphate",
+          " Phosphorotrithioic acid S,S,S-tributyl ester",
+          " S,S,S-tributyl phosphorotrithioate",
+          " Deleaf defoliant",
+          " Easy off-D",
+          " FOS-FALL ''A''",
+          " Butyl phosphorotrithioate",
+          " Tribufos",
+          " Folex 6EC",
+          " Tributylphosphorotrithioate",
+          " DEF",
+          " Tribuphos"
+        ],
+        "cas_number": "000078-48-8"
+      },
+      "target": {
+        "identifier": "9f6d9658-e3f7-4c8b-96da-bfec6511ae7d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Tribufos",
+        "synonyms": [
+          "Ortho phosphate defoliant",
+          " E-Z-Off D",
+          " Merphos oxide ",
+          " MERPHOSOXIDE (S,S,S-TRIBUTYL PHOSPHOROTRITHIOATE)",
+          " De-Green",
+          " S,S,S-Tributyltrithiophosphate",
+          " Tribufos",
+          " Folex 6EC",
+          " Tributylphosphorotrithioate",
+          " DEF",
+          " Tribuphos",
+          " Phosphorotrithioic acid S,S,S-tributyl ester",
+          " S,S,S-tributyl phosphorotrithioate",
+          " Deleaf defoliant",
+          " Easy off-D",
+          " FOS-FALL ''A''",
+          " Butyl phosphorotrithioate"
+        ],
+        "cas_number": "000078-48-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "83d5b12c-781b-463a-81a2-cdc5918f75cf",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Picloram",
+        "synonyms": [
+          " ATCP",
+          " Amdon",
+          " Access",
+          "3,5,6-trichloro-4-aminopicolinic acid",
+          " 4-amino-3,5,6-trichloro-2-picolinic acid",
+          " Grazon PC",
+          " Grazon 10K",
+          " Picloram",
+          " borolin",
+          " 4-Amino-3,5,6-trichloropicolinic acid",
+          " 4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid",
+          " K-PIN",
+          " Pyridinecarboxylic acid, 4-amino-3,5,6-trichloro-",
+          " PIN",
+          " Tordon",
+          " Tordon 22K",
+          " Grazon P+D",
+          " amdon grazon",
+          " Tordon(R",
+          " Grazon",
+          " Tordon 2K",
+          " 4-amino-3,5,6-trichloropyridine-2-carboxylic acid"
+        ],
+        "cas_number": "001918-02-1"
+      },
+      "target": {
+        "identifier": "83d5b12c-781b-463a-81a2-cdc5918f75cf",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Picloram",
+        "synonyms": [
+          " 4-amino-3,5,6-trichloropyridine-2-carboxylic acid",
+          " Tordon 22K",
+          " Grazon P+D",
+          " amdon grazon",
+          " Tordon(R",
+          " Grazon",
+          " Tordon 2K",
+          " 4-Amino-3,5,6-trichloropicolinic acid",
+          " 4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid",
+          " K-PIN",
+          " Pyridinecarboxylic acid, 4-amino-3,5,6-trichloro-",
+          " PIN",
+          " Tordon",
+          "3,5,6-trichloro-4-aminopicolinic acid",
+          " 4-amino-3,5,6-trichloro-2-picolinic acid",
+          " Grazon PC",
+          " Grazon 10K",
+          " Picloram",
+          " borolin",
+          " ATCP",
+          " Amdon",
+          " Access"
+        ],
+        "cas_number": "001918-02-1"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "fd950a9b-db9f-41c9-a8b0-d61f152f6ef2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "EPTC",
+        "synonyms": [
+          " N,N-dipropylthiocarbamic acid s ethyl ester",
+          " Sutazine+",
+          " Farmarox",
+          " Dipropylthiocarbamic Acid S-Ethyl Ester",
+          "Alirox",
+          " ethyl N,N-di-n-propylthiocarbamate",
+          " Niptan",
+          " Witox",
+          " S-Ethyl-N,N-dipropyl thiocarbamate",
+          " Ethyl N,N-dipropylthiocarbamate",
+          " Genep",
+          " Ethyl dipropylthiocarbamate",
+          " dipropylcarbamothioic acid S-ethyl ester",
+          " Eptam 7-E",
+          " Rhino",
+          " Genep EPTC",
+          " Eptam 10G",
+          " EPTC + antidote",
+          "S-ethyl N,N-di-n-propylthiocarbamate",
+          " Ethyl di-n-propylthiolcarbamate",
+          " Eptam",
+          " Sutan 6.7E",
+          " EPTC",
+          " R-1608",
+          " S-ethyl dipropylcarbamothioate",
+          " Sutan 10G"
+        ],
+        "cas_number": "000759-94-4"
+      },
+      "target": {
+        "identifier": "fd950a9b-db9f-41c9-a8b0-d61f152f6ef2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "EPTC",
+        "synonyms": [
+          " N,N-dipropylthiocarbamic acid s ethyl ester",
+          " Sutazine+",
+          " Farmarox",
+          " Dipropylthiocarbamic Acid S-Ethyl Ester",
+          "Alirox",
+          " ethyl N,N-di-n-propylthiocarbamate",
+          " S-ethyl dipropylcarbamothioate",
+          " Sutan 10G",
+          "S-ethyl N,N-di-n-propylthiocarbamate",
+          " Ethyl di-n-propylthiolcarbamate",
+          " Eptam",
+          " Sutan 6.7E",
+          " EPTC",
+          " R-1608",
+          " dipropylcarbamothioic acid S-ethyl ester",
+          " Eptam 7-E",
+          " Rhino",
+          " Genep EPTC",
+          " Eptam 10G",
+          " EPTC + antidote",
+          " Niptan",
+          " Witox",
+          " S-Ethyl-N,N-dipropyl thiocarbamate",
+          " Ethyl N,N-dipropylthiocarbamate",
+          " Genep",
+          " Ethyl dipropylthiocarbamate"
+        ],
+        "cas_number": "000759-94-4"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "00acb9f0-1640-4f8c-89ef-d857e1428be0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Metam-sodium",
+        "synonyms": [
+          " Maposol",
+          " Woodfume vapam",
+          " Metam S.A.U.",
+          " Sodium monomethyldithiocarbamate",
+          " Methylaminodithioformic acid, sodium salt",
+          " Nemasol",
+          " sodium methylcarbamodithioate",
+          " Solasan 500",
+          " Carbamic acid, N-methyldithio-, monosodium salt",
+          " N-methylaminodithioformic acid sodium salt",
+          " Sistan",
+          " carbam",
+          " Metam sodium",
+          " Vapam",
+          "Metam-Fluid BASF",
+          " Methylaminomethanethionothiolic acid, sodium salt",
+          " Roo-Pru",
+          " Gatorooter",
+          " N-869",
+          " methyl-Carbamodithioic acid, monosodium salt",
+          " Carbam, sodium salt",
+          " Karbation",
+          " metham",
+          " Sodium N-methylaminomethanethionothiolate",
+          " Sodium Methyldithiocarbamate",
+          " Sometam",
+          " VPM",
+          " Busan 1020",
+          " SMDC",
+          " Metham sodium",
+          " A7 Vapam",
+          " sodium N-methylaminodithioformate",
+          " Vaporooter",
+          " methyldithiocarbamic acid sodium salt",
+          " Methylcarbamodithioic acid sodium salt",
+          " Trimaton",
+          " Basamid-fluid"
+        ],
+        "cas_number": "000137-42-8"
+      },
+      "target": {
+        "identifier": "00acb9f0-1640-4f8c-89ef-d857e1428be0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Metam-sodium",
+        "synonyms": [
+          " Maposol",
+          " Woodfume vapam",
+          " Metam S.A.U.",
+          " Sodium monomethyldithiocarbamate",
+          " Methylaminodithioformic acid, sodium salt",
+          " Trimaton",
+          " Basamid-fluid",
+          " Metham sodium",
+          " A7 Vapam",
+          " sodium N-methylaminodithioformate",
+          " Vaporooter",
+          " methyldithiocarbamic acid sodium salt",
+          " Methylcarbamodithioic acid sodium salt",
+          " Sodium N-methylaminomethanethionothiolate",
+          " Sodium Methyldithiocarbamate",
+          " Sometam",
+          " VPM",
+          " Busan 1020",
+          " SMDC",
+          " Gatorooter",
+          " N-869",
+          " methyl-Carbamodithioic acid, monosodium salt",
+          " Carbam, sodium salt",
+          " Karbation",
+          " metham",
+          " carbam",
+          " Metam sodium",
+          " Vapam",
+          "Metam-Fluid BASF",
+          " Methylaminomethanethionothiolic acid, sodium salt",
+          " Roo-Pru",
+          " Nemasol",
+          " sodium methylcarbamodithioate",
+          " Solasan 500",
+          " Carbamic acid, N-methyldithio-, monosodium salt",
+          " N-methylaminodithioformic acid sodium salt",
+          " Sistan"
+        ],
+        "cas_number": "000137-42-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "1992f951-d2c6-428d-9ff9-dac673f2b532",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Methamidophos",
+        "synonyms": [
+          " Tahmabon",
+          " Amidophos",
+          " Tamaron",
+          " Dimethyl phosphoramidothioate",
+          " O,S-Dimethyl phosphoramidothioate",
+          " SRA 5172",
+          " Monitor 4",
+          " Metamidofos Estrella",
+          " Acephate-met",
+          " Filitox",
+          "Ortho 9006",
+          "Monitor",
+          " Phosphoramidothioic acid O,S-dimethyl ester",
+          " Patrole",
+          " Tamanox",
+          " MTD 600",
+          " Pillaron"
+        ],
+        "cas_number": "010265-92-6"
+      },
+      "target": {
+        "identifier": "1992f951-d2c6-428d-9ff9-dac673f2b532",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Methamidophos",
+        "synonyms": [
+          " Tahmabon",
+          " Amidophos",
+          " Tamaron",
+          " Dimethyl phosphoramidothioate",
+          " O,S-Dimethyl phosphoramidothioate",
+          " SRA 5172",
+          " Phosphoramidothioic acid O,S-dimethyl ester",
+          " Patrole",
+          " Tamanox",
+          " MTD 600",
+          " Pillaron",
+          " Monitor 4",
+          " Metamidofos Estrella",
+          " Acephate-met",
+          " Filitox",
+          "Ortho 9006",
+          "Monitor"
+        ],
+        "cas_number": "010265-92-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "05bfed24-3408-42a2-9208-daec1538905d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Cyanazine",
+        "synonyms": [
+          " 2-[[4-chloro-6-(ethylamino)-s-triazin-2-yl]amino]-2-methylpropionitrile",
+          " DW 3418",
+          " Cynex",
+          " Fortol",
+          "Cyanazine SD 15418",
+          " Bladex 4L",
+          " Cyanizine",
+          " Payze",
+          " 2-[[4-Chloro-6-(ethylamino)-1,3,5-triazin-2-yl]amino]-2-methylpropanenitrile",
+          " WL 19805",
+          " Bladex 80W",
+          " Bladex 80WP",
+          "1,3,5-Triazine, 2-chloro-4-(ethylamino)-6-(cyano-1-methyl)-(ethylamino)-",
+          " Fortrol",
+          " Bladex R",
+          " 2-Chloro-4-((1-cyano-1-methylethyl)amino)-6-(ethylamino)-s-triazine",
+          " Bladex",
+          " SD 15418",
+          " Extrazine",
+          " Bladex 90 DF",
+          " SD 45418"
+        ],
+        "cas_number": "021725-46-2"
+      },
+      "target": {
+        "identifier": "05bfed24-3408-42a2-9208-daec1538905d",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Cyanazine",
+        "synonyms": [
+          " 2-[[4-chloro-6-(ethylamino)-s-triazin-2-yl]amino]-2-methylpropionitrile",
+          " DW 3418",
+          " Cynex",
+          " Fortol",
+          "Cyanazine SD 15418",
+          " Bladex 4L",
+          " SD 15418",
+          " Extrazine",
+          " Bladex 90 DF",
+          " SD 45418",
+          " Bladex 80WP",
+          "1,3,5-Triazine, 2-chloro-4-(ethylamino)-6-(cyano-1-methyl)-(ethylamino)-",
+          " Fortrol",
+          " Bladex R",
+          " 2-Chloro-4-((1-cyano-1-methylethyl)amino)-6-(ethylamino)-s-triazine",
+          " Bladex",
+          " Cyanizine",
+          " Payze",
+          " 2-[[4-Chloro-6-(ethylamino)-1,3,5-triazin-2-yl]amino]-2-methylpropanenitrile",
+          " WL 19805",
+          " Bladex 80W"
+        ],
+        "cas_number": "021725-46-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "3268d8df-59cc-4740-a89f-dee8355ad7c3",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "name": "Sulphur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "target": {
+        "identifier": "3268d8df-59cc-4740-a89f-dee8355ad7c3",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "name": "Sulfur trioxide",
+        "synonyms": [
+          "sulfan, sulphuric anhydride"
+        ],
+        "cas_number": "007446-11-9"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "a9224ed8-bdfd-4e66-9e97-df752e2485ef",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Propanil",
+        "synonyms": [
+          " Prop-Job",
+          " Erban",
+          " Supernox",
+          " Strel",
+          " dichloropropionanilide",
+          " Rosanil",
+          " Surpur",
+          " Propanex",
+          "3',4'-dichloropropionanilide",
+          " Riselect",
+          " Stampede",
+          " 3',4'-DICHLOROPROPIONANILIDE (PROPANIL)",
+          " Farmco",
+          " Stam F-34",
+          " Prostar",
+          " N-(3,4-Dichlorophenyl)propanamide",
+          " Stam",
+          " Propanil 4 lb/gal",
+          " Drexel",
+          " Surcopur",
+          " Stam M-4",
+          " Rogue",
+          " StampedeCM",
+          " Chem Rice",
+          " Apronox",
+          "Propanil 4"
+        ],
+        "cas_number": "000709-98-8"
+      },
+      "target": {
+        "identifier": "a9224ed8-bdfd-4e66-9e97-df752e2485ef",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Propanil",
+        "synonyms": [
+          " Stam M-4",
+          " Rogue",
+          " StampedeCM",
+          " Chem Rice",
+          " Apronox",
+          "Propanil 4",
+          " Prostar",
+          " N-(3,4-Dichlorophenyl)propanamide",
+          " Stam",
+          " Propanil 4 lb/gal",
+          " Drexel",
+          " Surcopur",
+          " Riselect",
+          " Stampede",
+          " 3',4'-DICHLOROPROPIONANILIDE (PROPANIL)",
+          " Farmco",
+          " Stam F-34",
+          " Strel",
+          " dichloropropionanilide",
+          " Rosanil",
+          " Surpur",
+          " Propanex",
+          "3',4'-dichloropropionanilide",
+          " Prop-Job",
+          " Erban",
+          " Supernox"
+        ],
+        "cas_number": "000709-98-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "1b6a35b8-f6c8-404d-9c0e-e09b8fdb2d9e",
+        "unit": "kg",
+        "context": [
+          "water",
+          "surface water"
+        ],
+        "name": "Methane, dichloro-, HCC-30",
+        "synonyms": [
+          "methylenchlorid",
+          "dichlormethan"
+        ],
+        "cas_number": "000075-09-2"
+      },
+      "target": {
+        "identifier": "1b6a35b8-f6c8-404d-9c0e-e09b8fdb2d9e",
+        "unit": "kg",
+        "context": [
+          "water",
+          "surface water"
+        ],
+        "name": "Methane, dichloro-, HCC-30",
+        "synonyms": [
+          "dichlormethan",
+          "methylenchlorid"
+        ],
+        "cas_number": "000075-09-2"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "f8f1ba14-9934-4678-8a78-e2cf1fce7775",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Zinc, Zn 0.63%, Au 9.7E-4%, Ag 9.7E-4%, Cu 0.38%, Pb 0.014%, in ore, in ground",
+        "cas_number": "007440-66-6"
+      },
+      "target": {
+        "identifier": "f8f1ba14-9934-4678-8a78-e2cf1fce7775",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Zinc, Zn 0.63%, in mixed ore, in ground",
+        "cas_number": "007440-66-6"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "cfaa80f4-8e19-4fd6-942a-eaea14812896",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Silver, Ag 9.7E-4%, Au 9.7E-4%, Zn 0.63%, Cu 0.38%, Pb 0.014%, in ore, in ground",
+        "cas_number": "007440-22-4"
+      },
+      "target": {
+        "identifier": "cfaa80f4-8e19-4fd6-942a-eaea14812896",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "name": "Silver, Ag 9.7E-4%, in mixed ore, in ground",
+        "cas_number": "007440-22-4"
+      },
+      "comment": "Changed name from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "99f78a2c-48e3-492c-aa5a-ed0c2f24a1a0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quintozene",
+        "synonyms": [
+          " Botrilex",
+          " Terraclor",
+          " Kobu",
+          " nitropentachlorobenzene",
+          " quintobenzene",
+          " Terrafun",
+          " Fortox",
+          " fomac 2",
+          " Earthcide",
+          " KP 2",
+          " PCNB",
+          " Terrachlor",
+          " tritisan",
+          "Pentagen",
+          " fartox",
+          " gc 3944-3-4",
+          " saniclor 30",
+          " Pkhnb",
+          " Eorthcicle",
+          " quintocene",
+          "Avical",
+          " Tilcarex",
+          " Quintozine",
+          " SA Terraclor 2E",
+          " brassicol",
+          " Kobutol",
+          " olpisan",
+          " fungiclor",
+          " Avicol",
+          " Marison Forte",
+          " Tri PCNB",
+          " quintozen",
+          " SA Terraclor",
+          " batrilex"
+        ],
+        "cas_number": "000082-68-8"
+      },
+      "target": {
+        "identifier": "99f78a2c-48e3-492c-aa5a-ed0c2f24a1a0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quintozene",
+        "synonyms": [
+          " Botrilex",
+          " Terraclor",
+          " Kobu",
+          " nitropentachlorobenzene",
+          " quintobenzene",
+          " Marison Forte",
+          " Tri PCNB",
+          " quintozen",
+          " SA Terraclor",
+          " batrilex",
+          " SA Terraclor 2E",
+          " brassicol",
+          " Kobutol",
+          " olpisan",
+          " fungiclor",
+          " Avicol",
+          " Pkhnb",
+          " Eorthcicle",
+          " quintocene",
+          "Avical",
+          " Tilcarex",
+          " Quintozine",
+          " Terrachlor",
+          " tritisan",
+          "Pentagen",
+          " fartox",
+          " gc 3944-3-4",
+          " saniclor 30",
+          " Terrafun",
+          " Fortox",
+          " fomac 2",
+          " Earthcide",
+          " KP 2",
+          " PCNB"
+        ],
+        "cas_number": "000082-68-8"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "dd7748c9-be28-4c89-b8b1-ed5ac14599a2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Malathion",
+        "synonyms": [
+          " karbofos",
+          " compound 4049",
+          " fyfanon",
+          " chemathion",
+          " mercaptothion",
+          " carbetox",
+          " Cythion",
+          " carbofos",
+          " Ethiolacar",
+          " malagran",
+          " emmatos",
+          " carbethoxy malathion",
+          " malacide",
+          " S-1,2-bis(ethoxycarbonyl)ethyl O,O-dimethyl dithiophosphate",
+          " insecticide no. 4049",
+          " sadofos",
+          " Etiol",
+          " Malaspray",
+          " kop-thion",
+          " calmathion",
+          " MLT",
+          " carbophos",
+          " detmol ma",
+          " Lice Rid",
+          " malamar",
+          " phosphorodithioic acid, phosphothion",
+          " celthion",
+          "1,2-di(ethoxycarbonyl)ethyl O,O-dimethyl phosphorodithioate",
+          " Cleensheen",
+          " carbetovur",
+          " cimexan",
+          "Maldison",
+          " fosfothion",
+          " Dicarbethoxyethyl-O,O-dimethyldithiophosphate"
+        ],
+        "cas_number": "000121-75-5"
+      },
+      "target": {
+        "identifier": "dd7748c9-be28-4c89-b8b1-ed5ac14599a2",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Malathion",
+        "synonyms": [
+          " karbofos",
+          " compound 4049",
+          " fyfanon",
+          " chemathion",
+          " mercaptothion",
+          " carbetox",
+          " cimexan",
+          "Maldison",
+          " fosfothion",
+          " Dicarbethoxyethyl-O,O-dimethyldithiophosphate",
+          " malamar",
+          " phosphorodithioic acid, phosphothion",
+          " celthion",
+          "1,2-di(ethoxycarbonyl)ethyl O,O-dimethyl phosphorodithioate",
+          " Cleensheen",
+          " carbetovur",
+          " kop-thion",
+          " calmathion",
+          " MLT",
+          " carbophos",
+          " detmol ma",
+          " Lice Rid",
+          " malacide",
+          " S-1,2-bis(ethoxycarbonyl)ethyl O,O-dimethyl dithiophosphate",
+          " insecticide no. 4049",
+          " sadofos",
+          " Etiol",
+          " Malaspray",
+          " Cythion",
+          " carbofos",
+          " Ethiolacar",
+          " malagran",
+          " emmatos",
+          " carbethoxy malathion"
+        ],
+        "cas_number": "000121-75-5"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "0f02d06c-c44d-4681-a677-eff6aa3cd7e0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diclofop-methyl",
+        "synonyms": [
+          " Diclofop-Methyl",
+          " HOE-023408",
+          " Methyl 2-(2-(2,4-dichlorophenoxy)phenoxy)propanoate",
+          " Hoelon 3 EC or 3 EW",
+          " Hoegrass",
+          " Heolon",
+          " Methyl ester of 2-(4-(2,4-dichlorophenoxy)phenoxy)propanoic acid",
+          "2-[4-(2,4-Dichlorophenoxy)-phenoxy]propanoic acid methyl ester",
+          " Illoxan",
+          " Brestan H",
+          " HOE 23408",
+          " I1(1)oxan",
+          " Iloxan",
+          " Hoelon 3EC",
+          " methyl 2-[4-(2,4-dichlorophenoxy)phenoxy]propionate",
+          " Hoelon",
+          " Dichlordiphenprop",
+          " Diclofop-Me",
+          " Diclofop methyl ester"
+        ],
+        "cas_number": "051338-27-3"
+      },
+      "target": {
+        "identifier": "0f02d06c-c44d-4681-a677-eff6aa3cd7e0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diclofop-methyl",
+        "synonyms": [
+          " Diclofop-Methyl",
+          " HOE-023408",
+          " Methyl 2-(2-(2,4-dichlorophenoxy)phenoxy)propanoate",
+          " Hoelon 3 EC or 3 EW",
+          " Hoegrass",
+          " Heolon",
+          " Diclofop-Me",
+          " Diclofop methyl ester",
+          " I1(1)oxan",
+          " Iloxan",
+          " Hoelon 3EC",
+          " methyl 2-[4-(2,4-dichlorophenoxy)phenoxy]propionate",
+          " Hoelon",
+          " Dichlordiphenprop",
+          " Methyl ester of 2-(4-(2,4-dichlorophenoxy)phenoxy)propanoic acid",
+          "2-[4-(2,4-Dichlorophenoxy)-phenoxy]propanoic acid methyl ester",
+          " Illoxan",
+          " Brestan H",
+          " HOE 23408"
+        ],
+        "cas_number": "051338-27-3"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "c4302ab1-eb6d-458b-86ad-f7d7d4df411e",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diazinon",
+        "synonyms": [
+          " Dimpylatum",
+          " Dipofene",
+          " Exodin",
+          " Diazitol",
+          " Knox Out",
+          " Neocidol",
+          " Dassitox",
+          "Sarolex",
+          " Dacutox",
+          " Drawizon",
+          " Isopropylmethylpyrimidyl diethyl thiophosphate",
+          " O,O-Diethyl O-(2-isopropyl-6-methyl-4-pyrimidinyl), phosphorothioate",
+          " Knox out 2FM",
+          " Galesan",
+          " AG-500",
+          " Diazinon",
+          " dianon",
+          " Diethyl 2-isopropyl-4-methyl-6-pyrimidinyl phosphorothionate",
+          " Basudin",
+          " Diethyl O-(2-isopropyl-6-methyl-4-pyrimidinyl) phosphorothioate",
+          " Nipsan",
+          " gardentox",
+          " O,O-diethyl O-2-isopropyl-4-methyl-6-pyrimidyl thiophosphate",
+          " Dizinon",
+          " thiophosphoric acid 2-isopropyl-4-methyl-6-pyrimidyl diethyl ester",
+          " Fezudin",
+          "O,O-Diethyl O-(2-isopropyl-4-methyl-6-pyrimidinyl) thiophosphoric acid",
+          " Kayazol",
+          " Dyzol",
+          " Diagran",
+          " Diazajet",
+          " Antigal",
+          " Dazzel",
+          " kayazinon",
+          " Spectracide",
+          " Diazide",
+          " g-24480",
+          " Dimpylate",
+          " Nucidol",
+          " Flytrol",
+          " Diaterr-fos",
+          " Diazol"
+        ],
+        "cas_number": "000333-41-5"
+      },
+      "target": {
+        "identifier": "c4302ab1-eb6d-458b-86ad-f7d7d4df411e",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Diazinon",
+        "synonyms": [
+          " Dimpylatum",
+          " Dipofene",
+          " Exodin",
+          " Diazitol",
+          " Knox Out",
+          " Neocidol",
+          " g-24480",
+          " Dimpylate",
+          " Nucidol",
+          " Flytrol",
+          " Diaterr-fos",
+          " Diazol",
+          " Diazajet",
+          " Antigal",
+          " Dazzel",
+          " kayazinon",
+          " Spectracide",
+          " Diazide",
+          " thiophosphoric acid 2-isopropyl-4-methyl-6-pyrimidyl diethyl ester",
+          " Fezudin",
+          "O,O-Diethyl O-(2-isopropyl-4-methyl-6-pyrimidinyl) thiophosphoric acid",
+          " Kayazol",
+          " Dyzol",
+          " Diagran",
+          " Basudin",
+          " Diethyl O-(2-isopropyl-6-methyl-4-pyrimidinyl) phosphorothioate",
+          " Nipsan",
+          " gardentox",
+          " O,O-diethyl O-2-isopropyl-4-methyl-6-pyrimidyl thiophosphate",
+          " Dizinon",
+          " Knox out 2FM",
+          " Galesan",
+          " AG-500",
+          " Diazinon",
+          " dianon",
+          " Diethyl 2-isopropyl-4-methyl-6-pyrimidinyl phosphorothionate",
+          " Dassitox",
+          "Sarolex",
+          " Dacutox",
+          " Drawizon",
+          " Isopropylmethylpyrimidyl diethyl thiophosphate",
+          " O,O-Diethyl O-(2-isopropyl-6-methyl-4-pyrimidinyl), phosphorothioate"
+        ],
+        "cas_number": "000333-41-5"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "51e8811b-04e2-4801-987c-fb0015535965",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Trichlorfon",
+        "synonyms": [
+          " polfoschlor",
+          " hypodermacid",
+          " volfartol",
+          " Dyvon",
+          " metifonate",
+          " chlorak",
+          " Dipterex",
+          " trichlorophon",
+          " britten",
+          " sotipox",
+          " agroforotox",
+          " bilarcil",
+          " masoten",
+          "1-hydroxy-2,2,2-trichloroethylphosphonic acid dimethyl ester",
+          " Briten",
+          " WEC 50",
+          " flibol e",
+          " votexit",
+          " bayer 15922",
+          " DETF",
+          " loisol",
+          " chloroxyphos",
+          " mazoten",
+          " Dyrex",
+          " bay 15922",
+          " Tugon",
+          " Neguvon",
+          " forotox",
+          " Chlorophos",
+          " Bayer L 13/59",
+          "trinex",
+          " cekufon",
+          " phoschlor",
+          " TCF",
+          " dipterax",
+          " Chlorofos",
+          " fliegenteller",
+          " Metrifonatum",
+          " anthon",
+          " Foschlorine",
+          " diptevur",
+          " trichlorofon",
+          " combot equine",
+          " bovinox",
+          " leivasom",
+          " Dylox",
+          " wotexit",
+          " ditrifon",
+          " metriphonate",
+          " chlorophthalm",
+          " dylox-metasystox r",
+          " briton",
+          " equino-acid",
+          " equino-aid",
+          " methyl chlorophos",
+          " ritsifon",
+          " soldep",
+          " Vermicide Bayer 2349",
+          " Danex",
+          " OMS-0800",
+          " depthon",
+          " DEP",
+          " chloroftalm",
+          " foschlor",
+          " satox 20wsc",
+          " ciclosom",
+          " Proxol",
+          " ricifon",
+          " dipterex 50",
+          " combot"
+        ],
+        "cas_number": "000052-68-6"
+      },
+      "target": {
+        "identifier": "51e8811b-04e2-4801-987c-fb0015535965",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Trichlorfon",
+        "synonyms": [
+          " polfoschlor",
+          " hypodermacid",
+          " volfartol",
+          " Dyvon",
+          " metifonate",
+          " chlorak",
+          " Proxol",
+          " ricifon",
+          " dipterex 50",
+          " combot",
+          " depthon",
+          " DEP",
+          " chloroftalm",
+          " foschlor",
+          " satox 20wsc",
+          " ciclosom",
+          " methyl chlorophos",
+          " ritsifon",
+          " soldep",
+          " Vermicide Bayer 2349",
+          " Danex",
+          " OMS-0800",
+          " metriphonate",
+          " chlorophthalm",
+          " dylox-metasystox r",
+          " briton",
+          " equino-acid",
+          " equino-aid",
+          " combot equine",
+          " bovinox",
+          " leivasom",
+          " Dylox",
+          " wotexit",
+          " ditrifon",
+          " fliegenteller",
+          " Metrifonatum",
+          " anthon",
+          " Foschlorine",
+          " diptevur",
+          " trichlorofon",
+          "trinex",
+          " cekufon",
+          " phoschlor",
+          " TCF",
+          " dipterax",
+          " Chlorofos",
+          " bay 15922",
+          " Tugon",
+          " Neguvon",
+          " forotox",
+          " Chlorophos",
+          " Bayer L 13/59",
+          " bayer 15922",
+          " DETF",
+          " loisol",
+          " chloroxyphos",
+          " mazoten",
+          " Dyrex",
+          " masoten",
+          "1-hydroxy-2,2,2-trichloroethylphosphonic acid dimethyl ester",
+          " Briten",
+          " WEC 50",
+          " flibol e",
+          " votexit",
+          " Dipterex",
+          " trichlorophon",
+          " britten",
+          " sotipox",
+          " agroforotox",
+          " bilarcil"
+        ],
+        "cas_number": "000052-68-6"
+      },
+      "comment": "Changed synonyms from 3.01 to 3.1.",
+      "source_version": "ecoinvent-3.01-biosphere",
+      "target_version": "ecoinvent-3.1-biosphere"
+    }
+  ]
+}

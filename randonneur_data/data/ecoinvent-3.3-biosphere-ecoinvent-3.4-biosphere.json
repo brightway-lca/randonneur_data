@@ -1,0 +1,589 @@
+{
+  "name": "ecoinvent-3.3-biosphere-ecoinvent-3.4-biosphere",
+  "description": "ecoinvent elementary flow correspondence from 3.3 to 3.4",
+  "contributors": [
+    {
+      "title": "Chris Mutel",
+      "roles": [
+        "author"
+      ],
+      "path": "https://chris.mutel.org"
+    }
+  ],
+  "created": "2025-11-15T13:45:39.175941+00:00",
+  "version": "1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "graph_context": [
+    "edges"
+  ],
+  "mapping": {
+    "source": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    },
+    "target": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    }
+  },
+  "source_id": "ecoinvent-3.3-biosphere",
+  "target_id": "ecoinvent-3.4-biosphere",
+  "update": [
+    {
+      "source": {
+        "identifier": "0d8a4e41-a58c-49f9-82dc-9d57b3d0602c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Etridiazole",
+        "synonyms": [
+          " Tuban",
+          " Ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+          " Pansoil",
+          " Terrazole",
+          " ETCMTB",
+          " Dwell",
+          " ETMT",
+          " OM 2424",
+          " Truban",
+          " Olin Mathieson 2,424",
+          " Etridiazole",
+          " Terracoat L 21",
+          " Koban",
+          "5-ethoxy-3-(trichloromethyl)-1,2,4-Thiadiazole",
+          " Aaterra",
+          " Terraflo",
+          " Terracoat I21",
+          " Ethazol",
+          " OM 2425",
+          " Terracoat"
+        ],
+        "cas_number": "002593-15-9"
+      },
+      "target": {
+        "identifier": "0d8a4e41-a58c-49f9-82dc-9d57b3d0602c",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Etridiazole",
+        "synonyms": [
+          " Tuban",
+          " Ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+          " Pansoil",
+          " Terrazole",
+          " ETCMTB",
+          " Aaterra",
+          " ETMT",
+          " OM 2424",
+          " Olin Mathieson 2,424",
+          " Etridiazole",
+          " Terracoat L 21",
+          " Koban",
+          "5-ethoxy-3-(trichloromethyl)-1,2,4-Thiadiazole",
+          " Dwell",
+          " Terraflo",
+          " Terracoat I21",
+          " Ethazol",
+          " OM 2425",
+          " Terracoat",
+          " Truban"
+        ],
+        "cas_number": "002593-15-9"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "00acb9f0-1640-4f8c-89ef-d857e1428be0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Metam-sodium",
+        "synonyms": [
+          " Maposol",
+          " Woodfume vapam",
+          " Metam S.A.U.",
+          " Sodium monomethyldithiocarbamate",
+          " Methylaminodithioformic acid, sodium salt",
+          " Trimaton",
+          " Basamid-fluid",
+          " Metham sodium",
+          " A7 Vapam",
+          " sodium N-methylaminodithioformate",
+          " Vaporooter",
+          " methyldithiocarbamic acid sodium salt",
+          " Methylcarbamodithioic acid sodium salt",
+          " Sodium N-methylaminomethanethionothiolate",
+          " Sodium Methyldithiocarbamate",
+          " Sometam",
+          " VPM",
+          " Busan 1020",
+          " SMDC",
+          " Gatorooter",
+          " N-869",
+          " methyl-Carbamodithioic acid, monosodium salt",
+          " Carbam, sodium salt",
+          " Karbation",
+          " metham",
+          " carbam",
+          " Metam sodium",
+          " Vapam",
+          "Metam-Fluid BASF",
+          " Methylaminomethanethionothiolic acid, sodium salt",
+          " Roo-Pru",
+          " Nemasol",
+          " sodium methylcarbamodithioate",
+          " Solasan 500",
+          " Carbamic acid, N-methyldithio-, monosodium salt",
+          " N-methylaminodithioformic acid sodium salt",
+          " Sistan"
+        ],
+        "cas_number": "000137-42-8"
+      },
+      "target": {
+        "identifier": "00acb9f0-1640-4f8c-89ef-d857e1428be0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Metam-sodium",
+        "synonyms": [
+          " Maposol",
+          " Woodfume vapam",
+          " Metam S.A.U.",
+          " Sodium monomethyldithiocarbamate",
+          " Methylaminodithioformic acid, sodium salt",
+          " Nemasol",
+          " Basamid-fluid",
+          " A7 Vapam",
+          " sodium N-methylaminodithioformate",
+          " Vaporooter",
+          " methyldithiocarbamic acid sodium salt",
+          " Methylcarbamodithioic acid sodium salt",
+          " Trimaton",
+          " Sodium Methyldithiocarbamate",
+          " Sometam",
+          " VPM",
+          " Busan 1020",
+          " SMDC",
+          " Metham sodium",
+          " N-869",
+          " methyl-Carbamodithioic acid, monosodium salt",
+          " Carbam, sodium salt",
+          " Karbation",
+          " metham",
+          " Sodium N-methylaminomethanethionothiolate",
+          " Metam sodium",
+          " Vapam",
+          "Metam-Fluid BASF",
+          " Methylaminomethanethionothiolic acid, sodium salt",
+          " Roo-Pru",
+          " Gatorooter",
+          " sodium methylcarbamodithioate",
+          " Solasan 500",
+          " Carbamic acid, N-methyldithio-, monosodium salt",
+          " N-methylaminodithioformic acid sodium salt",
+          " Sistan",
+          " carbam"
+        ],
+        "cas_number": "000137-42-8"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "aa2f15ce-fc50-4252-89d8-89e06b4f588a",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Molinate",
+        "synonyms": [
+          " Yulan",
+          " Ethyl 1-hexamethyleneiminecarbothiolate",
+          " Felan",
+          " Hydram",
+          " Carbamothioic acid, N,N-hexamethylene-, S-ethyl ester",
+          " S-ethyl 1-hexamethyleneiminothiocarbamate",
+          " S-ethyl perhydroazepine-1-thiocarboxylate",
+          " S-ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Sakkimol",
+          " Ordram 8E",
+          " Yalan",
+          " Ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Ethyl 1-hexamethyleneiminecarbothioate",
+          " Ordram 10G",
+          "Ordram",
+          " Jalan",
+          " Carbamic acid, hexamethylenethio-, S-ethyl ester",
+          " Azepine-1-carbothioic acid, hexahydro-, S-ethyl ester",
+          "1H-Azepine-1 carbothioic acid, hexahydro-S-ethyl ester",
+          " hexahydro-1H-Azepine-1-carbothioic acid S-ethyl ester"
+        ],
+        "cas_number": "002212-67-1"
+      },
+      "target": {
+        "identifier": "aa2f15ce-fc50-4252-89d8-89e06b4f588a",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Molinate",
+        "synonyms": [
+          " Yulan",
+          " Ethyl 1-hexamethyleneiminecarbothiolate",
+          " Felan",
+          " Hydram",
+          " Carbamothioic acid, N,N-hexamethylene-, S-ethyl ester",
+          "Ordram",
+          " S-ethyl perhydroazepine-1-thiocarboxylate",
+          " S-ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Ordram 8E",
+          " Yalan",
+          " Ethyl hexahydro-1H-azepine-1-carbothioate",
+          " Ethyl 1-hexamethyleneiminecarbothioate",
+          " Ordram 10G",
+          " S-ethyl 1-hexamethyleneiminothiocarbamate",
+          " Jalan",
+          " Carbamic acid, hexamethylenethio-, S-ethyl ester",
+          " Azepine-1-carbothioic acid, hexahydro-, S-ethyl ester",
+          "1H-Azepine-1 carbothioic acid, hexahydro-S-ethyl ester",
+          " hexahydro-1H-Azepine-1-carbothioic acid S-ethyl ester",
+          " Sakkimol"
+        ],
+        "cas_number": "002212-67-1"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "c6b0b28d-dddf-4610-b62e-971d328fae57",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Pyrithiobac sodium salt",
+        "synonyms": [
+          " Benzoic acid, 2-chloro-6-{(4,6-dimethoxy-2-pyrimidinyl)thio}-, sodium salt",
+          " pyrithiobac sodium salt",
+          " Staple",
+          " KIH 2031",
+          " Sodium 2-chloro-6-(4,6-dimethoxypyrimidin-2-ylthio)benzoate",
+          "DPX-PE350",
+          " sodium 2-chloro-6-((4,6-dimethoxy-2-pyrimidinyl)thio)benzoate",
+          " pyrithiobac-sodium"
+        ],
+        "cas_number": "123343-16-8"
+      },
+      "target": {
+        "identifier": "c6b0b28d-dddf-4610-b62e-971d328fae57",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Pyrithiobac sodium salt",
+        "synonyms": [
+          " pyrithiobac-sodium",
+          " pyrithiobac sodium salt",
+          " Staple",
+          " KIH 2031",
+          " Sodium 2-chloro-6-(4,6-dimethoxypyrimidin-2-ylthio)benzoate",
+          "DPX-PE350",
+          " sodium 2-chloro-6-((4,6-dimethoxy-2-pyrimidinyl)thio)benzoate",
+          " Benzoic acid, 2-chloro-6-{(4,6-dimethoxy-2-pyrimidinyl)thio}-, sodium salt"
+        ],
+        "cas_number": "123343-16-8"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "99f78a2c-48e3-492c-aa5a-ed0c2f24a1a0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quintozene",
+        "synonyms": [
+          " Botrilex",
+          " Terraclor",
+          " Kobu",
+          " nitropentachlorobenzene",
+          " quintobenzene",
+          " Marison Forte",
+          " Tri PCNB",
+          " quintozen",
+          " SA Terraclor",
+          " batrilex",
+          " SA Terraclor 2E",
+          " brassicol",
+          " Kobutol",
+          " olpisan",
+          " fungiclor",
+          " Avicol",
+          " Pkhnb",
+          " Eorthcicle",
+          " quintocene",
+          "Avical",
+          " Tilcarex",
+          " Quintozine",
+          " Terrachlor",
+          " tritisan",
+          "Pentagen",
+          " fartox",
+          " gc 3944-3-4",
+          " saniclor 30",
+          " Terrafun",
+          " Fortox",
+          " fomac 2",
+          " Earthcide",
+          " KP 2",
+          " PCNB"
+        ],
+        "cas_number": "000082-68-8"
+      },
+      "target": {
+        "identifier": "99f78a2c-48e3-492c-aa5a-ed0c2f24a1a0",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "name": "Quintozene",
+        "synonyms": [
+          " Botrilex",
+          " Terraclor",
+          " Kobu",
+          " nitropentachlorobenzene",
+          " quintobenzene",
+          " Terrafun",
+          " Tri PCNB",
+          " quintozen",
+          " SA Terraclor",
+          " batrilex",
+          " brassicol",
+          " Kobutol",
+          " olpisan",
+          " fungiclor",
+          " Avicol",
+          " Marison Forte",
+          " Eorthcicle",
+          " quintocene",
+          "Avical",
+          " Tilcarex",
+          " Quintozine",
+          " SA Terraclor 2E",
+          " tritisan",
+          "Pentagen",
+          " fartox",
+          " gc 3944-3-4",
+          " saniclor 30",
+          " Pkhnb",
+          " Fortox",
+          " fomac 2",
+          " Earthcide",
+          " KP 2",
+          " PCNB",
+          " Terrachlor"
+        ],
+        "cas_number": "000082-68-8"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "1b6a35b8-f6c8-404d-9c0e-e09b8fdb2d9e",
+        "unit": "kg",
+        "context": [
+          "water",
+          "surface water"
+        ],
+        "name": "Methane, dichloro-, HCC-30",
+        "synonyms": [
+          "dichlormethan",
+          "methylenchlorid"
+        ],
+        "cas_number": "000075-09-2"
+      },
+      "target": {
+        "identifier": "1b6a35b8-f6c8-404d-9c0e-e09b8fdb2d9e",
+        "unit": "kg",
+        "context": [
+          "water",
+          "surface water"
+        ],
+        "name": "Methane, dichloro-, HCC-30",
+        "synonyms": [
+          "methylenchlorid",
+          "dichlormethan"
+        ],
+        "cas_number": "000075-09-2"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "6a45c705-855a-416d-8459-5fb6521b9b73",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox",
+          " Lannabait",
+          " Lanox 216",
+          " Lannate(R)",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " LANOX 90",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          " Mesomile",
+          " Lannate LB",
+          " Nudrin",
+          "Methomyl 5G",
+          " Lannate",
+          " Insecticide 1179",
+          " Nu-bait II"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "target": {
+        "identifier": "6a45c705-855a-416d-8459-5fb6521b9b73",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox",
+          " Lannabait",
+          " Lanox 216",
+          " Lannate(R)",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " Lannate LB",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          " Mesomile",
+          " Nudrin",
+          "Methomyl 5G",
+          " Lannate",
+          " Insecticide 1179",
+          " Nu-bait II",
+          " LANOX 90"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    },
+    {
+      "source": {
+        "identifier": "a4789830-1a88-4685-abac-882046c10974",
+        "unit": "kg",
+        "context": [
+          "water",
+          "ground-"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox 216",
+          " Lanox",
+          " LANOX 90",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          "Methomyl 5G",
+          " Nudrin",
+          " Mesomile",
+          " Insecticide 1179",
+          " Lannate(R)",
+          " Lannate",
+          " Lannabait",
+          " Nu-bait II",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " Lannate LB"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "target": {
+        "identifier": "a4789830-1a88-4685-abac-882046c10974",
+        "unit": "kg",
+        "context": [
+          "water",
+          "ground-"
+        ],
+        "name": "Methomyl",
+        "synonyms": [
+          " Lanox 216",
+          " Lanox",
+          " LANOX 90",
+          "Acetamidic acid, thio-, N-[(methyl-carbamoyl)oxy]-, methyl ester",
+          "Methomyl 5G",
+          " Lannate(R)",
+          " Mesomile",
+          " Insecticide 1179",
+          " Lannate",
+          " Lannabait",
+          " Nu-bait II",
+          " Carbamic acid, N-methyl-, compd. with (2-methylthio)acetaldoxime",
+          " Lannate LB",
+          " Nudrin"
+        ],
+        "cas_number": "016752-77-5"
+      },
+      "comment": "Changed synonyms from 3.3 to 3.4.",
+      "source_version": "ecoinvent-3.3-biosphere",
+      "target_version": "ecoinvent-3.4-biosphere"
+    }
+  ]
+}

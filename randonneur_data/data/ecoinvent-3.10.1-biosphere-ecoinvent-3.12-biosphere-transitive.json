@@ -1,0 +1,586 @@
+{
+  "name": "ecoinvent-3.10.1-biosphere-ecoinvent-3.12-biosphere-transitive",
+  "description": "Transitive ecoinvent elementary flow correspondence from 3.10.1 to 3.12",
+  "contributors": [
+    {
+      "title": "Chris Mutel",
+      "roles": [
+        "author"
+      ],
+      "path": "https://chris.mutel.org"
+    }
+  ],
+  "created": "2025-11-15T13:45:35.560803+00:00",
+  "version": "1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "graph_context": [
+    "edges"
+  ],
+  "mapping": {
+    "source": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    },
+    "target": {
+      "expression language": "XPath",
+      "labels": {
+        "name": "//*:elementaryExchange/*:name/text()",
+        "cas_number": "//*:elementaryExchange/@casNumber",
+        "unit": "//*:elementaryExchange/*:unitName/text()",
+        "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+        "context": [
+          "//*:elementaryExchange/*:compartment/*:compartment/text()",
+          "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+        ],
+        "synonyms": "//*:elementaryExchange/*:synonym/text()"
+      }
+    }
+  },
+  "source_id": "ecoinvent-3.10.1-biosphere",
+  "target_id": "ecoinvent-3.12-biosphere",
+  "update": [
+    {
+      "source": {
+        "name": "Chloromethane",
+        "identifier": "77baca1e-1fb6-49f0-8799-c37f3c31debb",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [],
+        "cas_number": "000074-87-3"
+      },
+      "target": {
+        "name": "Methylchloride",
+        "identifier": "18ea247b-edc2-43fe-89bd-cedd04102bcc",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "methyl chloride",
+          "chloromethane",
+          "Methane, monochloro-",
+          "R-40",
+          "Monochloromethane"
+        ],
+        "cas_number": "000074-87-3"
+      },
+      "comment": "This was a duplicate. Changed name, identifier, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Carbon, organic, in soil or biomass stock",
+        "unit": "kg",
+        "identifier": "8c2fe757-6866-4ed2-9f89-81012ad774a0",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "cas_number": "007440-44-0"
+      },
+      "target": {
+        "name": "Carbon, organic, decrease in soil or biomass stock",
+        "identifier": "8c2fe757-6866-4ed2-9f89-81012ad774a0",
+        "unit": "kg",
+        "context": [
+          "natural resource",
+          "in ground"
+        ],
+        "cas_number": "007440-44-0"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromo-, Halon 1001",
+        "unit": "kg",
+        "identifier": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "Methane, bromo-",
+          "methyl bromide"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "target": {
+        "name": "Bromomethane",
+        "identifier": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+        "unit": "kg",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "Methane, bromo-",
+          "methyl bromide",
+          "Halon 1001"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromochlorodifluoro-, Halon 1211",
+        "unit": "kg",
+        "identifier": "816c43d1-bc30-4a72-81db-08cb6be4da4f",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "bromochlorodifluoromethane",
+          "Methane, bromochlorodifluoro-",
+          "Halon 1211"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "target": {
+        "name": "Bromochlorodifluoromethane",
+        "identifier": "816c43d1-bc30-4a72-81db-08cb6be4da4f",
+        "unit": "kg",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "Halon 1211",
+          "Methane, bromochlorodifluoro-"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromotrifluoro-, Halon 1301",
+        "unit": "kg",
+        "identifier": "18ddd879-5496-4419-8ab7-e0d3864d977d",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "bromotrifluoromethane",
+          "Halon 1301",
+          "Methane, bromotrifluoro-"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "target": {
+        "name": "Bromotrifluoromethane",
+        "identifier": "18ddd879-5496-4419-8ab7-e0d3864d977d",
+        "unit": "kg",
+        "context": [
+          "air",
+          "urban air close to ground"
+        ],
+        "synonyms": [
+          "Methane, bromotrifluoro-",
+          "Halon 1301"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromo-, Halon 1001",
+        "unit": "kg",
+        "identifier": "701cda28-4722-431c-b52f-05a735ef5ed3",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "methyl bromide",
+          "Methane, bromo-"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "target": {
+        "name": "Bromomethane",
+        "identifier": "701cda28-4722-431c-b52f-05a735ef5ed3",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "methyl bromide",
+          "Methane, bromo-"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromo-, Halon 1001",
+        "unit": "kg",
+        "identifier": "09e231fa-b1c2-4d63-9c57-7ea0e2210858",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "Methane, bromo-",
+          "methyl bromide"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "target": {
+        "name": "Bromomethane",
+        "identifier": "09e231fa-b1c2-4d63-9c57-7ea0e2210858",
+        "unit": "kg",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "methyl bromide",
+          "Methane, bromo-"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromo-, Halon 1001",
+        "unit": "kg",
+        "identifier": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "Halon 1001",
+          "Methane, bromo-",
+          "methyl bromide"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "target": {
+        "name": "Bromomethane",
+        "identifier": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "methyl bromide",
+          "Halon 1001",
+          "Methane, bromo-"
+        ],
+        "cas_number": "000074-83-9"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromochlorodifluoro-, Halon 1211",
+        "unit": "kg",
+        "identifier": "494eb62d-3e16-4a81-b344-6d6dfd9fd4e2",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Methane, bromochlorodifluoro-",
+          "Halon 1211",
+          "bromochlorodifluoromethane"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "target": {
+        "name": "Bromochlorodifluoromethane",
+        "identifier": "494eb62d-3e16-4a81-b344-6d6dfd9fd4e2",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Halon 1211",
+          "Methane, bromochlorodifluoro-"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromochlorodifluoro-, Halon 1211",
+        "unit": "kg",
+        "identifier": "06a4fedf-dab4-4ef1-90df-1d0ce8fe6477",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "bromochlorodifluoromethane",
+          "Methane, bromochlorodifluoro-",
+          "Halon 1211"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "target": {
+        "name": "Bromochlorodifluoromethane",
+        "identifier": "06a4fedf-dab4-4ef1-90df-1d0ce8fe6477",
+        "unit": "kg",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "Methane, bromochlorodifluoro-",
+          "Halon 1211"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromochlorodifluoro-, Halon 1211",
+        "unit": "kg",
+        "identifier": "ee31ac2a-9336-4ed6-8077-9663003bc2f9",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "Halon 1211",
+          "Methane, bromochlorodifluoro-",
+          "bromochlorodifluoromethane"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "target": {
+        "name": "Bromochlorodifluoromethane",
+        "identifier": "ee31ac2a-9336-4ed6-8077-9663003bc2f9",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "Methane, bromochlorodifluoro-",
+          "Halon 1211"
+        ],
+        "cas_number": "000353-59-3"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromotrifluoro-, Halon 1301",
+        "unit": "kg",
+        "identifier": "82957257-07f3-4536-ac8b-175cb2353c75",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Methane, bromotrifluoro-",
+          "Halon 1301",
+          "bromotrifluoromethane"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "target": {
+        "name": "Bromotrifluoromethane",
+        "identifier": "82957257-07f3-4536-ac8b-175cb2353c75",
+        "unit": "kg",
+        "context": [
+          "air",
+          "non-urban air or from high stacks"
+        ],
+        "synonyms": [
+          "Halon 1301",
+          "Methane, bromotrifluoro-"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromotrifluoro-, Halon 1301",
+        "unit": "kg",
+        "identifier": "96b52062-5e2f-40de-921a-f443c08862e4",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "bromotrifluoromethane",
+          "Methane, bromotrifluoro-",
+          "Halon 1301"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "target": {
+        "name": "Bromotrifluoromethane",
+        "identifier": "96b52062-5e2f-40de-921a-f443c08862e4",
+        "unit": "kg",
+        "context": [
+          "air",
+          "low population density, long-term"
+        ],
+        "synonyms": [
+          "Methane, bromotrifluoro-",
+          "Halon 1301"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Methane, bromotrifluoro-, Halon 1301",
+        "unit": "kg",
+        "identifier": "4ac2ffc3-312e-4e2d-88c4-2630d4a73d8c",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "Halon 1301",
+          "bromotrifluoromethane",
+          "Methane, bromotrifluoro-"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "target": {
+        "name": "Bromotrifluoromethane",
+        "identifier": "4ac2ffc3-312e-4e2d-88c4-2630d4a73d8c",
+        "unit": "kg",
+        "context": [
+          "air",
+          "unspecified"
+        ],
+        "synonyms": [
+          "Halon 1301",
+          "Methane, bromotrifluoro-"
+        ],
+        "cas_number": "000075-63-8"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name, synonyms from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Pyrethrin",
+        "unit": "kg",
+        "identifier": "6f478f7b-1817-4316-8dd8-c65fdc1c6be7",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "synonyms": [
+          "pyrethrin I",
+          "Pyrethrin II"
+        ],
+        "cas_number": "000121-29-9"
+      },
+      "target": {
+        "name": "Pyrethrin II",
+        "identifier": "6f478f7b-1817-4316-8dd8-c65fdc1c6be7",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "cas_number": "000121-29-9"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    },
+    {
+      "source": {
+        "name": "Pyrethrum",
+        "unit": "kg",
+        "identifier": "69edbf6f-66cb-5e8f-8741-f34a16fed5ca",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "cas_number": "008003-34-7"
+      },
+      "target": {
+        "name": "Pyrethrins",
+        "identifier": "69edbf6f-66cb-5e8f-8741-f34a16fed5ca",
+        "unit": "kg",
+        "context": [
+          "soil",
+          "agricultural"
+        ],
+        "synonyms": [
+          "Pyrethrin mix"
+        ],
+        "cas_number": "008003-34-7"
+      },
+      "comment": "Flow attribute change not listed in change report. Changed name from 3.10.1 to 3.11.",
+      "source_version": "ecoinvent-3.10.1-biosphere",
+      "target_version": "ecoinvent-3.11-biosphere"
+    }
+  ]
+}

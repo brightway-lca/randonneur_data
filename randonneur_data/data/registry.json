@@ -2162,5 +2162,1216 @@
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
     "filename": "ecoinvent-3.11-cutoff-ecoinvent-3.12-cutoff.gz",
     "compression": "gzip"
+  },
+  "SimaPro-2025-ecoinvent-3.12-context": {
+    "name": "SimaPro-2025-ecoinvent-3.12-context",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "Context mapping from 2025 SimaPro to ecoinvent 3.12",
+    "case-insensitive": true,
+    "created": "2025-11-10T12:34:56Z",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "author"
+        ]
+      }
+    ],
+    "graph_context": [
+      "nodes"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "JSONPath",
+        "labels": {
+          "context": "$.context"
+        }
+      },
+      "target": {
+        "expression language": "JSONPath",
+        "labels": {
+          "context": "$.context"
+        }
+      }
+    },
+    "filename": "simapro-2025-ecoinvent-3-contexts.json",
+    "compression": false
+  },
+  "Flowmapper-standard-units-harmonization": {
+    "name": "Flowmapper-standard-units-harmonization",
+    "licenses": [
+      {
+        "name": "CC BY 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "Standard flowmapper unit harmonization linked with Pint customization",
+    "created": "2025-11-10T12:34:56Z",
+    "case-insensitive": true,
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "author"
+        ]
+      }
+    ],
+    "graph_context": [
+      "nodes"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "$.unit"
+        }
+      },
+      "target": {
+        "expression language": "JSONPath",
+        "labels": {
+          "unit": "$.unit"
+        }
+      }
+    },
+    "filename": "standard-units-harmonization.json",
+    "compression": false
+  },
+  "ecoinvent-3.10.1-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.10.1-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.10.1 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:35.560803+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.10.1-biosphere-ecoinvent-3.12-biosphere-transitive.json",
+    "compression": false
+  },
+  "ecoinvent-3.9.1-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.9.1 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:36.090426+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.9.1-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.8-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.8-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.8 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:36.615875+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.8-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.8-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.7-biosphere-ecoinvent-3.8-biosphere": {
+    "name": "ecoinvent-3.7-biosphere-ecoinvent-3.8-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.7 to 3.8",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:37.133614+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.7-biosphere",
+    "target_id": "ecoinvent-3.8-biosphere",
+    "filename": "ecoinvent-3.7-biosphere-ecoinvent-3.8-biosphere.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.7-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.7-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.7 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:37.257998+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.7-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.7-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.6-biosphere-ecoinvent-3.7-biosphere": {
+    "name": "ecoinvent-3.6-biosphere-ecoinvent-3.7-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.6 to 3.7",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:37.764969+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.6-biosphere",
+    "target_id": "ecoinvent-3.7-biosphere",
+    "filename": "ecoinvent-3.6-biosphere-ecoinvent-3.7-biosphere.json",
+    "compression": false
+  },
+  "ecoinvent-3.6-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.6-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.6 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:37.786738+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.6-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.6-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.5-biosphere-ecoinvent-3.6-biosphere": {
+    "name": "ecoinvent-3.5-biosphere-ecoinvent-3.6-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.5 to 3.6",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:38.244115+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.5-biosphere",
+    "target_id": "ecoinvent-3.6-biosphere",
+    "filename": "ecoinvent-3.5-biosphere-ecoinvent-3.6-biosphere.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.5-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.5-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.5 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:38.282818+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.5-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.5-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.4-biosphere-ecoinvent-3.5-biosphere": {
+    "name": "ecoinvent-3.4-biosphere-ecoinvent-3.5-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.4 to 3.5",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:38.740333+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.4-biosphere",
+    "target_id": "ecoinvent-3.5-biosphere",
+    "filename": "ecoinvent-3.4-biosphere-ecoinvent-3.5-biosphere.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.4-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.4-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.4 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:38.778625+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.4-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.4-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.3-biosphere-ecoinvent-3.4-biosphere": {
+    "name": "ecoinvent-3.3-biosphere-ecoinvent-3.4-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.3 to 3.4",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:39.175941+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.3-biosphere",
+    "target_id": "ecoinvent-3.4-biosphere",
+    "filename": "ecoinvent-3.3-biosphere-ecoinvent-3.4-biosphere.json",
+    "compression": false
+  },
+  "ecoinvent-3.3-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.3-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.3 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:39.197717+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.3-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.3-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.2-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.2-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.2 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:39.636771+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.2-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.2-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.1-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.1-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.1 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:40.070908+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.1-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.1-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.01-biosphere-ecoinvent-3.1-biosphere": {
+    "name": "ecoinvent-3.01-biosphere-ecoinvent-3.1-biosphere",
+    "description": "ecoinvent elementary flow correspondence from 3.01 to 3.1",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:40.475502+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.01-biosphere",
+    "target_id": "ecoinvent-3.1-biosphere",
+    "filename": "ecoinvent-3.01-biosphere-ecoinvent-3.1-biosphere.json",
+    "compression": false
+  },
+  "ecoinvent-3.01-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-3.01-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 3.01 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:40.498123+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.01-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-3.01-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-2.2-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "ecoinvent-2.2-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive ecoinvent elementary flow correspondence from 2.2 to 3.12",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-15T13:45:42.477375+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-2.2-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "ecoinvent-2.2-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.10-biosphere-simapro-2024-biosphere": {
+    "name": "ecoinvent-3.10-biosphere-simapro-2024-biosphere",
+    "description": "Manual SimaPro to ecoinvent name matches without conversion factors",
+    "contributors": [
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-16T22:04:33.433871+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      },
+      "target": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      }
+    },
+    "source_id": "simapro-2024-biosphere",
+    "target_id": "ecoinvent-3.10-biosphere",
+    "filename": "ecoinvent-3.10-biosphere-simapro-2024-biosphere.json",
+    "compression": false
   }
 }
