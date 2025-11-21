@@ -3309,8 +3309,8 @@
     "filename": "ecoinvent-2.2-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
     "compression": "gzip"
   },
-  "ecoinvent-3.10-biosphere-simapro-2024-biosphere": {
-    "name": "ecoinvent-3.10-biosphere-simapro-2024-biosphere",
+  "simapro-2024-biosphere-ecoinvent-3.10-biosphere": {
+    "name": "simapro-2024-biosphere-ecoinvent-3.10-biosphere",
     "description": "Manual SimaPro to ecoinvent name matches without conversion factors",
     "contributors": [
       {
@@ -3321,7 +3321,7 @@
         "path": "https://chris.mutel.org"
       }
     ],
-    "created": "2025-11-16T22:04:33.433871+00:00",
+    "created": "2025-11-21T12:28:19.186700+00:00",
     "version": "1.0",
     "licenses": [
       {
@@ -3335,20 +3335,6 @@
     ],
     "mapping": {
       "source": {
-        "expression language": "XPath",
-        "labels": {
-          "name": "//*:elementaryExchange/*:name/text()",
-          "cas_number": "//*:elementaryExchange/@casNumber",
-          "unit": "//*:elementaryExchange/*:unitName/text()",
-          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
-          "context": [
-            "//*:elementaryExchange/*:compartment/*:compartment/text()",
-            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
-          ],
-          "synonyms": "//*:elementaryExchange/*:synonym/text()"
-        }
-      },
-      "target": {
         "expression language": "like JSONPath",
         "labels": {
           "identifier": "Process[*].\"Process identifier\".text",
@@ -3367,11 +3353,97 @@
             "[\"Resources/\", Process[*].\"Resources\".[1]]"
           ]
         }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
       }
     },
     "source_id": "simapro-2024-biosphere",
     "target_id": "ecoinvent-3.10-biosphere",
-    "filename": "ecoinvent-3.10-biosphere-simapro-2024-biosphere.json",
+    "filename": "simapro-2024-biosphere-ecoinvent-3.10-biosphere.json",
     "compression": false
+  },
+  "simapro-2025-biosphere-ef-3.1-biosphere-ecoinvent-3.12-biosphere-transitive": {
+    "name": "simapro-2025-biosphere-ef-3.1-biosphere-ecoinvent-3.12-biosphere-transitive",
+    "description": "Transitive conversion from SimaPro 2025 to ecoinvent 3.12 elementary flows through EF 3.1 based on https://github.com/PRe-Sustainability/GLAD-ElementaryFlowResources",
+    "contributors": [
+      {
+        "title": "Arthur Donaldson",
+        "roles": [
+          "author"
+        ],
+        "path": "https://www.linkedin.com/in/artur-donaldson-environmental-data"
+      },
+      {
+        "title": "Chris Mutel",
+        "roles": [
+          "author"
+        ],
+        "path": "https://chris.mutel.org"
+      }
+    ],
+    "created": "2025-11-20T22:24:13.674805+00:00",
+    "version": "1.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "like JSONPath",
+        "labels": {
+          "identifier": "Process[*].\"Process identifier\".text",
+          "name": "Process[*].Products[*].text[0]",
+          "platform_id": "Process[*].\"Platform Identifier\"",
+          "unit": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[2]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[2]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[2]]",
+            "[\"Resources/\", Process[*].\"Resources\".[2]]"
+          ],
+          "context": [
+            "[\"Emissions to air/\", Process[*].\"Emissions to air\".[1]]",
+            "[\"Emissions to soil/\", Process[*].\"Emissions to soil\".[1]]",
+            "[\"Emissions to water/\", Process[*].\"Emissions to water\".[1]]",
+            "[\"Resources/\", Process[*].\"Resources\".[1]]"
+          ]
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "name": "//*:elementaryExchange/*:name/text()",
+          "cas_number": "//*:elementaryExchange/@casNumber",
+          "unit": "//*:elementaryExchange/*:unitName/text()",
+          "identifier": "//*:elementaryExchange/@elementaryExchangeId",
+          "context": [
+            "//*:elementaryExchange/*:compartment/*:compartment/text()",
+            "//*:elementaryExchange/*:compartment/*:subcompartment/text()"
+          ],
+          "synonyms": "//*:elementaryExchange/*:synonym/text()"
+        }
+      }
+    },
+    "source_id": "simapro-2025-biosphere",
+    "target_id": "ecoinvent-3.12-biosphere",
+    "filename": "simapro-2025-biosphere-ef-3.1-biosphere-ecoinvent-3.12-biosphere-transitive.gz",
+    "compression": "gzip"
   }
 }

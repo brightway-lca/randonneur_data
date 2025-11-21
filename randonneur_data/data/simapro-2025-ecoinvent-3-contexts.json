@@ -610,6 +610,28 @@
     },
     {
       "source": {
+        "context": "Resources/"
+      },
+      "target": {
+        "context": [
+          "natural resource"
+        ]
+      },
+      "comment": "Dummy value used for matching; not a real ecoinvent context"
+    },
+    {
+      "source": {
+        "context": "Resources"
+      },
+      "target": {
+        "context": [
+          "natural resource"
+        ]
+      },
+      "comment": "Dummy value used for matching; not a real ecoinvent context"
+    },
+    {
+      "source": {
         "context": "Raw"
       },
       "target": {
