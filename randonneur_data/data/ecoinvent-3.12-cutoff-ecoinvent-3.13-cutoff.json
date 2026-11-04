@@ -1200,7 +1200,8 @@
           "location": "IN-ML",
           "allocation": 0.16666666666666666
         }
-      ]
+      ],
+      "comment": "Equal allocation factors used because all target datasets have zero production volume"
     },
     {
       "source": {
