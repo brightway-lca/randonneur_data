@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "created": "2026-11-04T19:34:28.547733+00:00",
+  "created": "2026-11-04T20:21:17.932198+00:00",
   "version": "2.0.0",
   "licenses": [
     {
@@ -1162,35 +1162,35 @@
           "unit": "MJ",
           "name": "heat and power co-generation, wood chips, 6667 kW",
           "reference product": "heat, district or industrial, other than natural gas",
-          "location": "IN-ML",
+          "location": "RoW",
           "allocation": 0.16666666666666666
         },
         {
           "unit": "MJ",
           "name": "heat and power co-generation, wood chips, 6667 kW",
           "reference product": "heat, district or industrial, other than natural gas",
-          "location": "IN-ML",
+          "location": "IN-AS",
           "allocation": 0.16666666666666666
         },
         {
           "unit": "MJ",
           "name": "heat and power co-generation, wood chips, 6667 kW",
           "reference product": "heat, district or industrial, other than natural gas",
-          "location": "IN-ML",
+          "location": "IN-HP",
           "allocation": 0.16666666666666666
         },
         {
           "unit": "MJ",
           "name": "heat and power co-generation, wood chips, 6667 kW",
           "reference product": "heat, district or industrial, other than natural gas",
-          "location": "IN-ML",
+          "location": "IN-JH",
           "allocation": 0.16666666666666666
         },
         {
           "unit": "MJ",
           "name": "heat and power co-generation, wood chips, 6667 kW",
           "reference product": "heat, district or industrial, other than natural gas",
-          "location": "IN-ML",
+          "location": "IN-KL",
           "allocation": 0.16666666666666666
         },
         {
