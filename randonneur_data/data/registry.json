@@ -230,25 +230,29 @@
   },
   "ecoinvent-3.8-cutoff-ecoinvent-3.9-cutoff": {
     "name": "ecoinvent-3.8-cutoff-ecoinvent-3.9-cutoff",
-    "description": "Data migration file from ecoinvent-3.8-cutoff to ecoinvent-3.9-cutoff generated with `ecoinvent_migrate` version 0.2.0",
+    "description": "Data migration file from ecoinvent-3.8-cutoff to ecoinvent-3.9-cutoff generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "role": "author"
+        "roles": [
+          "author"
+        ]
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "role": "wrangler"
+        "roles": [
+          "wrangler"
+        ]
       }
     ],
-    "created": "2024-07-24T11:22:13.155831+00:00",
-    "version": "3.0.0",
+    "created": "2026-11-05T09:01:39.040978+00:00",
+    "version": "4.0.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
@@ -259,21 +263,21 @@
       "source": {
         "expression language": "XPath",
         "labels": {
-          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
-          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
-          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
         }
       },
       "target": {
         "expression language": "XPath",
         "labels": {
-          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
-          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
-          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
         }
       }
     },
@@ -285,25 +289,29 @@
   },
   "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff": {
     "name": "ecoinvent-3.9.1-cutoff-ecoinvent-3.10-cutoff",
-    "description": "Data migration file from ecoinvent-3.9.1-cutoff to ecoinvent-3.10-cutoff generated with `ecoinvent_migrate` version 0.3",
+    "description": "Data migration file from ecoinvent-3.9.1-cutoff to ecoinvent-3.10-cutoff generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "role": "author"
+        "roles": [
+          "author"
+        ]
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "role": "wrangler"
+        "roles": [
+          "wrangler"
+        ]
       }
     ],
-    "created": "2024-08-15T07:02:00.387580+00:00",
-    "version": "3.0.0",
+    "created": "2026-11-05T09:02:01.659976+00:00",
+    "version": "4.0.0",
     "licenses": [
       {
-        "name": "CC BY 4.0",
-        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "title": "Creative Commons Attribution 4.0 International"
       }
     ],
@@ -314,21 +322,21 @@
       "source": {
         "expression language": "XPath",
         "labels": {
-          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
-          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
-          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
         }
       },
       "target": {
         "expression language": "XPath",
         "labels": {
-          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/@intermediateExchangeId, '.spold')",
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
           "name": "//*:activityName/text()",
           "location": "//*:geography/*:shortname/text()",
-          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:name/text()",
-          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount > 0]/*:unitName/text()"
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
         }
       }
     },
@@ -340,21 +348,25 @@
   },
   "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere": {
     "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
-    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.4.1",
+    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "role": "author"
+        "roles": [
+          "author"
+        ]
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "role": "wrangler"
+        "roles": [
+          "wrangler"
+        ]
       }
     ],
-    "created": "2024-09-05T19:29:05.624925+00:00",
-    "version": "2.0.0",
+    "created": "2026-11-05T08:23:44.878633+00:00",
+    "version": "3.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -401,21 +413,25 @@
   },
   "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere": {
     "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere",
-    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.4.1",
+    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "role": "author"
+        "roles": [
+          "author"
+        ]
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "role": "wrangler"
+        "roles": [
+          "wrangler"
+        ]
       }
     ],
-    "created": "2024-09-05T19:29:08.110235+00:00",
-    "version": "3.0.0",
+    "created": "2026-11-05T09:02:20.009937+00:00",
+    "version": "4.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -1760,7 +1776,7 @@
   },
   "ecoinvent-3.10.1-cutoff-ecoinvent-3.11-cutoff": {
     "name": "ecoinvent-3.10.1-cutoff-ecoinvent-3.11-cutoff",
-    "description": "Data migration file from ecoinvent-3.10.1-cutoff to ecoinvent-3.11-cutoff generated with `ecoinvent_migrate` version 0.6.1",
+    "description": "Data migration file from ecoinvent-3.10.1-cutoff to ecoinvent-3.11-cutoff generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -1777,8 +1793,8 @@
         ]
       }
     ],
-    "created": "2025-03-25T10:19:41.203960+00:00",
-    "version": "2.0.0",
+    "created": "2026-11-05T08:24:46.321509+00:00",
+    "version": "3.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -2106,7 +2122,7 @@
   },
   "ecoinvent-3.11-cutoff-ecoinvent-3.12-cutoff": {
     "name": "ecoinvent-3.11-cutoff-ecoinvent-3.12-cutoff",
-    "description": "Data migration file from ecoinvent-3.11-cutoff to ecoinvent-3.12-cutoff generated with `ecoinvent_migrate` version 0.6.2",
+    "description": "Data migration file from ecoinvent-3.11-cutoff to ecoinvent-3.12-cutoff generated with `ecoinvent_migrate` version 0.7",
     "contributors": [
       {
         "title": "ecoinvent association",
@@ -2123,8 +2139,8 @@
         ]
       }
     ],
-    "created": "2025-11-05T13:20:45.060234+00:00",
-    "version": "2.0.0",
+    "created": "2026-11-05T08:25:06.492524+00:00",
+    "version": "3.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -3746,5 +3762,654 @@
     "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
     "filename": "ecoinvent-3.12-EN15804-ecoinvent-3.13-EN15804.json",
     "compression": false
+  },
+  "ecoinvent-3.8-consequential-ecoinvent-3.9-consequential": {
+    "name": "ecoinvent-3.8-consequential-ecoinvent-3.9-consequential",
+    "description": "Data migration file from ecoinvent-3.8-consequential to ecoinvent-3.9-consequential generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T09:01:44.091710+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.8-consequential",
+    "target_id": "ecoinvent-3.9-consequential",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.8-consequential-ecoinvent-3.9-consequential.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.8-EN15804-ecoinvent-3.9-EN15804": {
+    "name": "ecoinvent-3.8-EN15804-ecoinvent-3.9-EN15804",
+    "description": "Data migration file from ecoinvent-3.8-EN15804 to ecoinvent-3.9-EN15804 generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T09:01:48.945526+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.8-EN15804",
+    "target_id": "ecoinvent-3.9-EN15804",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.8-EN15804-ecoinvent-3.9-EN15804.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.9.1-apos-ecoinvent-3.10-apos": {
+    "name": "ecoinvent-3.9.1-apos-ecoinvent-3.10-apos",
+    "description": "Data migration file from ecoinvent-3.9.1-apos to ecoinvent-3.10-apos generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T09:02:07.045586+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-apos",
+    "target_id": "ecoinvent-3.10-apos",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.9.1-apos-ecoinvent-3.10-apos.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.9.1-consequential-ecoinvent-3.10-consequential": {
+    "name": "ecoinvent-3.9.1-consequential-ecoinvent-3.10-consequential",
+    "description": "Data migration file from ecoinvent-3.9.1-consequential to ecoinvent-3.10-consequential generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T09:02:12.317126+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-consequential",
+    "target_id": "ecoinvent-3.10-consequential",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.9.1-consequential-ecoinvent-3.10-consequential.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.9.1-EN15804-ecoinvent-3.10-EN15804": {
+    "name": "ecoinvent-3.9.1-EN15804-ecoinvent-3.10-EN15804",
+    "description": "Data migration file from ecoinvent-3.9.1-EN15804 to ecoinvent-3.10-EN15804 generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T09:02:17.625409+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.9.1-EN15804",
+    "target_id": "ecoinvent-3.10-EN15804",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.9.1-EN15804-ecoinvent-3.10-EN15804.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.10.1-apos-ecoinvent-3.11-apos": {
+    "name": "ecoinvent-3.10.1-apos-ecoinvent-3.11-apos",
+    "description": "Data migration file from ecoinvent-3.10.1-apos to ecoinvent-3.11-apos generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:24:55.078017+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-apos",
+    "target_id": "ecoinvent-3.11-apos",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.10.1-apos-ecoinvent-3.11-apos.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.10.1-consequential-ecoinvent-3.11-consequential": {
+    "name": "ecoinvent-3.10.1-consequential-ecoinvent-3.11-consequential",
+    "description": "Data migration file from ecoinvent-3.10.1-consequential to ecoinvent-3.11-consequential generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:24:50.906546+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-consequential",
+    "target_id": "ecoinvent-3.11-consequential",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.10.1-consequential-ecoinvent-3.11-consequential.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.10.1-EN15804-ecoinvent-3.11-EN15804": {
+    "name": "ecoinvent-3.10.1-EN15804-ecoinvent-3.11-EN15804",
+    "description": "Data migration file from ecoinvent-3.10.1-EN15804 to ecoinvent-3.11-EN15804 generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:25:00.086470+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.10.1-EN15804",
+    "target_id": "ecoinvent-3.11-EN15804",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.10.1-EN15804-ecoinvent-3.11-EN15804.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.11-apos-ecoinvent-3.12-apos": {
+    "name": "ecoinvent-3.11-apos-ecoinvent-3.12-apos",
+    "description": "Data migration file from ecoinvent-3.11-apos to ecoinvent-3.12-apos generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:25:21.267761+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.11-apos",
+    "target_id": "ecoinvent-3.12-apos",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.11-apos-ecoinvent-3.12-apos.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.11-consequential-ecoinvent-3.12-consequential": {
+    "name": "ecoinvent-3.11-consequential-ecoinvent-3.12-consequential",
+    "description": "Data migration file from ecoinvent-3.11-consequential to ecoinvent-3.12-consequential generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:25:16.072916+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.11-consequential",
+    "target_id": "ecoinvent-3.12-consequential",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.11-consequential-ecoinvent-3.12-consequential.gz",
+    "compression": "gzip"
+  },
+  "ecoinvent-3.11-EN15804-ecoinvent-3.12-EN15804": {
+    "name": "ecoinvent-3.11-EN15804-ecoinvent-3.12-EN15804",
+    "description": "Data migration file from ecoinvent-3.11-EN15804 to ecoinvent-3.12-EN15804 generated with `ecoinvent_migrate` version 0.7",
+    "contributors": [
+      {
+        "title": "ecoinvent association",
+        "path": "https://ecoinvent.org/",
+        "roles": [
+          "author"
+        ]
+      },
+      {
+        "title": "Chris Mutel",
+        "path": "https://chris.mutel.org/",
+        "roles": [
+          "wrangler"
+        ]
+      }
+    ],
+    "created": "2026-11-05T08:25:25.989146+00:00",
+    "version": "2.0.0",
+    "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "title": "Creative Commons Attribution 4.0 International"
+      }
+    ],
+    "graph_context": [
+      "edges"
+    ],
+    "mapping": {
+      "source": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      },
+      "target": {
+        "expression language": "XPath",
+        "labels": {
+          "filename": "concat(//*:activity/@id, '_', //*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/@intermediateExchangeId, '.spold')",
+          "name": "//*:activityName/text()",
+          "location": "//*:geography/*:shortname/text()",
+          "reference product": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:name/text()",
+          "unit": "//*:intermediateExchange[*:outputGroup = '0' and @amount != 0]/*:unitName/text()"
+        }
+      }
+    },
+    "source_id": "ecoinvent-3.11-EN15804",
+    "target_id": "ecoinvent-3.12-EN15804",
+    "homepage": "https://github.com/brightway-lca/ecoinvent_migrate",
+    "filename": "ecoinvent-3.11-EN15804-ecoinvent-3.12-EN15804.gz",
+    "compression": "gzip"
   }
 }
