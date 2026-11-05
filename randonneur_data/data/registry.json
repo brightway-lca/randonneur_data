@@ -348,25 +348,21 @@
   },
   "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere": {
     "name": "ecoinvent-3.8-biosphere-ecoinvent-3.9-biosphere",
-    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.7",
+    "description": "Data migration file from ecoinvent-3.8-biosphere to ecoinvent-3.9-biosphere generated with `ecoinvent_migrate` version 0.4.1",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "roles": [
-          "author"
-        ]
+        "role": "author"
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "roles": [
-          "wrangler"
-        ]
+        "role": "wrangler"
       }
     ],
-    "created": "2026-11-05T08:23:44.878633+00:00",
-    "version": "3.0.0",
+    "created": "2024-09-05T19:29:05.624925+00:00",
+    "version": "2.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
@@ -413,25 +409,21 @@
   },
   "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere": {
     "name": "ecoinvent-3.9.1-biosphere-ecoinvent-3.10-biosphere",
-    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.7",
+    "description": "Data migration file from ecoinvent-3.9.1-biosphere to ecoinvent-3.10-biosphere generated with `ecoinvent_migrate` version 0.4.1",
     "contributors": [
       {
         "title": "ecoinvent association",
         "path": "https://ecoinvent.org/",
-        "roles": [
-          "author"
-        ]
+        "role": "author"
       },
       {
         "title": "Chris Mutel",
         "path": "https://chris.mutel.org/",
-        "roles": [
-          "wrangler"
-        ]
+        "role": "wrangler"
       }
     ],
-    "created": "2026-11-05T09:02:20.009937+00:00",
-    "version": "4.0.0",
+    "created": "2024-09-05T19:29:08.110235+00:00",
+    "version": "3.0.0",
     "licenses": [
       {
         "name": "CC-BY-4.0",
