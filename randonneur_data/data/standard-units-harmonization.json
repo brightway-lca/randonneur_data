@@ -318,6 +318,14 @@
     },
     {
       "source": {
+        "unit": "kgy"
+      },
+      "target": {
+        "unit": "kilogram_year"
+      }
+    },
+    {
+      "source": {
         "unit": "metric ton*km"
       },
       "target": {
