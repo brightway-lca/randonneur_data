@@ -7,6 +7,7 @@
 * Regenerate ecoinvent cutoff mappings for 3.8 to 3.9, 3.9.1 to 3.10, 3.10.1 to 3.11 and 3.11 to 3.12 with `ecoinvent_migrate` 0.7.1. Migrations whose source dataset isn't in the source release and migrations which change unit without a conversion factor are removed ([#15](https://github.com/brightway-lca/randonneur_data/pull/15))
 * Remove two unregistered ecoinvent biosphere files ([#15](https://github.com/brightway-lca/randonneur_data/pull/15))
 * Add `kgy` to `kilogram_year` unit normalization ([#14](https://github.com/brightway-lca/randonneur_data/pull/14))
+* Packaging: license metadata uses `project.license` instead of the deprecated `tool.setuptools.license-files`, and data files are declared as package data. Building now needs `setuptools>=77`
 
 ### [0.7.2] - 2025-11-21
 

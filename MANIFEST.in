@@ -1,3 +1,2 @@
 include randonneur_data/data/*.gz
-include randonneur_data/data/*.xz
 include randonneur_data/data/*.json

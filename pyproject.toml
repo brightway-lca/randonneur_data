@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -12,6 +12,8 @@ maintainers = [
 ]
 description = "Data for the randonneur ETL library and spec"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 dynamic = ["version"]
 # Add here all kinds of additional classifiers as defined under
 # https://pypi.org/classifiers/
@@ -58,9 +60,11 @@ dev = [
 ]
 
 [tool.setuptools]
-license-files = ["LICENSE"]
-include-package-data = true
+include-package-data = false
 packages = ["randonneur_data"]
+
+[tool.setuptools.package-data]
+randonneur_data = ["data/*.gz", "data/*.json"]
 
 [tool.setuptools.dynamic]
 version = {attr = "randonneur_data.__version__"}
